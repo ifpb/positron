@@ -67,11 +67,15 @@ following command, such as:
 
 ```shell
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd positron 
 sudo bash scripts/dependencies.sh
 =======
 ./ns3 --run simple-global-routing
 >>>>>>> 3c604d5b2 (Update docs with CMake and ns3 wrapper)
+=======
+./ns3 run simple-global-routing
+>>>>>>> 33f2ee841 (doc: update ns3 API)
 ```
 
 A instalação deve continuar conforme os passos do próprio NS-3, apenas com a indicação da biblioteca YAML como diferença

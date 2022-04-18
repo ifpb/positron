@@ -589,10 +589,14 @@ Node::RegisterProtocolHandler (ProtocolHandler handler,
     // On demand enable promiscuous mode in netdevices
     if (promiscuous)
     {
+<<<<<<< HEAD
       if (device == 0)
       {
         for (std::vector<Ptr<NetDevice>>::iterator i = m_devices.begin();
              i != m_devices.end(); i++)
+=======
+      if (!device)
+>>>>>>> e461e54d5 (Update Ptr validity checks to new Ptr<>::operator bool)
         {
           Ptr<NetDevice> dev = *i;
           dev->SetPromiscReceiveCallback(MakeCallback(&Node::PromiscReceiveFromDevice, this));
@@ -663,11 +667,16 @@ Node::RegisterProtocolHandler (ProtocolHandler handler,
     for (ProtocolHandlerList::iterator i = m_handlers.begin();
          i != m_handlers.end(); i++)
     {
+<<<<<<< HEAD
       if (i->device == 0 ||
           (i->device != 0 && i->device == device))
       {
         if (i->protocol == 0 ||
             i->protocol == protocol)
+=======
+      if (!i->device ||
+          (i->device == device))
+>>>>>>> e461e54d5 (Update Ptr validity checks to new Ptr<>::operator bool)
         {
 <<<<<<< HEAD
           if (promiscuous == i->promiscuous)

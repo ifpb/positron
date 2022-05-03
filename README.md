@@ -1,4 +1,13 @@
-# The Network Simulator, Version 3
+
+POSITRON: Esquema de Alocação Justa de Dispositivos IoT Multifuncionais
+================================
+
+## Lista de conteúdo:
+
+1) [Informações](#informações)
+2) [Instalação](#instalação)
+3) [Utilização](#utilização)
+4) [Contatos](#contatos)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9,11 +18,16 @@ POSITRON: Esquema de Alocação Justa de Dispositivos IoT Multifuncionais
 =======
 =======
 
-[![codecov](https://codecov.io/gh/nsnam/ns-3-dev-git/branch/master/graph/badge.svg)](https://codecov.io/gh/nsnam/ns-3-dev-git/branch/master/)
-[![Gitlab CI](https://gitlab.com/nsnam/ns-3-dev/badges/master/pipeline.svg)](https://gitlab.com/nsnam/ns-3-dev/-/pipelines)
-[![Github CI](https://github.com/nsnam/ns-3-dev-git/actions/workflows/per_commit.yml/badge.svg)](https://github.com/nsnam/ns-3-dev-git/actions)
+## Informações
+
+O POSITRON foi implementado e testado com base na versão 3.35 do [NS-3](https://www.nsnam.org), em um ambiente Linux Ubuntu 20.04.
+
+Para o seu funcionamento, é necessária a instalação prévia do SQLite 3 e da biblioteca YAML CPP.
+
+Instruções de instalação e uso são descritas a seguir.
 
 
+<<<<<<< HEAD
 >>>>>>> 5bf6e4d64 (Update README.md to display coverage and CI badges)
 ## Table of Contents
 >>>>>>> af8689447 (Fix syntax of Markdown files)
@@ -65,14 +79,20 @@ included in the file doc/build.txt
 
 However, the real quick and dirty way to get started is to
 type the command
+=======
+## Instalação
+
+Primeiramente, deve-se fazer um clone deste repositório através da ferramenta Git
+>>>>>>> 27288fce1 (POSITRON: initial commit)
 
 ```shell
-./ns3 configure --enable-examples
+git clone https://github.com/leandro-hbs/teste-ns-3
 ```
 
-followed by
+Após a clonagem do repositório, recomenda-se a instalação das dependências
 
 ```shell
+<<<<<<< HEAD
 ./ns3
 >>>>>>> 3c604d5b2 (Update docs with CMake and ns3 wrapper)
 ```
@@ -145,9 +165,23 @@ familiar with it.
 
 If you have successfully installed git, you can get
 a copy of the development version with the following command:
+=======
+cd teste-ns-3
+sudo bash script/dependencies.sh
+```
+
+A instalação deve continuar conforme os passos do próprio NS-3, apenas com a indicação da biblioteca YAML como diferença
+
+```shell
+CXFLAGS_EXTRA="-I/usr/include/yaml-cpp" LDFLAGS="-lyaml-cpp" ./waf configure --enable-example --enable-tests
+```
+
+seguido de
+>>>>>>> 27288fce1 (POSITRON: initial commit)
 
 >>>>>>> af8689447 (Fix syntax of Markdown files)
 ```shell
+<<<<<<< HEAD
 CXFLAGS_EXTRA="-I/usr/include/yaml-cpp" LDFLAGS="-lyaml-cpp" ./waf configure --enable-examples --enable-tests
 ```
 
@@ -157,6 +191,11 @@ seguido de
 ./waf build
 ```
 
+=======
+./waf build
+```
+
+>>>>>>> 27288fce1 (POSITRON: initial commit)
 ## Utilização
 
 Uma vez compilado, pode-se executar o POSITRON a partir dos arquivos main.cc e input.yaml no diretório scracth.
@@ -183,6 +222,7 @@ Exemplos de parâmetros de simulação
 
 ## Contatos
 
+<<<<<<< HEAD
 * Aldri Santos (aldri[at]dcc.ufmg.br)
 * Ayrton M. Porto de Gois (ayrton.porto[at]academico.ifpb.edu.br)
 * Diego M. Rocha (diego.rocha[at]academico.ifpb.edu.br)
@@ -192,3 +232,11 @@ Exemplos de parâmetros de simulação
 * Lucas Carvalho Goncalves Silva (lucas.goncalves[at]academico.ifpb.edu.br)
 * Paulo Ditarso Maciel Jr. (paulo.maciel[at]ifpb.edu.br)
 * Ricardo Pereira Lins (ricardo.lins[at]academico.ifpb.edu.br)
+=======
+* Diego M. Rocha (diego.rocha[at]academico.ifpb.edu.br)
+* Ayrton M. Porto de Gois (ayrton.porto[at]academico.ifpb.edu.br)
+* Leandro H. Batista da silva (leandro.batista[at]academico.ifpb.edu.br)
+* Fernando Matos (fernando[at]ci.ufpb.br)
+* Aldri Santos (aldri[at]dcc.ufmg.br)
+* Paulo Ditarso Maciel Jr. (paulo.maciel[at]ifpb.edu.br)
+>>>>>>> 27288fce1 (POSITRON: initial commit)

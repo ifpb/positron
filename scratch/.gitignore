@@ -1,9 +1,9 @@
 # Ignore everything on scratch by default, except the provided examples
 /*
 !.gitignore
-
 !subdir/
 !scratch-simulator.cc
+<<<<<<< HEAD
 <<<<<<< HEAD
 !input.yaml
 !main.cc
@@ -12,3 +12,7 @@
 =======
 !CMakeLists.txt
 >>>>>>> 9c876c7f5 (CMake buildsystem)
+=======
+!input.yaml
+!main.cc
+>>>>>>> 61494877c (POSITRON: updating .gitignore scratch folder)

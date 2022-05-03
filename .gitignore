@@ -37,4 +37,5 @@ build/
 /.cproject
 /.project
 
+!scripts
 version.cache

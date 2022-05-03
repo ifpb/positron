@@ -15,6 +15,8 @@ def build(bld):
         'model/packet-loss-counter.cc',
         'model/udp-echo-client.cc',
         'model/udp-echo-server.cc',
+        'model/control-layer-client.cc',
+        'model/control-layer-server.cc',
         'model/application-packet-probe.cc',
         'model/three-gpp-http-client.cc',
         'model/three-gpp-http-server.cc',
@@ -25,6 +27,7 @@ def build(bld):
         'helper/packet-sink-helper.cc',
         'helper/udp-client-server-helper.cc',
         'helper/udp-echo-helper.cc',
+        'helper/control-layer-helper.cc',
         'helper/three-gpp-http-helper.cc',
         ]
 
@@ -56,6 +59,8 @@ def build(bld):
         'model/packet-loss-counter.h',
         'model/udp-echo-client.h',
         'model/udp-echo-server.h',
+        'model/control-layer-client.h',
+        'model/control-layer-server.h',
         'model/application-packet-probe.h',
         'model/three-gpp-http-client.h',
         'model/three-gpp-http-server.h',
@@ -66,6 +71,7 @@ def build(bld):
         'helper/packet-sink-helper.h',
         'helper/udp-client-server-helper.h',
         'helper/udp-echo-helper.h',
+        'helper/control-layer-helper.h',
         'helper/three-gpp-http-helper.h'
         ]
     

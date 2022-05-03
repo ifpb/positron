@@ -27,6 +27,9 @@
 #include "ns3/callback.h"
 #include "ns3/ptr.h"
 #include "ns3/net-device.h"
+#include "ns3/string.h"
+#include "ns3/nstime.h"
+#include "ns3/event-id.h"
 
 namespace ns3 {
 
@@ -77,6 +80,37 @@ public:
    * the NodeList. 
    */
   uint32_t GetId (void) const;
+
+// -----------------------------------------------
+
+  double GetPower (void);
+
+  double GetInitialConsumption (void) const;
+
+  double GetCurrentConsumption (void) const;
+
+  double GetCpu (void) const;
+
+  double GetMemory (void) const;
+
+  double GetTransmission (void) const;
+
+  double GetStorage (void) const;
+
+  void UpdateEvent (void);
+
+  void OutOfPower (void);
+
+  void Recharge (void);
+
+  void AttPower (void);
+
+  void AddApplication (void);
+
+  void RemoveApplication (void);
+
+
+// -----------------------------------------------
 
   /**
    * In the future, ns3 nodes may have clock that returned a local time
@@ -284,6 +318,16 @@ private:
 
   uint32_t    m_id;         //!< Node id for this node
   uint32_t    m_sid;        //!< System id for this node
+  double      power;
+  double      initialConsumption;
+  double      currentConsumption;
+  double      cpu;
+  double      memory;
+  double      transmission;
+  double      storage;
+  Time        lastSet;
+  EventId     outOfPowerEvent;
+
   std::vector<Ptr<NetDevice> > m_devices; //!< Devices associated to this node
   std::vector<Ptr<Application> > m_applications; //!< Applications associated to this node
   ProtocolHandlerList m_handlers; //!< Protocol handlers in the node

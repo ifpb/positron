@@ -24,13 +24,13 @@ Instruções de instalação e uso são descritas a seguir.
 Primeiramente, deve-se fazer um clone deste repositório através da ferramenta Git
 
 ```shell
-git clone https://github.com/leandro-hbs/teste-ns-3
+git clone https://github.com/ifpb/positron
 ```
 
 Após a clonagem do repositório, recomenda-se a instalação das dependências
 
 ```shell
-cd teste-ns-3
+cd positron 
 sudo bash script/dependencies.sh
 ```
 

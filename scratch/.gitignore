@@ -3,3 +3,5 @@
 !.gitignore
 !subdir/
 !scratch-simulator.cc
+!input.yaml
+!main.cc

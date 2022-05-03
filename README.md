@@ -122,6 +122,7 @@ following command, such as:
 <<<<<<< HEAD
 cd positron 
 sudo bash scripts/dependencies.sh
+<<<<<<< HEAD
 =======
 ./ns3 --run simple-global-routing
 >>>>>>> 3c604d5b2 (Update docs with CMake and ns3 wrapper)
@@ -168,6 +169,8 @@ a copy of the development version with the following command:
 =======
 cd teste-ns-3
 sudo bash script/dependencies.sh
+=======
+>>>>>>> 21a67c264 (POSITRON: scripts folder and README update)
 ```
 
 A instalação deve continuar conforme os passos do próprio NS-3, apenas com a indicação da biblioteca YAML como diferença

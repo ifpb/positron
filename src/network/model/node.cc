@@ -19,7 +19,10 @@
  *          Mathieu Lacage <mathieu.lacage@sophia.inria.fr>
  */
 
+<<<<<<< HEAD
 #include <cmath>
+=======
+>>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
 #include "node.h"
 #include "node-list.h"
 #include "net-device.h"
@@ -55,6 +58,7 @@ namespace ns3
                                                      BooleanValue(false),
                                                      MakeBooleanChecker());
 
+<<<<<<< HEAD
   TypeId
   Node::GetTypeId(void)
   {
@@ -110,6 +114,36 @@ namespace ns3
                                           MakeDoubleChecker<double>());
     return tid;
   }
+=======
+TypeId
+Node::GetTypeId (void)
+{
+  static TypeId tid = TypeId ("ns3::Node")
+    .SetParent<Object> ()
+    .SetGroupName("Network")
+    .AddConstructor<Node> ()
+    .AddAttribute ("DeviceList", "The list of devices associated to this Node.",
+                   ObjectVectorValue (),
+                   MakeObjectVectorAccessor (&Node::m_devices),
+                   MakeObjectVectorChecker<NetDevice> ())
+    .AddAttribute ("ApplicationList", "The list of applications associated to this Node.",
+                   ObjectVectorValue (),
+                   MakeObjectVectorAccessor (&Node::m_applications),
+                   MakeObjectVectorChecker<Application> ())
+    .AddAttribute ("Id", "The id (unique integer) of this Node.",
+                   TypeId::ATTR_GET, // allow only getting it.
+                   UintegerValue (0),
+                   MakeUintegerAccessor (&Node::m_id),
+                   MakeUintegerChecker<uint32_t> ())
+    .AddAttribute ("SystemId", "The systemId of this node: a unique integer used for parallel simulations.",
+                   TypeId::ATTR_GET | TypeId::ATTR_SET,
+                   UintegerValue (0),
+                   MakeUintegerAccessor (&Node::m_sid),
+                   MakeUintegerChecker<uint32_t> ())
+  ;
+  return tid;
+}
+>>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
 
   Node::Node()
       : m_id(0),
@@ -119,6 +153,7 @@ namespace ns3
     Construct();
   }
 
+<<<<<<< HEAD
   Node::Node(uint32_t sid)
       : m_id(0),
         m_sid(sid)
@@ -126,6 +161,15 @@ namespace ns3
     NS_LOG_FUNCTION(this << sid);
     Construct();
   }
+=======
+Node::Node(uint32_t sid)
+  : m_id (0),
+    m_sid (sid)
+{
+  NS_LOG_FUNCTION (this << sid);
+  Construct ();
+}
+>>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
 
   void
   Node::Construct(void)
@@ -158,6 +202,7 @@ namespace ns3
     return power;
   }
 
+<<<<<<< HEAD
   double
   Node::GetInitialConsumption(void) const
   {
@@ -400,6 +445,71 @@ namespace ns3
     m_handlers.clear();
     for (std::vector<Ptr<NetDevice>>::iterator i = m_devices.begin();
          i != m_devices.end(); i++)
+=======
+uint32_t
+Node::AddDevice (Ptr<NetDevice> device)
+{
+  NS_LOG_FUNCTION (this << device);
+  uint32_t index = m_devices.size ();
+  m_devices.push_back (device);
+  device->SetNode (this);
+  device->SetIfIndex (index);
+  device->SetReceiveCallback (MakeCallback (&Node::NonPromiscReceiveFromDevice, this));
+  Simulator::ScheduleWithContext (GetId (), Seconds (0.0),
+                                  &NetDevice::Initialize, device);
+  NotifyDeviceAdded (device);
+  return index;
+}
+Ptr<NetDevice>
+Node::GetDevice (uint32_t index) const
+{
+  NS_LOG_FUNCTION (this << index);
+  NS_ASSERT_MSG (index < m_devices.size (), "Device index " << index <<
+                 " is out of range (only have " << m_devices.size () << " devices).");
+  return m_devices[index];
+}
+uint32_t
+Node::GetNDevices (void) const
+{
+  NS_LOG_FUNCTION (this);
+  return m_devices.size ();
+}
+
+uint32_t
+Node::AddApplication (Ptr<Application> application)
+{
+  NS_LOG_FUNCTION (this << application);
+  uint32_t index = m_applications.size ();
+  m_applications.push_back (application);
+  application->SetNode (this);
+  Simulator::ScheduleWithContext (GetId (), Seconds (0.0),
+                                  &Application::Initialize, application);
+  return index;
+}
+Ptr<Application>
+Node::GetApplication (uint32_t index) const
+{
+  NS_LOG_FUNCTION (this << index);
+  NS_ASSERT_MSG (index < m_applications.size (), "Application index " << index <<
+                 " is out of range (only have " << m_applications.size () << " applications).");
+  return m_applications[index];
+}
+uint32_t
+Node::GetNApplications (void) const
+{
+  NS_LOG_FUNCTION (this);
+  return m_applications.size ();
+}
+
+void
+Node::DoDispose ()
+{
+  NS_LOG_FUNCTION (this);
+  m_deviceAdditionListeners.clear ();
+  m_handlers.clear ();
+  for (std::vector<Ptr<NetDevice> >::iterator i = m_devices.begin ();
+       i != m_devices.end (); i++)
+>>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
     {
       Ptr<NetDevice> device = *i;
       device->Dispose();
@@ -413,6 +523,7 @@ namespace ns3
       application->Dispose();
       *i = 0;
     }
+<<<<<<< HEAD
     m_applications.clear();
     Object::DoDispose();
   }
@@ -422,6 +533,17 @@ namespace ns3
     NS_LOG_FUNCTION(this);
     for (std::vector<Ptr<NetDevice>>::iterator i = m_devices.begin();
          i != m_devices.end(); i++)
+=======
+  m_applications.clear ();
+  Object::DoDispose ();
+}
+void
+Node::DoInitialize (void)
+{
+  NS_LOG_FUNCTION (this);
+  for (std::vector<Ptr<NetDevice> >::iterator i = m_devices.begin ();
+       i != m_devices.end (); i++)
+>>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
     {
       Ptr<NetDevice> device = *i;
       device->Initialize();
@@ -436,6 +558,7 @@ namespace ns3
     Object::DoInitialize();
   }
 
+<<<<<<< HEAD
   void
   Node::RegisterProtocolHandler(ProtocolHandler handler,
                                 uint16_t protocolType,
@@ -448,6 +571,20 @@ namespace ns3
     entry.protocol = protocolType;
     entry.device = device;
     entry.promiscuous = promiscuous;
+=======
+void
+Node::RegisterProtocolHandler (ProtocolHandler handler,
+                               uint16_t protocolType,
+                               Ptr<NetDevice> device,
+                               bool promiscuous)
+{
+  NS_LOG_FUNCTION (this << &handler << protocolType << device << promiscuous);
+  struct Node::ProtocolHandlerEntry entry;
+  entry.handler = handler;
+  entry.protocol = protocolType;
+  entry.device = device;
+  entry.promiscuous = promiscuous;
+>>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
 
     // On demand enable promiscuous mode in netdevices
     if (promiscuous)
@@ -532,14 +669,27 @@ namespace ns3
         if (i->protocol == 0 ||
             i->protocol == protocol)
         {
+<<<<<<< HEAD
           if (promiscuous == i->promiscuous)
           {
             i->handler(device, packet, protocol, from, to, packetType);
             found = true;
           }
+=======
+          if (i->protocol == 0 ||
+              i->protocol == protocol)
+            {
+              if (promiscuous == i->promiscuous)
+                {
+                  i->handler (device, packet, protocol, from, to, packetType);
+                  found = true;
+                }
+            }
+>>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
         }
       }
     }
+<<<<<<< HEAD
     return found;
   }
   void
@@ -550,9 +700,22 @@ namespace ns3
     // and, then, notify the new listener about all existing devices.
     for (std::vector<Ptr<NetDevice>>::const_iterator i = m_devices.begin();
          i != m_devices.end(); ++i)
+=======
+  return found;
+}
+void
+Node::RegisterDeviceAdditionListener (DeviceAdditionListener listener)
+{
+  NS_LOG_FUNCTION (this << &listener);
+  m_deviceAdditionListeners.push_back (listener);
+  // and, then, notify the new listener about all existing devices.
+  for (std::vector<Ptr<NetDevice> >::const_iterator i = m_devices.begin ();
+       i != m_devices.end (); ++i)
+>>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
     {
       listener(*i);
     }
+<<<<<<< HEAD
   }
   void
   Node::UnregisterDeviceAdditionListener(DeviceAdditionListener listener)
@@ -560,6 +723,15 @@ namespace ns3
     NS_LOG_FUNCTION(this << &listener);
     for (DeviceAdditionListenerList::iterator i = m_deviceAdditionListeners.begin();
          i != m_deviceAdditionListeners.end(); i++)
+=======
+}
+void
+Node::UnregisterDeviceAdditionListener (DeviceAdditionListener listener)
+{
+  NS_LOG_FUNCTION (this << &listener);
+  for (DeviceAdditionListenerList::iterator i = m_deviceAdditionListeners.begin ();
+       i != m_deviceAdditionListeners.end (); i++)
+>>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
     {
       if ((*i).IsEqual(listener))
       {
@@ -567,7 +739,23 @@ namespace ns3
         break;
       }
     }
+<<<<<<< HEAD
   }
+=======
+}
+
+void
+Node::NotifyDeviceAdded (Ptr<NetDevice> device)
+{
+  NS_LOG_FUNCTION (this << device);
+  for (DeviceAdditionListenerList::iterator i = m_deviceAdditionListeners.begin ();
+       i != m_deviceAdditionListeners.end (); i++)
+    {
+      (*i) (device);
+    }
+}
+
+>>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
 
   void
   Node::NotifyDeviceAdded(Ptr<NetDevice> device)

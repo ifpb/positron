@@ -37,7 +37,7 @@ sudo bash scripts/dependencies.sh
 A instalação deve continuar conforme os passos do próprio NS-3, apenas com a indicação da biblioteca YAML como diferença
 
 ```shell
-CXFLAGS_EXTRA="-I/usr/include/yaml-cpp" LDFLAGS="-lyaml-cpp" ./waf configure --enable-example --enable-tests
+CXFLAGS_EXTRA="-I/usr/include/yaml-cpp" LDFLAGS="-lyaml-cpp" ./waf configure --enable-examples --enable-tests
 ```
 
 seguido de

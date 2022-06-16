@@ -158,19 +158,29 @@ int main(int argc, char *argv[])
   {
 
     std::string policy = apps[i]["policy"].as<std::string>();
-    float start = apps[i]["start"].as<float>();
     float cpu = apps[i]["cpu"].as<float>();
     float memory = apps[i]["memory"].as<float>();
     float storage = apps[i]["storage"].as<float>();
 
+    float start = 0.0;
+    float startAux = apps[i]["start"].as<float>();
+    float startMean = startAux + 14400; // 4 hours shift, in seconds
+    float startVar = pow((startMean * 0.50), 2); // 50% std deviation to the mean
+    while( start <= startAux | start >=  (startAux + 28800) ) { // Can't arrive in another shift of 8 hours
+      Ptr<NormalRandomVariable> rndStart = CreateObject<NormalRandomVariable> ();
+      rndStart->SetAttribute ("Mean", DoubleValue (startMean));
+      rndStart->SetAttribute ("Variance", DoubleValue (startVar));
+      start = rndStart->GetValue ();
+    }
+
     float duration = 0.0;
-    float mean = apps[i]["duration"].as<float>();
-    float variance = pow((mean * 0.20), 2);
+    float durationMean = apps[i]["duration"].as<float>();
+    float durationVar = pow((durationMean * 0.20), 2); // 20% std deviation to the mean
     while(duration <= 0.0) {
-        Ptr<NormalRandomVariable> auxDuration = CreateObject<NormalRandomVariable> ();
-        auxDuration->SetAttribute ("Mean", DoubleValue (mean));
-        auxDuration->SetAttribute ("Variance", DoubleValue (variance));
-        duration = auxDuration->GetValue ();
+      Ptr<NormalRandomVariable> rndDuration = CreateObject<NormalRandomVariable> ();
+      rndDuration->SetAttribute ("Mean", DoubleValue (durationMean));
+      rndDuration->SetAttribute ("Variance", DoubleValue (durationVar));
+      duration = rndDuration->GetValue ();
     }
 
     int app_id = i + 1;

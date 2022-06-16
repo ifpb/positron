@@ -165,7 +165,7 @@ int main(int argc, char *argv[])
 
     float duration = 0.0;
     float mean = apps[i]["duration"].as<float>();
-    float variance = pow((mean * 0.2), 2);
+    float variance = pow((mean * 0.20), 2);
     while(duration <= 0.0) {
         Ptr<NormalRandomVariable> auxDuration = CreateObject<NormalRandomVariable> ();
         auxDuration->SetAttribute ("Mean", DoubleValue (mean));

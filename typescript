@@ -1,0 +1,8 @@
+Script started on 2022-06-16 21:24:07-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="140" LINES="58"]
+[1m[7m%[27m[1m[0m                                                                                                                                            ]2;paulo@notelinux:~/ns-3/positron]1;~/ns-3/positron[0m[27m[24m[J[[01;37mpaulo[00m@[01;31mnotelinux[00m [36mpositron[00m ([01;32mmain[32m [33m✗[00m)[00m]$ [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls --color=tty]1;lsAUTHORS   CHANGES.html     [0m[01;34mdoc[0m       Makefile     RELEASE_NOTES  [01;34msrc[0m          typescript  VERSION  [01;34mwaf-tools[0m
+[01;34mbindings[0m  [01;34mcontrib[0m          [01;34mexamples[0m  [01;34m__pycache__[0m  [01;34mscratch[0m        [01;32mtest.py[0m      [01;34mutils[0m       [01;32mwaf[0m      wscript
+[01;34mbuild[0m     CONTRIBUTING.md  LICENSE   README.md    [01;34mscripts[0m        testpy.supp  utils.py    [01;32mwaf.bat[0m  wutils.py
+[1m[7m%[27m[1m[0m                                                                                                                                            ]2;paulo@notelinux:~/ns-3/positron]1;~/ns-3/positron[0m[27m[24m[J[[01;37mpaulo[00m@[01;31mnotelinux[00m [36mpositron[00m ([01;32mmain[32m [33m✗[00m)[00m]$ [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2022-06-16 21:24:15-03:00 [COMMAND_EXIT_CODE="0"]

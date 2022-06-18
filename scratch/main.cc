@@ -11,6 +11,7 @@
 #include "ns3/point-to-point-module.h"
 #include "ns3/applications-module.h"
 #include "ns3/ipv4-global-routing-helper.h"
+// #include "ns3/random-variable-stream.h"
 #include <yaml-cpp/yaml.h>
 
 using namespace ns3;
@@ -129,7 +130,6 @@ int main(int argc, char *argv[])
   controller.CreateDatabase();
   controller.initialize(controlNodes, controlInterfaces, balanced);
 
-
   cout << "List of nodes:" << endl;
   for (NodeList::Iterator node = NodeList::Begin(); node != NodeList::End(); node++)
   {
@@ -164,14 +164,13 @@ int main(int argc, char *argv[])
 
     float start = 0.0;
     float startAux = apps[i]["start"].as<float>();
-    float startMean = startAux + 14400; // 4 hours shift, in seconds
-    float startVar = pow((startMean * 0.50), 2); // 50% std deviation to the mean
-    while( start <= startAux | start >=  (startAux + 28800) ) { // Can't arrive in another shift of 8 hours
-      Ptr<NormalRandomVariable> rndStart = CreateObject<NormalRandomVariable> ();
-      rndStart->SetAttribute ("Mean", DoubleValue (startMean));
-      rndStart->SetAttribute ("Variance", DoubleValue (startVar));
-      start = rndStart->GetValue ();
-    }
+    float startMin = startAux + 10; // plus 10s to avoid starting at the very beginning
+    float startMax = startAux + 3600; // Apps arrive up to 1h shift
+    Ptr<UniformRandomVariable> rndStart = CreateObject<UniformRandomVariable> ();
+    rndStart->SetAttribute ("Min", DoubleValue (startMin));
+    rndStart->SetAttribute ("Max", DoubleValue (startMax));
+    start = rndStart->GetValue ();
+    
 
     float duration = 0.0;
     float durationMean = apps[i]["duration"].as<float>();
@@ -185,7 +184,9 @@ int main(int argc, char *argv[])
 
     int app_id = i + 1;
 
-    Simulator::Schedule(Seconds(start), &ControlLayerClientHelper::AddAppToDatabase, &controller, policy, start, duration, cpu, memory, storage);
+    float startNow = 0.0;
+    // Simulator::Schedule(Seconds(start), &ControlLayerClientHelper::AddAppToDatabase, &controller, policy, start, duration, cpu, memory, storage);
+    Simulator::Schedule(Seconds(startNow), &ControlLayerClientHelper::AddAppToDatabase, &controller, policy, start, duration, cpu, memory, storage);
     Simulator::Schedule(Seconds(start), &ControlLayerClientHelper::AllocateAPP, &controller, app_id);
 
   }

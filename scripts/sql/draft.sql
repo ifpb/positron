@@ -1,3 +1,5 @@
+-- usage: POSITRON_FOLDER $ sqlite3 scratch/database.db < scripts/sql/draft.sql
+
 .headers on
 
 --select ID, ID_WORKER, (PERFORMED_AT - START) as diffSTART, (DURATION - (FINISHED_AT - PERFORMED_AT)) as diffDuration

@@ -374,7 +374,7 @@ namespace ns3
     else
     {
 
-      std::cout << "Não foi possível alocar a aplicação: " << application.ID << std::endl;
+      std::cout << "It was not possible to allocate application : " << application.ID << std::endl;
       // TODO:
       // PRECISAMOS DEFINIR COMO INDICAR SE NAO TIVER WORKER PARA A APP NESSE MOMENTO
     }

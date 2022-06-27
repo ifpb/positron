@@ -15,27 +15,17 @@ do
     echo "pfBal,pfSat" > $resultsdir/pfair-$scenario.txt
     echo "puBal,puSat" > $resultsdir/pused-$scenario.txt
     ./scripts/change-input.sh $scenario
+    totalofnodes=${scenario%nodes}
+
     for turn in $turns; 
     do
         ./waf --run "main --balanced=true --seed=$turn" 2> /dev/null > log-bal.tmp
-        resultBal=$(cat log-bal.tmp | ./scripts/pfair.awk)
+        resultBal=$(cat log-bal.tmp | ./scripts/pfair.awk $totalofnodes)
         ./waf --run "main --balanced=false --seed=$turn" 2> /dev/null > log-sat.tmp
-        resultSat=$(cat log-sat.tmp | ./scripts/pfair.awk)
+        resultSat=$(cat log-sat.tmp | ./scripts/pfair.awk $totalofnodes)
         echo "$resultBal,$resultSat" >> $resultsdir/pfair-$scenario.txt
     done
+    # mv log-bal.tmp log-bal-$scenario.tmp
+    # mv log-sat.tmp log-sat-$scenario.tmp
     rm log-bal.tmp log-sat.tmp
 done
-
-# for i in $(seq 1 5);
-# do
-#     ./waf --run "main --balanced=true --seed=$i" 2> /dev/null | ./scripts/pfair.awk
-
-#     cat app_nao_justa.txt | awk -v r="$i" '
-#     BEGIN{ count_1=0;  count_2=0;  count_3=0 } 
-#     { if ($4 == "1") { count_1+=1 }}
-#     { if ($4 == "2") { count_2+=1 }} 
-#     { if ($4 == "3") { count_3+=1 }} 
-#     END{print "round " r " - qtde não justa " "tipo 1: " count_1 " tipo 2: " count_2 " tipo 3: " count_3}
-#     '
-#     echo -n >app_nao_justa.txt
-# done

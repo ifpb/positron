@@ -1,9 +1,7 @@
 #! /bin/bash
 
-# for i counter in $(seq 1 15);
-# do
-#     ./waf --run "main --balanced=true --seed=$counter" 2> /dev/null | awk 'function ceil(x, y){y=int(x); return(x>y?y+1:y)} function app(x){return (x <= 3 ? x : app(x - 3))} BEGIN{ count=0 }{ if ($4 == "allocate_worker_application") {apptype=app($11); nodegroup=ceil(($8*3)/18); aux=(apptype == nodegroup ? 1 : 0); count+=aux; print $10, $11, "tipo", apptype, $7, $8, "grupo", nodegroup, "justa", aux, "count", count} }END{print "percentual total de alocacao justa", (count/39)*100 "%"}' | grep -E "justa 0" >> app_nao_justa.txt
-# done
+# usage example, from POSITRON workdir
+# ./scripts/run.sh
 
 turns=$(seq 1 5)
 workdir="/usr/local/src/ns3-workspace/positron"

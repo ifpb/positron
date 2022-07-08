@@ -1,5 +1,5 @@
 configs:
-  - scenarioName: "60nodes"
+  - scenarioName: "30nodes"
   - simulationTime: 86400
 
 applications:

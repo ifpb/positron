@@ -18,8 +18,9 @@ if (any(packages_loaded == FALSE)) {
   rm(packages_installed, packages_loaded, packages_needed)
 }
 
-working_directory <- "/usr/local/src/ns3-workspace/positron/scripts/experiments/analytics"
-if (getwd() != working_directory) setwd("/usr/local/src/ns3-workspace/positron/scripts/experiments/analytics")
+# Need a symbolic link to wherever folder it is located: $ ln -s /path/to/positron ~/positron
+working_directory <- "~/positron/scripts/experiments/analytics"
+if (getwd() != working_directory) setwd("~/positron/scripts/experiments/analytics")
 rm(working_directory)
 
 rm(list = ls())
@@ -33,6 +34,7 @@ data$nodes <- c(rep(c("60"), 30), rep(c("90"), 30), rep(c("120"), 30), rep(c("15
 data$policies <- c(rep("sat", 75), rep("bal", 75))
 data$values <- c(rnorm(75, mean = 50, sd = 10), rnorm(75, mean = 70, sd = 10))
 
+pdf(file="plot.pdf")
 plot <- ggplot( data, 
                 aes(
                     x=factor(nodes, level = level_order), 
@@ -65,3 +67,4 @@ plot <- ggplot( data,
     axis.title = element_text(face = "bold", size = 12),
     strip.text = element_text(face = "bold", size = 12)
   )
+dev.off()

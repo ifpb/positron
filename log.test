@@ -1,0 +1,5339 @@
+Waf: Entering directory `/usr/local/src/ns3-workspace/positron/build'
+Waf: Leaving directory `/usr/local/src/ns3-workspace/positron/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (1.679s)
+List of nodes:
+Node ID: 0; Address: fe80::ff:fe00:1; Name: Controller;
+Node ID: 1; Address: fe80::ff:fe00:2; Name: Grupo1-1;
+Node ID: 2; Address: fe80::ff:fe00:3; Name: Grupo1-2;
+Node ID: 3; Address: fe80::ff:fe00:4; Name: Grupo1-3;
+Node ID: 4; Address: fe80::ff:fe00:5; Name: Grupo1-4;
+Node ID: 5; Address: fe80::ff:fe00:6; Name: Grupo1-5;
+Node ID: 6; Address: fe80::ff:fe00:7; Name: Grupo1-6;
+Node ID: 7; Address: fe80::ff:fe00:8; Name: Grupo1-7;
+Node ID: 8; Address: fe80::ff:fe00:9; Name: Grupo1-8;
+Node ID: 9; Address: fe80::ff:fe00:a; Name: Grupo1-9;
+Node ID: 10; Address: fe80::ff:fe00:b; Name: Grupo1-10;
+Node ID: 11; Address: fe80::ff:fe00:c; Name: Grupo1-11;
+Node ID: 12; Address: fe80::ff:fe00:d; Name: Grupo1-12;
+Node ID: 13; Address: fe80::ff:fe00:e; Name: Grupo1-13;
+Node ID: 14; Address: fe80::ff:fe00:f; Name: Grupo1-14;
+Node ID: 15; Address: fe80::ff:fe00:10; Name: Grupo1-15;
+Node ID: 16; Address: fe80::ff:fe00:11; Name: Grupo1-16;
+Node ID: 17; Address: fe80::ff:fe00:12; Name: Grupo1-17;
+Node ID: 18; Address: fe80::ff:fe00:13; Name: Grupo1-18;
+Node ID: 19; Address: fe80::ff:fe00:14; Name: Grupo1-19;
+Node ID: 20; Address: fe80::ff:fe00:15; Name: Grupo1-20;
+Node ID: 21; Address: fe80::ff:fe00:16; Name: Grupo2-1;
+Node ID: 22; Address: fe80::ff:fe00:17; Name: Grupo2-2;
+Node ID: 23; Address: fe80::ff:fe00:18; Name: Grupo2-3;
+Node ID: 24; Address: fe80::ff:fe00:19; Name: Grupo2-4;
+Node ID: 25; Address: fe80::ff:fe00:1a; Name: Grupo2-5;
+Node ID: 26; Address: fe80::ff:fe00:1b; Name: Grupo2-6;
+Node ID: 27; Address: fe80::ff:fe00:1c; Name: Grupo2-7;
+Node ID: 28; Address: fe80::ff:fe00:1d; Name: Grupo2-8;
+Node ID: 29; Address: fe80::ff:fe00:1e; Name: Grupo2-9;
+Node ID: 30; Address: fe80::ff:fe00:1f; Name: Grupo2-10;
+Node ID: 31; Address: fe80::ff:fe00:20; Name: Grupo2-11;
+Node ID: 32; Address: fe80::ff:fe00:21; Name: Grupo2-12;
+Node ID: 33; Address: fe80::ff:fe00:22; Name: Grupo2-13;
+Node ID: 34; Address: fe80::ff:fe00:23; Name: Grupo2-14;
+Node ID: 35; Address: fe80::ff:fe00:24; Name: Grupo2-15;
+Node ID: 36; Address: fe80::ff:fe00:25; Name: Grupo2-16;
+Node ID: 37; Address: fe80::ff:fe00:26; Name: Grupo2-17;
+Node ID: 38; Address: fe80::ff:fe00:27; Name: Grupo2-18;
+Node ID: 39; Address: fe80::ff:fe00:28; Name: Grupo2-19;
+Node ID: 40; Address: fe80::ff:fe00:29; Name: Grupo2-20;
+Node ID: 41; Address: fe80::ff:fe00:2a; Name: Grupo3-1;
+Node ID: 42; Address: fe80::ff:fe00:2b; Name: Grupo3-2;
+Node ID: 43; Address: fe80::ff:fe00:2c; Name: Grupo3-3;
+Node ID: 44; Address: fe80::ff:fe00:2d; Name: Grupo3-4;
+Node ID: 45; Address: fe80::ff:fe00:2e; Name: Grupo3-5;
+Node ID: 46; Address: fe80::ff:fe00:2f; Name: Grupo3-6;
+Node ID: 47; Address: fe80::ff:fe00:30; Name: Grupo3-7;
+Node ID: 48; Address: fe80::ff:fe00:31; Name: Grupo3-8;
+Node ID: 49; Address: fe80::ff:fe00:32; Name: Grupo3-9;
+Node ID: 50; Address: fe80::ff:fe00:33; Name: Grupo3-10;
+Node ID: 51; Address: fe80::ff:fe00:34; Name: Grupo3-11;
+Node ID: 52; Address: fe80::ff:fe00:35; Name: Grupo3-12;
+Node ID: 53; Address: fe80::ff:fe00:36; Name: Grupo3-13;
+Node ID: 54; Address: fe80::ff:fe00:37; Name: Grupo3-14;
+Node ID: 55; Address: fe80::ff:fe00:38; Name: Grupo3-15;
+Node ID: 56; Address: fe80::ff:fe00:39; Name: Grupo3-16;
+Node ID: 57; Address: fe80::ff:fe00:3a; Name: Grupo3-17;
+Node ID: 58; Address: fe80::ff:fe00:3b; Name: Grupo3-18;
+Node ID: 59; Address: fe80::ff:fe00:3c; Name: Grupo3-19;
+Node ID: 60; Address: fe80::ff:fe00:3d; Name: Grupo3-20;
+
+Inserting Node Grupo1-1 to database with:
+  > Power = 100;
+  > Initial Consumption = 0.00115741;
+  > Current Consumption = 0.00115741;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-2 to database with:
+  > Power = 100;
+  > Initial Consumption = 0.00115741;
+  > Current Consumption = 0.00115741;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-3 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-4 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-5 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-6 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-7 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-8 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-9 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-10 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-11 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-12 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-13 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-14 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-15 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-16 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-17 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-18 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-19 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo1-20 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 4;
+  > Memory = 8;
+  > Transmission = 50;
+  > Storage = 64;
+
+Inserting Node Grupo2-1 to database with:
+  > Power = 100;
+  > Initial Consumption = 0.00115741;
+  > Current Consumption = 0.00115741;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-2 to database with:
+  > Power = 100;
+  > Initial Consumption = 0.00115741;
+  > Current Consumption = 0.00115741;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-3 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-4 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-5 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-6 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-7 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-8 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-9 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-10 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-11 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-12 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-13 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-14 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-15 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-16 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-17 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-18 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-19 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo2-20 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 4;
+  > Transmission = 50;
+  > Storage = 128;
+
+Inserting Node Grupo3-1 to database with:
+  > Power = 100;
+  > Initial Consumption = 0.00115741;
+  > Current Consumption = 0.00115741;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-2 to database with:
+  > Power = 100;
+  > Initial Consumption = 0.00115741;
+  > Current Consumption = 0.00115741;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-3 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-4 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-5 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-6 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-7 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-8 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-9 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-10 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-11 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-12 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-13 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-14 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-15 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-16 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-17 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-18 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-19 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+Inserting Node Grupo3-20 to database with:
+  > Power = 100;
+  > Initial Consumption = 0;
+  > Current Consumption = 0;
+  > CPU = 2;
+  > Memory = 2;
+  > Transmission = 100;
+  > Storage = 64;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 1869.13;
+  > Duration = 12891.3;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 1630.71;
+  > Duration = 19261.9;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 1368.47;
+  > Duration = 20062.9;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 2174.91;
+  > Duration = 19786.6;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 1615.74;
+  > Duration = 27027.9;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 899.083;
+  > Duration = 18424.4;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 2035.97;
+  > Duration = 23607.1;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 2585.33;
+  > Duration = 23598;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 1025.28;
+  > Duration = 24298.7;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 448.398;
+  > Duration = 20606.8;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 3496.22;
+  > Duration = 21562.5;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 665.191;
+  > Duration = 22387.4;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 353.323;
+  > Duration = 22425.6;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 3351.86;
+  > Duration = 20703.6;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 2392.59;
+  > Duration = 27197.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 3492.92;
+  > Duration = 14426.3;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 925.944;
+  > Duration = 11905.4;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 2936.62;
+  > Duration = 17748.9;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 1088.97;
+  > Duration = 20737.9;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 3387.25;
+  > Duration = 19434.6;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 1089.27;
+  > Duration = 25458.9;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 2413.55;
+  > Duration = 25257.9;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 2222.92;
+  > Duration = 20472.2;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 912.659;
+  > Duration = 21106.5;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 1846.53;
+  > Duration = 15366.2;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 885.509;
+  > Duration = 27473;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 2921.27;
+  > Duration = 22629.4;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 2828.62;
+  > Duration = 18847.8;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 2565.53;
+  > Duration = 18247.6;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 98.5331;
+  > Duration = 20764.7;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 3427.2;
+  > Duration = 22946.4;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 852.766;
+  > Duration = 18785.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 2969.86;
+  > Duration = 13683.1;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 1005.94;
+  > Duration = 18083.8;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 507.22;
+  > Duration = 19061;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 1578.59;
+  > Duration = 20836;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 2408.12;
+  > Duration = 22768.9;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 878.136;
+  > Duration = 13955.4;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 875.348;
+  > Duration = 26146.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 2141.06;
+  > Duration = 21108.9;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 3368.86;
+  > Duration = 17428;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 2086.52;
+  > Duration = 24490.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 959.051;
+  > Duration = 17049.7;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 1611.47;
+  > Duration = 15400;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 2796.94;
+  > Duration = 17719.6;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 3595.23;
+  > Duration = 21364.2;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 870.049;
+  > Duration = 22276.7;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 722.526;
+  > Duration = 24983.2;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 2052.89;
+  > Duration = 24070.2;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 2149.63;
+  > Duration = 19985;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 1088.23;
+  > Duration = 17953.4;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 1468.43;
+  > Duration = 23760.4;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 1955.61;
+  > Duration = 19750;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 1665.77;
+  > Duration = 23954.8;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 3015.15;
+  > Duration = 20431.9;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 1509.57;
+  > Duration = 27321;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 1536.96;
+  > Duration = 22054.6;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 1347.15;
+  > Duration = 20040;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 473.275;
+  > Duration = 14765.9;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 2826.44;
+  > Duration = 15821.1;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 30903.8;
+  > Duration = 18145.3;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 30013.3;
+  > Duration = 16342.2;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 30670.6;
+  > Duration = 25088.7;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 32090.6;
+  > Duration = 9575.09;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 30178.2;
+  > Duration = 17885.8;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 30565.8;
+  > Duration = 19609.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 30549.5;
+  > Duration = 15764.4;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 31326.7;
+  > Duration = 25883.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 29613.9;
+  > Duration = 25982.1;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 31475;
+  > Duration = 21997.8;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 31425.3;
+  > Duration = 28680.2;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 29566.1;
+  > Duration = 22834.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 31030.1;
+  > Duration = 23389.4;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 30588.2;
+  > Duration = 25495.1;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 30277.4;
+  > Duration = 18347.5;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 29500.9;
+  > Duration = 25136.4;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 30141;
+  > Duration = 16815.9;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 32266.3;
+  > Duration = 24141.2;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 28929.2;
+  > Duration = 21988.5;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 31804.9;
+  > Duration = 16286.4;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 28836.8;
+  > Duration = 25886.6;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 31736;
+  > Duration = 27392.5;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 28918.2;
+  > Duration = 22626.7;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 31681.2;
+  > Duration = 24803.7;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 29472.3;
+  > Duration = 23225.5;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 30643.4;
+  > Duration = 22367.7;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 30724.8;
+  > Duration = 22871.7;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 32306.1;
+  > Duration = 17626.5;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 29003.9;
+  > Duration = 18999;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 32221.5;
+  > Duration = 16732.8;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 30177.1;
+  > Duration = 20312.6;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 31697.7;
+  > Duration = 20725.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 31373.6;
+  > Duration = 23086.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 30209.6;
+  > Duration = 22487.1;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 30618.4;
+  > Duration = 21816.8;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 30381.3;
+  > Duration = 17277.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 29164.6;
+  > Duration = 16352.7;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 29178.9;
+  > Duration = 17027.4;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 30632.2;
+  > Duration = 19498.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 28867;
+  > Duration = 24938.4;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 31591.2;
+  > Duration = 19503.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 29990.4;
+  > Duration = 24963.2;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 29001;
+  > Duration = 22517.7;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 31450.4;
+  > Duration = 21131.1;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 29361.4;
+  > Duration = 27146.8;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 31145.5;
+  > Duration = 29501;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 32145.5;
+  > Duration = 20862.7;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 30597.9;
+  > Duration = 17801.4;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 28821;
+  > Duration = 12437.1;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 31939.7;
+  > Duration = 15529.5;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 28879.8;
+  > Duration = 24794.4;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 30635.1;
+  > Duration = 19951.4;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 31041;
+  > Duration = 21942.1;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 32182.7;
+  > Duration = 15544.4;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 29781;
+  > Duration = 21179.2;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 30428.5;
+  > Duration = 19213.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 32290.8;
+  > Duration = 24395.1;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 31800.3;
+  > Duration = 30732.5;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 28882.5;
+  > Duration = 27148;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 31731.1;
+  > Duration = 26803.1;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 58736.8;
+  > Duration = 21717;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 58811.3;
+  > Duration = 22629.6;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 58230.6;
+  > Duration = 12914;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 60059.3;
+  > Duration = 22284.6;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 60028.4;
+  > Duration = 15968.8;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 59158;
+  > Duration = 24799.7;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 59003.1;
+  > Duration = 20499.1;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 60278.5;
+  > Duration = 21981.1;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 60946;
+  > Duration = 25068.9;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 59569;
+  > Duration = 26611.2;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 58840.1;
+  > Duration = 22926.9;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 59304;
+  > Duration = 15328.1;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 60112.8;
+  > Duration = 21738;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 60956.1;
+  > Duration = 21441.5;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 59585.6;
+  > Duration = 21623.8;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 60520.9;
+  > Duration = 19869.4;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 58099.1;
+  > Duration = 20782.5;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 60683.7;
+  > Duration = 23386.4;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 57955;
+  > Duration = 30451.9;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 58986.3;
+  > Duration = 22904.1;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 59747.4;
+  > Duration = 29276.6;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 60862.7;
+  > Duration = 17038.8;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 58177.5;
+  > Duration = 22883.8;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 58590;
+  > Duration = 20964.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 58767.4;
+  > Duration = 24534.9;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 58430.3;
+  > Duration = 21455.6;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 59432;
+  > Duration = 20391.2;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 58766.3;
+  > Duration = 18941.4;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 59819.9;
+  > Duration = 13491.6;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 59397.3;
+  > Duration = 24451.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 59840.1;
+  > Duration = 16666.3;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 59575.4;
+  > Duration = 22038.2;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 58825.5;
+  > Duration = 23933.3;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 58349.5;
+  > Duration = 20069.1;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 58814.9;
+  > Duration = 13857.6;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 59951.5;
+  > Duration = 18630.7;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 58291.6;
+  > Duration = 28273.5;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 58000.6;
+  > Duration = 12651.7;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 60879.3;
+  > Duration = 23578.8;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 58259.9;
+  > Duration = 19981;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 60496.7;
+  > Duration = 16575;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 60034.4;
+  > Duration = 18822.2;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 57940;
+  > Duration = 21569.1;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 60977.3;
+  > Duration = 19629.2;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 57618.5;
+  > Duration = 18179.2;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 61031.9;
+  > Duration = 18846.2;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 59612.7;
+  > Duration = 17722.6;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 58187.2;
+  > Duration = 30690.6;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 59771.3;
+  > Duration = 16300;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 59930.3;
+  > Duration = 31569.5;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 57759.2;
+  > Duration = 29037.4;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 59729.3;
+  > Duration = 17605.3;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 59700.2;
+  > Duration = 24028.4;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 60528;
+  > Duration = 27603.1;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 58242.1;
+  > Duration = 17456.3;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 60117.2;
+  > Duration = 29355.2;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 60319.8;
+  > Duration = 30561.6;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application performance to database with:
+  > Start = 61025.9;
+  > Duration = 21338;
+  > CPU = 0.4;
+  > Memory = 0.4;
+  > Storage = 2;
+
+At time 0.0s: Inserting Application storage to database with:
+  > Start = 57772.4;
+  > Duration = 22890.1;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 8;
+
+At time 0.0s: Inserting Application transmission to database with:
+  > Start = 58037.6;
+  > Duration = 17140.7;
+  > CPU = 0.2;
+  > Memory = 0.2;
+  > Storage = 2;
+
+At time 98.5s: allocate_worker_application called in worker 41 and application 30
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 30
+INITIAL CONSUMPTION = 0.0012 	 START = 98.5331
+POWER = 99.8860 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0012 	 DURATION = 20764.6992
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 2.0000 	 	 MEMORY = 0.2000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 98.5s: AddApplication called at node 41
+At time 353.3s: allocate_worker_application called in worker 1 and application 13
+
+NODE 	 	 	 	 APPLICATION
+ID = 1 	 	 	 	 ID = 13
+INITIAL CONSUMPTION = 0.0012 	 START = 353.3230
+POWER = 99.5911 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0012 	 DURATION = 22425.5996
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 353.3s: AddApplication called at node 1
+At time 448.3s: allocate_worker_application called in worker 2 and application 10
+
+NODE 	 	 	 	 APPLICATION
+ID = 2 	 	 	 	 ID = 10
+INITIAL CONSUMPTION = 0.0012 	 START = 448.3980
+POWER = 99.4810 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0012 	 DURATION = 20606.8008
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 448.3s: AddApplication called at node 2
+At time 473.2s: allocate_worker_application called in worker 21 and application 59
+
+NODE 	 	 	 	 APPLICATION
+ID = 21 	 	 	 	 ID = 59
+INITIAL CONSUMPTION = 0.0012 	 START = 473.2750
+POWER = 99.4522 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0012 	 DURATION = 14765.9004
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 473.2s: AddApplication called at node 21
+At time 507.2s: allocate_worker_application called in worker 22 and application 35
+
+NODE 	 	 	 	 APPLICATION
+ID = 22 	 	 	 	 ID = 35
+INITIAL CONSUMPTION = 0.0012 	 START = 507.2200
+POWER = 99.4129 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0012 	 DURATION = 19061.0000
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 507.2s: AddApplication called at node 22
+At time 665.1s: allocate_worker_application called in worker 41 and application 12
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 12
+INITIAL CONSUMPTION = 0.0012 	 START = 665.1910
+POWER = 98.5742 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0023 	 DURATION = 22387.4004
+CPU = 1.8000 	 	 	 CPU = 0.2000
+MEMORY = 1.8000 	 	 MEMORY = 0.2000
+STORAGE = 62.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 665.1s: AddApplication called at node 41
+At time 722.5s: allocate_worker_application called in worker 41 and application 48
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 48
+INITIAL CONSUMPTION = 0.0012 	 START = 722.5260
+POWER = 98.3752 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0035 	 DURATION = 24983.1992
+CPU = 1.6000 	 	 	 CPU = 0.2000
+MEMORY = 1.6000 	 	 MEMORY = 0.2000
+STORAGE = 60.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 722.5s: AddApplication called at node 41
+At time 852.7s: allocate_worker_application called in worker 23 and application 32
+
+NODE 	 	 	 	 APPLICATION
+ID = 23 	 	 	 	 ID = 32
+INITIAL CONSUMPTION = 0.0000 	 START = 852.7660
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 18785.3008
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 852.7s: AddApplication called at node 23
+At time 870.0s: allocate_worker_application called in worker 24 and application 47
+
+NODE 	 	 	 	 APPLICATION
+ID = 24 	 	 	 	 ID = 47
+INITIAL CONSUMPTION = 0.0000 	 START = 870.0490
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22276.6992
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 870.0s: AddApplication called at node 24
+At time 875.3s: allocate_worker_application called in worker 41 and application 39
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 39
+INITIAL CONSUMPTION = 0.0012 	 START = 875.3480
+POWER = 97.6677 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0046 	 DURATION = 26146.3008
+CPU = 1.4000 	 	 	 CPU = 0.2000
+MEMORY = 1.4000 	 	 MEMORY = 0.2000
+STORAGE = 58.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 875.3s: AddApplication called at node 41
+At time 878.1s: allocate_worker_application called in worker 25 and application 38
+
+NODE 	 	 	 	 APPLICATION
+ID = 25 	 	 	 	 ID = 38
+INITIAL CONSUMPTION = 0.0000 	 START = 878.1360
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 13955.4004
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 878.1s: AddApplication called at node 25
+At time 885.5s: allocate_worker_application called in worker 26 and application 26
+
+NODE 	 	 	 	 APPLICATION
+ID = 26 	 	 	 	 ID = 26
+INITIAL CONSUMPTION = 0.0000 	 START = 885.5090
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 27473.0000
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 885.5s: AddApplication called at node 26
+At time 899.0s: allocate_worker_application called in worker 41 and application 6
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 6
+INITIAL CONSUMPTION = 0.0012 	 START = 899.0830
+POWER = 97.5303 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0058 	 DURATION = 18424.4004
+CPU = 1.2000 	 	 	 CPU = 0.2000
+MEMORY = 1.2000 	 	 MEMORY = 0.2000
+STORAGE = 56.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 899.0s: AddApplication called at node 41
+At time 912.6s: allocate_worker_application called in worker 41 and application 24
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 24
+INITIAL CONSUMPTION = 0.0012 	 START = 912.6590
+POWER = 97.4360 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0069 	 DURATION = 21106.5000
+CPU = 1.0000 	 	 	 CPU = 0.2000
+MEMORY = 1.0000 	 	 MEMORY = 0.2000
+STORAGE = 54.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 912.6s: AddApplication called at node 41
+At time 925.9s: allocate_worker_application called in worker 27 and application 17
+
+NODE 	 	 	 	 APPLICATION
+ID = 27 	 	 	 	 ID = 17
+INITIAL CONSUMPTION = 0.0000 	 START = 925.9440
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 11905.4004
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 925.9s: AddApplication called at node 27
+At time 959.0s: allocate_worker_application called in worker 3 and application 43
+
+NODE 	 	 	 	 APPLICATION
+ID = 3 	 	 	 	 ID = 43
+INITIAL CONSUMPTION = 0.0000 	 START = 959.0510
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 17049.6992
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 959.0s: AddApplication called at node 3
+At time 1005.9s: allocate_worker_application called in worker 4 and application 34
+
+NODE 	 	 	 	 APPLICATION
+ID = 4 	 	 	 	 ID = 34
+INITIAL CONSUMPTION = 0.0000 	 START = 1005.9400
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 18083.8008
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 1005.9s: AddApplication called at node 4
+At time 1025.2s: allocate_worker_application called in worker 41 and application 9
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 9
+INITIAL CONSUMPTION = 0.0012 	 START = 1025.2800
+POWER = 96.5236 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0081 	 DURATION = 24298.6992
+CPU = 0.8000 	 	 	 CPU = 0.2000
+MEMORY = 0.8000 	 	 MEMORY = 0.2000
+STORAGE = 52.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 1025.2s: AddApplication called at node 41
+At time 1088.2s: allocate_worker_application called in worker 41 and application 51
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 51
+INITIAL CONSUMPTION = 0.0012 	 START = 1088.2300
+POWER = 95.9408 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0093 	 DURATION = 17953.4004
+CPU = 0.6000 	 	 	 CPU = 0.2000
+MEMORY = 0.6000 	 	 MEMORY = 0.2000
+STORAGE = 50.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 1088.2s: AddApplication called at node 41
+At time 1088.9s: allocate_worker_application called in worker 5 and application 19
+
+NODE 	 	 	 	 APPLICATION
+ID = 5 	 	 	 	 ID = 19
+INITIAL CONSUMPTION = 0.0000 	 START = 1088.9700
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20737.9004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 1088.9s: AddApplication called at node 5
+At time 1089.2s: allocate_worker_application called in worker 41 and application 21
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 21
+INITIAL CONSUMPTION = 0.0012 	 START = 1089.2700
+POWER = 95.9298 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0104 	 DURATION = 25458.9004
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 1089.2s: AddApplication called at node 41
+At time 1347.1s: allocate_worker_application called in worker 6 and application 58
+
+NODE 	 	 	 	 APPLICATION
+ID = 6 	 	 	 	 ID = 58
+INITIAL CONSUMPTION = 0.0000 	 START = 1347.1500
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20040.0000
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 1347.1s: AddApplication called at node 6
+At time 1368.4s: allocate_worker_application called in worker 41 and application 3
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 3
+INITIAL CONSUMPTION = 0.0012 	 START = 1368.4700
+POWER = 92.6984 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0116 	 DURATION = 20062.9004
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 1368.4s: AddApplication called at node 41
+At time 1468.4s: allocate_worker_application called in worker 7 and application 52
+
+NODE 	 	 	 	 APPLICATION
+ID = 7 	 	 	 	 ID = 52
+INITIAL CONSUMPTION = 0.0000 	 START = 1468.4301
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 23760.4004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 1468.4s: AddApplication called at node 7
+At time 1509.5s: allocate_worker_application called in worker 28 and application 56
+
+NODE 	 	 	 	 APPLICATION
+ID = 28 	 	 	 	 ID = 56
+INITIAL CONSUMPTION = 0.0000 	 START = 1509.5699
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 27321.0000
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 1509.5s: AddApplication called at node 28
+At time 1536.9s: allocate_worker_application called in worker 42 and application 57
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 57
+INITIAL CONSUMPTION = 0.0012 	 START = 1536.9600
+POWER = 98.2211 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0012 	 DURATION = 22054.5996
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 2.0000 	 	 MEMORY = 0.2000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 1536.9s: AddApplication called at node 42
+At time 1578.5s: allocate_worker_application called in worker 42 and application 36
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 36
+INITIAL CONSUMPTION = 0.0012 	 START = 1578.5900
+POWER = 98.1247 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0023 	 DURATION = 20836.0000
+CPU = 1.8000 	 	 	 CPU = 0.2000
+MEMORY = 1.8000 	 	 MEMORY = 0.2000
+STORAGE = 62.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 1578.5s: AddApplication called at node 42
+At time 1611.4s: allocate_worker_application called in worker 29 and application 44
+
+NODE 	 	 	 	 APPLICATION
+ID = 29 	 	 	 	 ID = 44
+INITIAL CONSUMPTION = 0.0000 	 START = 1611.4700
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 15400.0000
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 1611.4s: AddApplication called at node 29
+At time 1615.7s: allocate_worker_application called in worker 30 and application 5
+
+NODE 	 	 	 	 APPLICATION
+ID = 30 	 	 	 	 ID = 5
+INITIAL CONSUMPTION = 0.0000 	 START = 1615.7400
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 27027.9004
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 1615.7s: AddApplication called at node 30
+At time 1630.7s: allocate_worker_application called in worker 31 and application 2
+
+NODE 	 	 	 	 APPLICATION
+ID = 31 	 	 	 	 ID = 2
+INITIAL CONSUMPTION = 0.0000 	 START = 1630.7100
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 19261.9004
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 1630.7s: AddApplication called at node 31
+At time 1665.7s: allocate_worker_application called in worker 42 and application 54
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 54
+INITIAL CONSUMPTION = 0.0012 	 START = 1665.7700
+POWER = 97.8220 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0035 	 DURATION = 23954.8008
+CPU = 1.6000 	 	 	 CPU = 0.2000
+MEMORY = 1.6000 	 	 MEMORY = 0.2000
+STORAGE = 60.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 1665.7s: AddApplication called at node 42
+At time 1846.5s: allocate_worker_application called in worker 8 and application 25
+
+NODE 	 	 	 	 APPLICATION
+ID = 8 	 	 	 	 ID = 25
+INITIAL CONSUMPTION = 0.0000 	 START = 1846.5300
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 15366.2002
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 1846.5s: AddApplication called at node 8
+At time 1869.1s: allocate_worker_application called in worker 9 and application 1
+
+NODE 	 	 	 	 APPLICATION
+ID = 9 	 	 	 	 ID = 1
+INITIAL CONSUMPTION = 0.0000 	 START = 1869.1300
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 12891.2998
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 1869.1s: AddApplication called at node 9
+At time 1955.6s: allocate_worker_application called in worker 32 and application 53
+
+NODE 	 	 	 	 APPLICATION
+ID = 32 	 	 	 	 ID = 53
+INITIAL CONSUMPTION = 0.0000 	 START = 1955.6100
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 19750.0000
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 1955.6s: AddApplication called at node 32
+At time 2035.9s: allocate_worker_application called in worker 10 and application 7
+
+NODE 	 	 	 	 APPLICATION
+ID = 10 	 	 	 	 ID = 7
+INITIAL CONSUMPTION = 0.0000 	 START = 2035.9700
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 23607.0996
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 2035.9s: AddApplication called at node 10
+At time 2052.8s: allocate_worker_application called in worker 11 and application 49
+
+NODE 	 	 	 	 APPLICATION
+ID = 11 	 	 	 	 ID = 49
+INITIAL CONSUMPTION = 0.0000 	 START = 2052.8899
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24070.1992
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 2052.8s: AddApplication called at node 11
+At time 2086.5s: allocate_worker_application called in worker 42 and application 42
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 42
+INITIAL CONSUMPTION = 0.0012 	 START = 2086.5200
+POWER = 95.8741 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0046 	 DURATION = 24490.3008
+CPU = 1.4000 	 	 	 CPU = 0.2000
+MEMORY = 1.4000 	 	 MEMORY = 0.2000
+STORAGE = 58.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 2086.5s: AddApplication called at node 42
+At time 2141.0s: allocate_worker_application called in worker 12 and application 40
+
+NODE 	 	 	 	 APPLICATION
+ID = 12 	 	 	 	 ID = 40
+INITIAL CONSUMPTION = 0.0000 	 START = 2141.0601
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21108.9004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 2141.0s: AddApplication called at node 12
+At time 2149.6s: allocate_worker_application called in worker 33 and application 50
+
+NODE 	 	 	 	 APPLICATION
+ID = 33 	 	 	 	 ID = 50
+INITIAL CONSUMPTION = 0.0000 	 START = 2149.6299
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 19985.0000
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 2149.6s: AddApplication called at node 33
+At time 2174.9s: allocate_worker_application called in worker 13 and application 4
+
+NODE 	 	 	 	 APPLICATION
+ID = 13 	 	 	 	 ID = 4
+INITIAL CONSUMPTION = 0.0000 	 START = 2174.9099
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 19786.5996
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 2174.9s: AddApplication called at node 13
+At time 2222.9s: allocate_worker_application called in worker 34 and application 23
+
+NODE 	 	 	 	 APPLICATION
+ID = 34 	 	 	 	 ID = 23
+INITIAL CONSUMPTION = 0.0000 	 START = 2222.9199
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20472.1992
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 2222.9s: AddApplication called at node 34
+At time 2392.5s: allocate_worker_application called in worker 42 and application 15
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 15
+INITIAL CONSUMPTION = 0.0012 	 START = 2392.5901
+POWER = 94.1029 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0058 	 DURATION = 27197.3008
+CPU = 1.2000 	 	 	 CPU = 0.2000
+MEMORY = 1.2000 	 	 MEMORY = 0.2000
+STORAGE = 56.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 2392.5s: AddApplication called at node 42
+At time 2408.1s: allocate_worker_application called in worker 14 and application 37
+
+NODE 	 	 	 	 APPLICATION
+ID = 14 	 	 	 	 ID = 37
+INITIAL CONSUMPTION = 0.0000 	 START = 2408.1201
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22768.9004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 2408.1s: AddApplication called at node 14
+At time 2413.5s: allocate_worker_application called in worker 15 and application 22
+
+NODE 	 	 	 	 APPLICATION
+ID = 15 	 	 	 	 ID = 22
+INITIAL CONSUMPTION = 0.0000 	 START = 2413.5500
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 25257.9004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 2413.5s: AddApplication called at node 15
+At time 2565.5s: allocate_worker_application called in worker 35 and application 29
+
+NODE 	 	 	 	 APPLICATION
+ID = 35 	 	 	 	 ID = 29
+INITIAL CONSUMPTION = 0.0000 	 START = 2565.5300
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 18247.5996
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 2565.5s: AddApplication called at node 35
+At time 2585.3s: allocate_worker_application called in worker 36 and application 8
+
+NODE 	 	 	 	 APPLICATION
+ID = 36 	 	 	 	 ID = 8
+INITIAL CONSUMPTION = 0.0000 	 START = 2585.3301
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 23598.0000
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 2585.3s: AddApplication called at node 36
+At time 2796.9s: allocate_worker_application called in worker 42 and application 45
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 45
+INITIAL CONSUMPTION = 0.0012 	 START = 2796.9399
+POWER = 91.2949 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0069 	 DURATION = 17719.5996
+CPU = 1.0000 	 	 	 CPU = 0.2000
+MEMORY = 1.0000 	 	 MEMORY = 0.2000
+STORAGE = 54.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 2796.9s: AddApplication called at node 42
+At time 2826.4s: allocate_worker_application called in worker 42 and application 60
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 60
+INITIAL CONSUMPTION = 0.0012 	 START = 2826.4399
+POWER = 91.0559 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0081 	 DURATION = 15821.0996
+CPU = 0.8000 	 	 	 CPU = 0.2000
+MEMORY = 0.8000 	 	 MEMORY = 0.2000
+STORAGE = 52.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 2826.4s: AddApplication called at node 42
+At time 2828.6s: allocate_worker_application called in worker 16 and application 28
+
+NODE 	 	 	 	 APPLICATION
+ID = 16 	 	 	 	 ID = 28
+INITIAL CONSUMPTION = 0.0000 	 START = 2828.6201
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 18847.8008
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 2828.6s: AddApplication called at node 16
+At time 2921.2s: allocate_worker_application called in worker 42 and application 27
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 27
+INITIAL CONSUMPTION = 0.0012 	 START = 2921.2700
+POWER = 90.1778 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0093 	 DURATION = 22629.4004
+CPU = 0.6000 	 	 	 CPU = 0.2000
+MEMORY = 0.6000 	 	 MEMORY = 0.2000
+STORAGE = 50.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 2921.2s: AddApplication called at node 42
+At time 2936.6s: allocate_worker_application called in worker 42 and application 18
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 18
+INITIAL CONSUMPTION = 0.0012 	 START = 2936.6201
+POWER = 90.0179 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0104 	 DURATION = 17748.9004
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 2936.6s: AddApplication called at node 42
+At time 2969.8s: allocate_worker_application called in worker 42 and application 33
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 33
+INITIAL CONSUMPTION = 0.0012 	 START = 2969.8601
+POWER = 89.6332 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0116 	 DURATION = 13683.0996
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 2969.8s: AddApplication called at node 42
+At time 3015.1s: allocate_worker_application called in worker 17 and application 55
+
+NODE 	 	 	 	 APPLICATION
+ID = 17 	 	 	 	 ID = 55
+INITIAL CONSUMPTION = 0.0000 	 START = 3015.1499
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20431.9004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 3015.1s: AddApplication called at node 17
+At time 3351.8s: allocate_worker_application called in worker 37 and application 14
+
+NODE 	 	 	 	 APPLICATION
+ID = 37 	 	 	 	 ID = 14
+INITIAL CONSUMPTION = 0.0000 	 START = 3351.8601
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20703.5996
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 3351.8s: AddApplication called at node 37
+At time 3368.8s: allocate_worker_application called in worker 38 and application 41
+
+NODE 	 	 	 	 APPLICATION
+ID = 38 	 	 	 	 ID = 41
+INITIAL CONSUMPTION = 0.0000 	 START = 3368.8601
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 17428.0000
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 3368.8s: AddApplication called at node 38
+At time 3387.2s: allocate_worker_application called in worker 39 and application 20
+
+NODE 	 	 	 	 APPLICATION
+ID = 39 	 	 	 	 ID = 20
+INITIAL CONSUMPTION = 0.0000 	 START = 3387.2500
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 19434.5996
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 3387.2s: AddApplication called at node 39
+At time 3427.1s: allocate_worker_application called in worker 18 and application 31
+
+NODE 	 	 	 	 APPLICATION
+ID = 18 	 	 	 	 ID = 31
+INITIAL CONSUMPTION = 0.0000 	 START = 3427.2000
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22946.4004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 3427.1s: AddApplication called at node 18
+At time 3492.9s: allocate_worker_application called in worker 19 and application 16
+
+NODE 	 	 	 	 APPLICATION
+ID = 19 	 	 	 	 ID = 16
+INITIAL CONSUMPTION = 0.0000 	 START = 3492.9199
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 14426.2998
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 3492.9s: AddApplication called at node 19
+At time 3496.2s: allocate_worker_application called in worker 40 and application 11
+
+NODE 	 	 	 	 APPLICATION
+ID = 40 	 	 	 	 ID = 11
+INITIAL CONSUMPTION = 0.0000 	 START = 3496.2200
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21562.5000
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 3496.2s: AddApplication called at node 40
+At time 3595.2s: allocate_worker_application called in worker 20 and application 46
+
+NODE 	 	 	 	 APPLICATION
+ID = 20 	 	 	 	 ID = 46
+INITIAL CONSUMPTION = 0.0000 	 START = 3595.2300
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21364.1992
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 3595.2s: AddApplication called at node 20
+At time 8649.5s: Node 41 out of power.
+At time 8649.5 - Node: 41 --- controllayerhelper::lost_power
+At time 8649.5s: deallocate_worker_application called in worker 41 and application 3 finish: 0
+At time 8649.5s: allocate_worker_application called in worker 43 and application 3
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 3
+INITIAL CONSUMPTION = 0.0000 	 START = 1368.4700
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20062.9004
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 2.0000 	 	 MEMORY = 0.2000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 8649.5s: AddApplication called at node 43
+At time 8649.5s: deallocate_worker_application called in worker 41 and application 6 finish: 0
+At time 8649.5s: allocate_worker_application called in worker 43 and application 6
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 6
+INITIAL CONSUMPTION = 0.0000 	 START = 899.0830
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 18424.4004
+CPU = 1.8000 	 	 	 CPU = 0.2000
+MEMORY = 1.8000 	 	 MEMORY = 0.2000
+STORAGE = 62.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 8649.5s: AddApplication called at node 43
+At time 8649.5s: deallocate_worker_application called in worker 41 and application 9 finish: 0
+At time 8649.5s: allocate_worker_application called in worker 43 and application 9
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 9
+INITIAL CONSUMPTION = 0.0000 	 START = 1025.2800
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24298.6992
+CPU = 1.6000 	 	 	 CPU = 0.2000
+MEMORY = 1.6000 	 	 MEMORY = 0.2000
+STORAGE = 60.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 8649.5s: AddApplication called at node 43
+At time 8649.5s: deallocate_worker_application called in worker 41 and application 12 finish: 0
+At time 8649.5s: allocate_worker_application called in worker 43 and application 12
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 12
+INITIAL CONSUMPTION = 0.0000 	 START = 665.1910
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22387.4004
+CPU = 1.4000 	 	 	 CPU = 0.2000
+MEMORY = 1.4000 	 	 MEMORY = 0.2000
+STORAGE = 58.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 8649.5s: AddApplication called at node 43
+At time 8649.5s: deallocate_worker_application called in worker 41 and application 21 finish: 0
+At time 8649.5s: allocate_worker_application called in worker 43 and application 21
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 21
+INITIAL CONSUMPTION = 0.0000 	 START = 1089.2700
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 25458.9004
+CPU = 1.2000 	 	 	 CPU = 0.2000
+MEMORY = 1.2000 	 	 MEMORY = 0.2000
+STORAGE = 56.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 8649.5s: AddApplication called at node 43
+At time 8649.5s: deallocate_worker_application called in worker 41 and application 24 finish: 0
+At time 8649.5s: allocate_worker_application called in worker 43 and application 24
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 24
+INITIAL CONSUMPTION = 0.0000 	 START = 912.6590
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21106.5000
+CPU = 1.0000 	 	 	 CPU = 0.2000
+MEMORY = 1.0000 	 	 MEMORY = 0.2000
+STORAGE = 54.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 8649.5s: AddApplication called at node 43
+At time 8649.5s: deallocate_worker_application called in worker 41 and application 30 finish: 0
+At time 8649.5s: allocate_worker_application called in worker 43 and application 30
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 30
+INITIAL CONSUMPTION = 0.0000 	 START = 98.5331
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20764.6992
+CPU = 0.8000 	 	 	 CPU = 0.2000
+MEMORY = 0.8000 	 	 MEMORY = 0.2000
+STORAGE = 52.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 8649.5s: AddApplication called at node 43
+At time 8649.5s: deallocate_worker_application called in worker 41 and application 39 finish: 0
+At time 8649.5s: allocate_worker_application called in worker 43 and application 39
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 39
+INITIAL CONSUMPTION = 0.0000 	 START = 875.3480
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 26146.3008
+CPU = 0.6000 	 	 	 CPU = 0.2000
+MEMORY = 0.6000 	 	 MEMORY = 0.2000
+STORAGE = 50.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 8649.5s: AddApplication called at node 43
+At time 8649.5s: deallocate_worker_application called in worker 41 and application 48 finish: 0
+At time 8649.5s: allocate_worker_application called in worker 43 and application 48
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 48
+INITIAL CONSUMPTION = 0.0000 	 START = 722.5260
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24983.1992
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 8649.5s: AddApplication called at node 43
+At time 8649.5s: deallocate_worker_application called in worker 41 and application 51 finish: 0
+At time 8649.5s: allocate_worker_application called in worker 43 and application 51
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 51
+INITIAL CONSUMPTION = 0.0000 	 START = 1088.2300
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 17953.4004
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 8649.5s: AddApplication called at node 43
+At time 9249.5s: Node 41 recharge for 100% power.
+At time 9249.5 --- controllayerhelper::node_recharge
+At time 10010.1s: Node 42 out of power.
+At time 10010.1 - Node: 42 --- controllayerhelper::lost_power
+At time 10010.1s: deallocate_worker_application called in worker 42 and application 15 finish: 0
+At time 10010.1s: allocate_worker_application called in worker 44 and application 15
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 15
+INITIAL CONSUMPTION = 0.0000 	 START = 2392.5901
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 27197.3008
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 2.0000 	 	 MEMORY = 0.2000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 10010.1s: AddApplication called at node 44
+At time 10010.1s: deallocate_worker_application called in worker 42 and application 18 finish: 0
+At time 10010.1s: allocate_worker_application called in worker 44 and application 18
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 18
+INITIAL CONSUMPTION = 0.0000 	 START = 2936.6201
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 17748.9004
+CPU = 1.8000 	 	 	 CPU = 0.2000
+MEMORY = 1.8000 	 	 MEMORY = 0.2000
+STORAGE = 62.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 10010.1s: AddApplication called at node 44
+At time 10010.1s: deallocate_worker_application called in worker 42 and application 27 finish: 0
+At time 10010.1s: allocate_worker_application called in worker 44 and application 27
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 27
+INITIAL CONSUMPTION = 0.0000 	 START = 2921.2700
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22629.4004
+CPU = 1.6000 	 	 	 CPU = 0.2000
+MEMORY = 1.6000 	 	 MEMORY = 0.2000
+STORAGE = 60.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 10010.1s: AddApplication called at node 44
+At time 10010.1s: deallocate_worker_application called in worker 42 and application 33 finish: 0
+At time 10010.1s: allocate_worker_application called in worker 44 and application 33
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 33
+INITIAL CONSUMPTION = 0.0000 	 START = 2969.8601
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 13683.0996
+CPU = 1.4000 	 	 	 CPU = 0.2000
+MEMORY = 1.4000 	 	 MEMORY = 0.2000
+STORAGE = 58.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 10010.1s: AddApplication called at node 44
+At time 10010.1s: deallocate_worker_application called in worker 42 and application 36 finish: 0
+At time 10010.1s: allocate_worker_application called in worker 44 and application 36
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 36
+INITIAL CONSUMPTION = 0.0000 	 START = 1578.5900
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20836.0000
+CPU = 1.2000 	 	 	 CPU = 0.2000
+MEMORY = 1.2000 	 	 MEMORY = 0.2000
+STORAGE = 56.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 10010.1s: AddApplication called at node 44
+At time 10010.1s: deallocate_worker_application called in worker 42 and application 42 finish: 0
+At time 10010.1s: allocate_worker_application called in worker 44 and application 42
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 42
+INITIAL CONSUMPTION = 0.0000 	 START = 2086.5200
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24490.3008
+CPU = 1.0000 	 	 	 CPU = 0.2000
+MEMORY = 1.0000 	 	 MEMORY = 0.2000
+STORAGE = 54.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 10010.1s: AddApplication called at node 44
+At time 10010.1s: deallocate_worker_application called in worker 42 and application 45 finish: 0
+At time 10010.1s: allocate_worker_application called in worker 44 and application 45
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 45
+INITIAL CONSUMPTION = 0.0000 	 START = 2796.9399
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 17719.5996
+CPU = 0.8000 	 	 	 CPU = 0.2000
+MEMORY = 0.8000 	 	 MEMORY = 0.2000
+STORAGE = 52.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 10010.1s: AddApplication called at node 44
+At time 10010.1s: deallocate_worker_application called in worker 42 and application 54 finish: 0
+At time 10010.1s: allocate_worker_application called in worker 44 and application 54
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 54
+INITIAL CONSUMPTION = 0.0000 	 START = 1665.7700
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 23954.8008
+CPU = 0.6000 	 	 	 CPU = 0.2000
+MEMORY = 0.6000 	 	 MEMORY = 0.2000
+STORAGE = 50.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 10010.1s: AddApplication called at node 44
+At time 10010.1s: deallocate_worker_application called in worker 42 and application 57 finish: 0
+At time 10010.1s: allocate_worker_application called in worker 44 and application 57
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 57
+INITIAL CONSUMPTION = 0.0000 	 START = 1536.9600
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22054.5996
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 10010.1s: AddApplication called at node 44
+At time 10010.1s: deallocate_worker_application called in worker 42 and application 60 finish: 0
+At time 10010.1s: allocate_worker_application called in worker 44 and application 60
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 60
+INITIAL CONSUMPTION = 0.0000 	 START = 2826.4399
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 15821.0996
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 10010.1s: AddApplication called at node 44
+At time 10610.1s: Node 42 recharge for 100% power.
+At time 10610.1 --- controllayerhelper::node_recharge
+At time 12831.3s: deallocate_worker_application called in worker 27 and application 17 finish: 1
+At time 12831.3s: RemoveApplication called at node 27
+At time 14760.4s: deallocate_worker_application called in worker 9 and application 1 finish: 1
+At time 14760.4s: RemoveApplication called at node 9
+At time 14833.5s: deallocate_worker_application called in worker 25 and application 38 finish: 1
+At time 14833.5s: RemoveApplication called at node 25
+At time 15239.1s: deallocate_worker_application called in worker 21 and application 59 finish: 1
+At time 15239.2s: RemoveApplication called at node 21
+At time 17011.4s: deallocate_worker_application called in worker 29 and application 44 finish: 1
+At time 17011.5s: RemoveApplication called at node 29
+At time 17212.7s: deallocate_worker_application called in worker 8 and application 25 finish: 1
+At time 17212.7s: RemoveApplication called at node 8
+At time 17919.2s: deallocate_worker_application called in worker 19 and application 16 finish: 1
+At time 17919.2s: RemoveApplication called at node 19
+At time 18008.7s: deallocate_worker_application called in worker 3 and application 43 finish: 1
+At time 18008.8s: RemoveApplication called at node 3
+At time 19089.7s: deallocate_worker_application called in worker 4 and application 34 finish: 1
+At time 19089.7s: RemoveApplication called at node 4
+At time 19568.2s: deallocate_worker_application called in worker 22 and application 35 finish: 1
+At time 19568.2s: RemoveApplication called at node 22
+At time 19638.0s: deallocate_worker_application called in worker 23 and application 32 finish: 1
+At time 19638.1s: RemoveApplication called at node 23
+At time 20796.8s: deallocate_worker_application called in worker 38 and application 41 finish: 1
+At time 20796.9s: RemoveApplication called at node 38
+At time 20813.1s: deallocate_worker_application called in worker 35 and application 29 finish: 1
+At time 20813.1s: RemoveApplication called at node 35
+At time 20892.6s: deallocate_worker_application called in worker 31 and application 2 finish: 1
+At time 20892.6s: RemoveApplication called at node 31
+At time 21055.1s: deallocate_worker_application called in worker 2 and application 10 finish: 1
+At time 21055.2s: RemoveApplication called at node 2
+At time 21387.1s: deallocate_worker_application called in worker 6 and application 58 finish: 1
+At time 21387.2s: RemoveApplication called at node 6
+At time 21676.4s: deallocate_worker_application called in worker 16 and application 28 finish: 1
+At time 21676.4s: RemoveApplication called at node 16
+At time 21705.6s: deallocate_worker_application called in worker 32 and application 53 finish: 1
+At time 21705.6s: RemoveApplication called at node 32
+At time 21826.8s: deallocate_worker_application called in worker 5 and application 19 finish: 1
+At time 21826.9s: RemoveApplication called at node 5
+At time 21961.5s: deallocate_worker_application called in worker 13 and application 4 finish: 1
+At time 21961.5s: RemoveApplication called at node 13
+At time 22134.6s: deallocate_worker_application called in worker 33 and application 50 finish: 1
+At time 22134.6s: RemoveApplication called at node 33
+At time 22695.1s: deallocate_worker_application called in worker 34 and application 23 finish: 1
+At time 22695.1s: RemoveApplication called at node 34
+At time 22778.9s: deallocate_worker_application called in worker 1 and application 13 finish: 1
+At time 22778.9s: RemoveApplication called at node 1
+At time 22821.8s: deallocate_worker_application called in worker 39 and application 20 finish: 1
+At time 22821.8s: RemoveApplication called at node 39
+At time 23146.7s: deallocate_worker_application called in worker 24 and application 47 finish: 1
+At time 23146.7s: RemoveApplication called at node 24
+At time 23249.9s: deallocate_worker_application called in worker 12 and application 40 finish: 1
+At time 23250s: RemoveApplication called at node 12
+At time 23447.0s: deallocate_worker_application called in worker 17 and application 55 finish: 1
+At time 23447s: RemoveApplication called at node 17
+At time 23693.2s: deallocate_worker_application called in worker 44 and application 33 finish: 1
+At time 23693.3s: RemoveApplication called at node 44
+At time 24055.4s: deallocate_worker_application called in worker 37 and application 14 finish: 1
+At time 24055.5s: RemoveApplication called at node 37
+At time 24959.4s: deallocate_worker_application called in worker 20 and application 46 finish: 1
+At time 24959.4s: RemoveApplication called at node 20
+At time 25058.7s: deallocate_worker_application called in worker 40 and application 11 finish: 1
+At time 25058.7s: RemoveApplication called at node 40
+At time 25177.0s: deallocate_worker_application called in worker 14 and application 37 finish: 1
+At time 25177s: RemoveApplication called at node 14
+At time 25228.8s: deallocate_worker_application called in worker 7 and application 52 finish: 1
+At time 25228.8s: RemoveApplication called at node 7
+At time 25643.0s: deallocate_worker_application called in worker 10 and application 7 finish: 1
+At time 25643.1s: RemoveApplication called at node 10
+At time 25831.2s: deallocate_worker_application called in worker 44 and application 60 finish: 1
+At time 25831.3s: RemoveApplication called at node 44
+At time 26123.0s: deallocate_worker_application called in worker 11 and application 49 finish: 1
+At time 26123.1s: RemoveApplication called at node 11
+At time 26183.3s: deallocate_worker_application called in worker 36 and application 8 finish: 1
+At time 26183.3s: RemoveApplication called at node 36
+At time 26373.5s: deallocate_worker_application called in worker 18 and application 31 finish: 1
+At time 26373.6s: RemoveApplication called at node 18
+At time 26602.9s: deallocate_worker_application called in worker 43 and application 51 finish: 1
+At time 26602.9s: RemoveApplication called at node 43
+At time 27073.9s: deallocate_worker_application called in worker 43 and application 6 finish: 1
+At time 27073.9s: RemoveApplication called at node 43
+At time 27671.4s: deallocate_worker_application called in worker 15 and application 22 finish: 1
+At time 27671.4s: RemoveApplication called at node 15
+At time 27729.7s: deallocate_worker_application called in worker 44 and application 45 finish: 1
+At time 27729.8s: RemoveApplication called at node 44
+At time 27759.0s: deallocate_worker_application called in worker 44 and application 18 finish: 1
+At time 27759.1s: RemoveApplication called at node 44
+At time 28358.5s: deallocate_worker_application called in worker 26 and application 26 finish: 1
+At time 28358.5s: RemoveApplication called at node 26
+At time 28643.6s: deallocate_worker_application called in worker 30 and application 5 finish: 1
+At time 28643.6s: RemoveApplication called at node 30
+At time 28712.4s: deallocate_worker_application called in worker 43 and application 3 finish: 1
+At time 28712.4s: RemoveApplication called at node 43
+At time 28820.9s: allocate_worker_application called in worker 1 and application 109
+
+NODE 	 	 	 	 APPLICATION
+ID = 1 	 	 	 	 ID = 109
+INITIAL CONSUMPTION = 0.0012 	 START = 28821.0000
+POWER = 40.6869 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0012 	 DURATION = 12437.0996
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 28820.9s: AddApplication called at node 1
+At time 28830.5s: deallocate_worker_application called in worker 28 and application 56 finish: 1
+At time 28830.6s: RemoveApplication called at node 28
+At time 28836.7s: allocate_worker_application called in worker 41 and application 81
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 81
+INITIAL CONSUMPTION = 0.0012 	 START = 28836.8008
+POWER = 76.6351 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0093 	 DURATION = 25886.5996
+CPU = 0.6000 	 	 	 CPU = 0.2000
+MEMORY = 0.6000 	 	 MEMORY = 0.2000
+STORAGE = 50.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 28836.7s: AddApplication called at node 41
+At time 28866.9s: allocate_worker_application called in worker 2 and application 100
+
+NODE 	 	 	 	 APPLICATION
+ID = 2 	 	 	 	 ID = 100
+INITIAL CONSUMPTION = 0.0012 	 START = 28867.0000
+POWER = 42.7387 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0012 	 DURATION = 24938.4004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 28866.9s: AddApplication called at node 2
+At time 28879.8s: allocate_worker_application called in worker 41 and application 111
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 111
+INITIAL CONSUMPTION = 0.0012 	 START = 28879.8008
+POWER = 76.5355 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0104 	 DURATION = 24794.4004
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 28879.8s: AddApplication called at node 41
+At time 28882.5s: allocate_worker_application called in worker 21 and application 119
+
+NODE 	 	 	 	 APPLICATION
+ID = 21 	 	 	 	 ID = 119
+INITIAL CONSUMPTION = 0.0012 	 START = 28882.5000
+POWER = 49.4810 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0012 	 DURATION = 27148.0000
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 28882.5s: AddApplication called at node 21
+At time 28918.1s: allocate_worker_application called in worker 22 and application 83
+
+NODE 	 	 	 	 APPLICATION
+ID = 22 	 	 	 	 ID = 83
+INITIAL CONSUMPTION = 0.0012 	 START = 28918.1992
+POWER = 44.4686 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0012 	 DURATION = 22626.6992
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 28918.1s: AddApplication called at node 22
+At time 28929.1s: allocate_worker_application called in worker 3 and application 79
+
+NODE 	 	 	 	 APPLICATION
+ID = 3 	 	 	 	 ID = 79
+INITIAL CONSUMPTION = 0.0000 	 START = 28929.1992
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21988.5000
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 28929.1s: AddApplication called at node 3
+At time 29000.9s: allocate_worker_application called in worker 4 and application 103
+
+NODE 	 	 	 	 APPLICATION
+ID = 4 	 	 	 	 ID = 103
+INITIAL CONSUMPTION = 0.0000 	 START = 29001.0000
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22517.6992
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 29000.9s: AddApplication called at node 4
+At time 29003.8s: allocate_worker_application called in worker 23 and application 89
+
+NODE 	 	 	 	 APPLICATION
+ID = 23 	 	 	 	 ID = 89
+INITIAL CONSUMPTION = 0.0000 	 START = 29003.9004
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 18999.0000
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 29003.8s: AddApplication called at node 23
+At time 29164.5s: allocate_worker_application called in worker 5 and application 97
+
+NODE 	 	 	 	 APPLICATION
+ID = 5 	 	 	 	 ID = 97
+INITIAL CONSUMPTION = 0.0000 	 START = 29164.5996
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 16352.7002
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 29164.5s: AddApplication called at node 5
+At time 29178.9s: allocate_worker_application called in worker 24 and application 98
+
+NODE 	 	 	 	 APPLICATION
+ID = 24 	 	 	 	 ID = 98
+INITIAL CONSUMPTION = 0.0000 	 START = 29178.9004
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 17027.4004
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 29178.9s: AddApplication called at node 24
+At time 29361.4s: allocate_worker_application called in worker 41 and application 105
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 105
+INITIAL CONSUMPTION = 0.0012 	 START = 29361.4004
+POWER = 74.8633 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0116 	 DURATION = 27146.8008
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 29361.4s: AddApplication called at node 41
+At time 29414.2s: deallocate_worker_application called in worker 43 and application 30 finish: 1
+At time 29414.2s: RemoveApplication called at node 43
+At time 29472.2s: allocate_worker_application called in worker 6 and application 85
+
+NODE 	 	 	 	 APPLICATION
+ID = 6 	 	 	 	 ID = 85
+INITIAL CONSUMPTION = 0.0000 	 START = 29472.3008
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 23225.5000
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 29472.2s: AddApplication called at node 6
+At time 29500.8s: allocate_worker_application called in worker 7 and application 76
+
+NODE 	 	 	 	 APPLICATION
+ID = 7 	 	 	 	 ID = 76
+INITIAL CONSUMPTION = 0.0000 	 START = 29500.9004
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 25136.4004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 29500.8s: AddApplication called at node 7
+At time 29566.1s: allocate_worker_application called in worker 41 and application 72
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 72
+INITIAL CONSUMPTION = 0.0012 	 START = 29566.0996
+POWER = 73.9155 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0116 	 DURATION = 22834.3008
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 29566.1s: AddApplication called at node 41
+At time 29613.8s: allocate_worker_application called in worker 42 and application 69
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 69
+INITIAL CONSUMPTION = 0.0012 	 START = 29613.9004
+POWER = 77.3105 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0081 	 DURATION = 25982.0996
+CPU = 0.8000 	 	 	 CPU = 0.2000
+MEMORY = 0.8000 	 	 MEMORY = 0.2000
+STORAGE = 52.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 29613.8s: AddApplication called at node 42
+At time 29756.0s: deallocate_worker_application called in worker 43 and application 24 finish: 1
+At time 29756s: RemoveApplication called at node 43
+At time 29781.0s: allocate_worker_application called in worker 8 and application 115
+
+NODE 	 	 	 	 APPLICATION
+ID = 8 	 	 	 	 ID = 115
+INITIAL CONSUMPTION = 0.0000 	 START = 29781.0000
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21179.1992
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 29781.0s: AddApplication called at node 8
+At time 29990.3s: allocate_worker_application called in worker 41 and application 102
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 102
+INITIAL CONSUMPTION = 0.0012 	 START = 29990.4004
+POWER = 71.4605 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0116 	 DURATION = 24963.1992
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 29990.3s: AddApplication called at node 41
+At time 30013.3s: allocate_worker_application called in worker 25 and application 62
+
+NODE 	 	 	 	 APPLICATION
+ID = 25 	 	 	 	 ID = 62
+INITIAL CONSUMPTION = 0.0000 	 START = 30013.3008
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 16342.2002
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 30013.3s: AddApplication called at node 25
+At time 30141.0s: allocate_worker_application called in worker 26 and application 77
+
+NODE 	 	 	 	 APPLICATION
+ID = 26 	 	 	 	 ID = 77
+INITIAL CONSUMPTION = 0.0000 	 START = 30141.0000
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 16815.9004
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 30141.0s: AddApplication called at node 26
+At time 30177.1s: allocate_worker_application called in worker 9 and application 91
+
+NODE 	 	 	 	 APPLICATION
+ID = 9 	 	 	 	 ID = 91
+INITIAL CONSUMPTION = 0.0000 	 START = 30177.0996
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20312.5996
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 30177.1s: AddApplication called at node 9
+At time 30178.2s: allocate_worker_application called in worker 27 and application 65
+
+NODE 	 	 	 	 APPLICATION
+ID = 27 	 	 	 	 ID = 65
+INITIAL CONSUMPTION = 0.0000 	 START = 30178.1992
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 17885.8008
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 30178.2s: AddApplication called at node 27
+At time 30209.6s: allocate_worker_application called in worker 10 and application 94
+
+NODE 	 	 	 	 APPLICATION
+ID = 10 	 	 	 	 ID = 94
+INITIAL CONSUMPTION = 0.0000 	 START = 30209.5996
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22487.0996
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 30209.6s: AddApplication called at node 10
+At time 30277.4s: allocate_worker_application called in worker 42 and application 75
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 75
+INITIAL CONSUMPTION = 0.0012 	 START = 30277.4004
+POWER = 75.7745 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0093 	 DURATION = 18347.5000
+CPU = 0.6000 	 	 	 CPU = 0.2000
+MEMORY = 0.6000 	 	 MEMORY = 0.2000
+STORAGE = 50.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 30277.4s: AddApplication called at node 42
+At time 30381.3s: allocate_worker_application called in worker 42 and application 96
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 96
+INITIAL CONSUMPTION = 0.0012 	 START = 30381.3008
+POWER = 75.4137 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0104 	 DURATION = 17277.3008
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 30381.3s: AddApplication called at node 42
+At time 30428.5s: allocate_worker_application called in worker 28 and application 116
+
+NODE 	 	 	 	 APPLICATION
+ID = 28 	 	 	 	 ID = 116
+INITIAL CONSUMPTION = 0.0000 	 START = 30428.5000
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 19213.3008
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 30428.5s: AddApplication called at node 28
+At time 30549.5s: allocate_worker_application called in worker 11 and application 67
+
+NODE 	 	 	 	 APPLICATION
+ID = 11 	 	 	 	 ID = 67
+INITIAL CONSUMPTION = 0.0000 	 START = 30549.5000
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 15764.4004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 30549.5s: AddApplication called at node 11
+At time 30565.7s: allocate_worker_application called in worker 42 and application 66
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 66
+INITIAL CONSUMPTION = 0.0012 	 START = 30565.8008
+POWER = 74.5600 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0116 	 DURATION = 19609.3008
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 30565.7s: AddApplication called at node 42
+At time 30588.1s: allocate_worker_application called in worker 29 and application 74
+
+NODE 	 	 	 	 APPLICATION
+ID = 29 	 	 	 	 ID = 74
+INITIAL CONSUMPTION = 0.0000 	 START = 30588.1992
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 25495.0996
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 30588.1s: AddApplication called at node 29
+At time 30597.8s: allocate_worker_application called in worker 43 and application 108
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 108
+INITIAL CONSUMPTION = 0.0000 	 START = 30597.9004
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 17801.4004
+CPU = 1.0000 	 	 	 CPU = 0.2000
+MEMORY = 1.0000 	 	 MEMORY = 0.2000
+STORAGE = 54.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 30597.8s: AddApplication called at node 43
+At time 30618.3s: allocate_worker_application called in worker 30 and application 95
+
+NODE 	 	 	 	 APPLICATION
+ID = 30 	 	 	 	 ID = 95
+INITIAL CONSUMPTION = 0.0000 	 START = 30618.4004
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21816.8008
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 30618.3s: AddApplication called at node 30
+At time 30632.1s: allocate_worker_application called in worker 43 and application 99
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 99
+INITIAL CONSUMPTION = 0.0000 	 START = 30632.1992
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 19498.3008
+CPU = 0.8000 	 	 	 CPU = 0.2000
+MEMORY = 0.8000 	 	 MEMORY = 0.2000
+STORAGE = 52.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 30632.1s: AddApplication called at node 43
+At time 30635.0s: allocate_worker_application called in worker 12 and application 112
+
+NODE 	 	 	 	 APPLICATION
+ID = 12 	 	 	 	 ID = 112
+INITIAL CONSUMPTION = 0.0000 	 START = 30635.0996
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 19951.4004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 30635.0s: AddApplication called at node 12
+At time 30643.4s: allocate_worker_application called in worker 31 and application 86
+
+NODE 	 	 	 	 APPLICATION
+ID = 31 	 	 	 	 ID = 86
+INITIAL CONSUMPTION = 0.0000 	 START = 30643.4004
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22367.6992
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 30643.4s: AddApplication called at node 31
+At time 30670.5s: allocate_worker_application called in worker 43 and application 63
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 63
+INITIAL CONSUMPTION = 0.0000 	 START = 30670.5996
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 25088.6992
+CPU = 0.6000 	 	 	 CPU = 0.2000
+MEMORY = 0.6000 	 	 MEMORY = 0.2000
+STORAGE = 50.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 30670.5s: AddApplication called at node 43
+At time 30724.8s: allocate_worker_application called in worker 43 and application 87
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 87
+INITIAL CONSUMPTION = 0.0000 	 START = 30724.8008
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22871.6992
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 30724.8s: AddApplication called at node 43
+At time 30846.1s: deallocate_worker_application called in worker 44 and application 36 finish: 1
+At time 30846.2s: RemoveApplication called at node 44
+At time 30903.8s: allocate_worker_application called in worker 13 and application 61
+
+NODE 	 	 	 	 APPLICATION
+ID = 13 	 	 	 	 ID = 61
+INITIAL CONSUMPTION = 0.0000 	 START = 30903.8008
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 18145.3008
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 30903.8s: AddApplication called at node 13
+At time 31030.1s: allocate_worker_application called in worker 14 and application 73
+
+NODE 	 	 	 	 APPLICATION
+ID = 14 	 	 	 	 ID = 73
+INITIAL CONSUMPTION = 0.0000 	 START = 31030.0996
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 23389.4004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 31030.1s: AddApplication called at node 14
+At time 31036.9s: deallocate_worker_application called in worker 43 and application 12 finish: 1
+At time 31036.9s: RemoveApplication called at node 43
+At time 31041.0s: allocate_worker_application called in worker 32 and application 113
+
+NODE 	 	 	 	 APPLICATION
+ID = 32 	 	 	 	 ID = 113
+INITIAL CONSUMPTION = 0.0000 	 START = 31041.0000
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21942.0996
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 31041.0s: AddApplication called at node 32
+At time 31145.4s: allocate_worker_application called in worker 15 and application 106
+
+NODE 	 	 	 	 APPLICATION
+ID = 15 	 	 	 	 ID = 106
+INITIAL CONSUMPTION = 0.0000 	 START = 31145.5000
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 29501.0000
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 31145.4s: AddApplication called at node 15
+At time 31326.6s: allocate_worker_application called in worker 33 and application 68
+
+NODE 	 	 	 	 APPLICATION
+ID = 33 	 	 	 	 ID = 68
+INITIAL CONSUMPTION = 0.0000 	 START = 31326.6992
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 25883.3008
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 31326.6s: AddApplication called at node 33
+At time 31373.5s: allocate_worker_application called in worker 41 and application 93
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 93
+INITIAL CONSUMPTION = 0.0012 	 START = 31373.5996
+POWER = 61.8550 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0116 	 DURATION = 23086.3008
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 31373.5s: AddApplication called at node 41
+At time 31425.3s: allocate_worker_application called in worker 34 and application 71
+
+NODE 	 	 	 	 APPLICATION
+ID = 34 	 	 	 	 ID = 71
+INITIAL CONSUMPTION = 0.0000 	 START = 31425.3008
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 28680.1992
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 31425.3s: AddApplication called at node 34
+At time 31450.4s: allocate_worker_application called in worker 35 and application 104
+
+NODE 	 	 	 	 APPLICATION
+ID = 35 	 	 	 	 ID = 104
+INITIAL CONSUMPTION = 0.0000 	 START = 31450.4004
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21131.0996
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 31450.4s: AddApplication called at node 35
+At time 31474.9s: allocate_worker_application called in worker 16 and application 70
+
+NODE 	 	 	 	 APPLICATION
+ID = 16 	 	 	 	 ID = 70
+INITIAL CONSUMPTION = 0.0000 	 START = 31475.0000
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21997.8008
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 31474.9s: AddApplication called at node 16
+At time 31591.2s: allocate_worker_application called in worker 36 and application 101
+
+NODE 	 	 	 	 APPLICATION
+ID = 36 	 	 	 	 ID = 101
+INITIAL CONSUMPTION = 0.0000 	 START = 31591.1992
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 19503.3008
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 31591.2s: AddApplication called at node 36
+At time 31681.2s: allocate_worker_application called in worker 42 and application 84
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 84
+INITIAL CONSUMPTION = 0.0012 	 START = 31681.1992
+POWER = 68.1048 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0116 	 DURATION = 24803.6992
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 31681.2s: AddApplication called at node 42
+At time 31697.6s: allocate_worker_application called in worker 37 and application 92
+
+NODE 	 	 	 	 APPLICATION
+ID = 37 	 	 	 	 ID = 92
+INITIAL CONSUMPTION = 0.0000 	 START = 31697.6992
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20725.3008
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 31697.6s: AddApplication called at node 37
+At time 31731.0s: allocate_worker_application called in worker 43 and application 120
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 120
+INITIAL CONSUMPTION = 0.0000 	 START = 31731.0996
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 26803.0996
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 31731.0s: AddApplication called at node 43
+At time 31736.0s: allocate_worker_application called in worker 17 and application 82
+
+NODE 	 	 	 	 APPLICATION
+ID = 17 	 	 	 	 ID = 82
+INITIAL CONSUMPTION = 0.0000 	 START = 31736.0000
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 27392.5000
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 31736.0s: AddApplication called at node 17
+At time 31800.3s: allocate_worker_application called in worker 18 and application 118
+
+NODE 	 	 	 	 APPLICATION
+ID = 18 	 	 	 	 ID = 118
+INITIAL CONSUMPTION = 0.0000 	 START = 31800.3008
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 30732.5000
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 31800.3s: AddApplication called at node 18
+At time 31804.9s: allocate_worker_application called in worker 38 and application 80
+
+NODE 	 	 	 	 APPLICATION
+ID = 38 	 	 	 	 ID = 80
+INITIAL CONSUMPTION = 0.0000 	 START = 31804.9004
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 16286.4004
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 31804.9s: AddApplication called at node 38
+At time 31939.6s: allocate_worker_application called in worker 39 and application 110
+
+NODE 	 	 	 	 APPLICATION
+ID = 39 	 	 	 	 ID = 110
+INITIAL CONSUMPTION = 0.0000 	 START = 31939.6992
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 15529.5000
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 31939.6s: AddApplication called at node 39
+At time 32064.7s: deallocate_worker_application called in worker 44 and application 57 finish: 1
+At time 32064.8s: RemoveApplication called at node 44
+At time 32090.6s: allocate_worker_application called in worker 19 and application 64
+
+NODE 	 	 	 	 APPLICATION
+ID = 19 	 	 	 	 ID = 64
+INITIAL CONSUMPTION = 0.0000 	 START = 32090.5996
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 9575.0898
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 32090.6s: AddApplication called at node 19
+At time 32145.5s: allocate_worker_application called in worker 40 and application 107
+
+NODE 	 	 	 	 APPLICATION
+ID = 40 	 	 	 	 ID = 107
+INITIAL CONSUMPTION = 0.0000 	 START = 32145.5000
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20862.6992
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 32145.5s: AddApplication called at node 40
+At time 32182.6s: allocate_worker_application called in worker 42 and application 114
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 114
+INITIAL CONSUMPTION = 0.0012 	 START = 32182.6992
+POWER = 64.6223 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0116 	 DURATION = 15544.4004
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 32182.6s: AddApplication called at node 42
+At time 32221.5s: allocate_worker_application called in worker 43 and application 90
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 90
+INITIAL CONSUMPTION = 0.0000 	 START = 32221.5000
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 16732.8008
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 32221.5s: AddApplication called at node 43
+At time 32266.3s: allocate_worker_application called in worker 44 and application 78
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 78
+INITIAL CONSUMPTION = 0.0000 	 START = 32266.3008
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24141.1992
+CPU = 1.2000 	 	 	 CPU = 0.2000
+MEMORY = 1.2000 	 	 MEMORY = 0.2000
+STORAGE = 56.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 32266.3s: AddApplication called at node 44
+At time 32290.8s: allocate_worker_application called in worker 44 and application 117
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 117
+INITIAL CONSUMPTION = 0.0000 	 START = 32290.8008
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24395.0996
+CPU = 1.0000 	 	 	 CPU = 0.2000
+MEMORY = 1.0000 	 	 MEMORY = 0.2000
+STORAGE = 54.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 32290.8s: AddApplication called at node 44
+At time 32306.0s: allocate_worker_application called in worker 20 and application 88
+
+NODE 	 	 	 	 APPLICATION
+ID = 20 	 	 	 	 ID = 88
+INITIAL CONSUMPTION = 0.0000 	 START = 32306.0996
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 17626.5000
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 32306.0s: AddApplication called at node 20
+At time 32639.5s: deallocate_worker_application called in worker 44 and application 27 finish: 1
+At time 32639.6s: RemoveApplication called at node 44
+At time 32948.2s: deallocate_worker_application called in worker 43 and application 9 finish: 1
+At time 32948.2s: RemoveApplication called at node 43
+At time 33632.7s: deallocate_worker_application called in worker 43 and application 48 finish: 1
+At time 33632.7s: RemoveApplication called at node 43
+At time 33964.9s: deallocate_worker_application called in worker 44 and application 54 finish: 1
+At time 33965s: RemoveApplication called at node 44
+At time 34108.4s: deallocate_worker_application called in worker 43 and application 21 finish: 1
+At time 34108.4s: RemoveApplication called at node 43
+At time 34500.4s: deallocate_worker_application called in worker 44 and application 42 finish: 1
+At time 34500.5s: RemoveApplication called at node 44
+At time 34795.8s: deallocate_worker_application called in worker 43 and application 39 finish: 1
+At time 34795.8s: RemoveApplication called at node 43
+At time 37207.4s: deallocate_worker_application called in worker 44 and application 15 finish: 1
+At time 37207.5s: RemoveApplication called at node 44
+At time 39008.2s: Node 41 out of power.
+At time 39008.2 - Node: 41 --- controllayerhelper::lost_power
+At time 39008.2s: deallocate_worker_application called in worker 41 and application 72 finish: 0
+At time 39008.2s: allocate_worker_application called in worker 42 and application 72
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 72
+INITIAL CONSUMPTION = 0.0012 	 START = 29566.0996
+POWER = 9.3228 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0081 	 DURATION = 22834.3008
+CPU = 0.8000 	 	 	 CPU = 0.2000
+MEMORY = 0.8000 	 	 MEMORY = 0.2000
+STORAGE = 52.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39008.2s: AddApplication called at node 42
+At time 39008.2s: deallocate_worker_application called in worker 41 and application 81 finish: 0
+At time 39008.2s: allocate_worker_application called in worker 42 and application 81
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 81
+INITIAL CONSUMPTION = 0.0012 	 START = 28836.8008
+POWER = 9.3228 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0093 	 DURATION = 25886.5996
+CPU = 0.6000 	 	 	 CPU = 0.2000
+MEMORY = 0.6000 	 	 MEMORY = 0.2000
+STORAGE = 50.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39008.2s: AddApplication called at node 42
+At time 39008.2s: deallocate_worker_application called in worker 41 and application 93 finish: 0
+At time 39008.2s: allocate_worker_application called in worker 42 and application 93
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 93
+INITIAL CONSUMPTION = 0.0012 	 START = 31373.5996
+POWER = 9.3228 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0104 	 DURATION = 23086.3008
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39008.2s: AddApplication called at node 42
+At time 39008.2s: deallocate_worker_application called in worker 41 and application 102 finish: 0
+At time 39008.2s: allocate_worker_application called in worker 42 and application 102
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 102
+INITIAL CONSUMPTION = 0.0012 	 START = 29990.4004
+POWER = 9.3228 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0116 	 DURATION = 24963.1992
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39008.2s: AddApplication called at node 42
+At time 39008.2s: deallocate_worker_application called in worker 41 and application 105 finish: 0
+At time 39008.2s: allocate_worker_application called in worker 43 and application 105
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 105
+INITIAL CONSUMPTION = 0.0000 	 START = 29361.4004
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 27146.8008
+CPU = 0.8000 	 	 	 CPU = 0.2000
+MEMORY = 0.8000 	 	 MEMORY = 0.2000
+STORAGE = 52.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39008.2s: AddApplication called at node 43
+At time 39008.2s: deallocate_worker_application called in worker 41 and application 111 finish: 0
+At time 39008.2s: allocate_worker_application called in worker 43 and application 111
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 111
+INITIAL CONSUMPTION = 0.0000 	 START = 28879.8008
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24794.4004
+CPU = 0.6000 	 	 	 CPU = 0.2000
+MEMORY = 0.6000 	 	 MEMORY = 0.2000
+STORAGE = 50.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39008.2s: AddApplication called at node 43
+At time 39608.2s: Node 41 recharge for 100% power.
+At time 39608.2 --- controllayerhelper::node_recharge
+At time 39740.4s: Node 42 out of power.
+At time 39740.4 - Node: 42 --- controllayerhelper::lost_power
+At time 39740.5s: deallocate_worker_application called in worker 42 and application 66 finish: 0
+At time 39740.4s: allocate_worker_application called in worker 41 and application 66
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 66
+INITIAL CONSUMPTION = 0.0012 	 START = 30565.8008
+POWER = 99.1525 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0081 	 DURATION = 19609.3008
+CPU = 0.8000 	 	 	 CPU = 0.2000
+MEMORY = 0.8000 	 	 MEMORY = 0.2000
+STORAGE = 52.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39740.4s: AddApplication called at node 41
+At time 39740.5s: deallocate_worker_application called in worker 42 and application 69 finish: 0
+At time 39740.4s: allocate_worker_application called in worker 41 and application 69
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 69
+INITIAL CONSUMPTION = 0.0012 	 START = 29613.9004
+POWER = 99.1525 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0093 	 DURATION = 25982.0996
+CPU = 0.6000 	 	 	 CPU = 0.2000
+MEMORY = 0.6000 	 	 MEMORY = 0.2000
+STORAGE = 50.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39740.4s: AddApplication called at node 41
+At time 39740.5s: deallocate_worker_application called in worker 42 and application 72 finish: 0
+At time 39740.4s: allocate_worker_application called in worker 41 and application 72
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 72
+INITIAL CONSUMPTION = 0.0012 	 START = 29566.0996
+POWER = 99.1525 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0104 	 DURATION = 22834.3008
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39740.4s: AddApplication called at node 41
+At time 39740.5s: deallocate_worker_application called in worker 42 and application 75 finish: 0
+At time 39740.4s: allocate_worker_application called in worker 41 and application 75
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 75
+INITIAL CONSUMPTION = 0.0012 	 START = 30277.4004
+POWER = 99.1525 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0104 	 DURATION = 18347.5000
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39740.4s: AddApplication called at node 41
+At time 39740.5s: deallocate_worker_application called in worker 42 and application 81 finish: 0
+At time 39740.4s: allocate_worker_application called in worker 41 and application 81
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 81
+INITIAL CONSUMPTION = 0.0012 	 START = 28836.8008
+POWER = 99.1525 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0116 	 DURATION = 25886.5996
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39740.4s: AddApplication called at node 41
+At time 39740.5s: deallocate_worker_application called in worker 42 and application 84 finish: 0
+At time 39740.4s: allocate_worker_application called in worker 41 and application 84
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 84
+INITIAL CONSUMPTION = 0.0012 	 START = 31681.1992
+POWER = 99.1525 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0116 	 DURATION = 24803.6992
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39740.4s: AddApplication called at node 41
+At time 39740.5s: deallocate_worker_application called in worker 42 and application 93 finish: 0
+At time 39740.4s: allocate_worker_application called in worker 43 and application 93
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 93
+INITIAL CONSUMPTION = 0.0000 	 START = 31373.5996
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 23086.3008
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39740.4s: AddApplication called at node 43
+At time 39740.5s: deallocate_worker_application called in worker 42 and application 96 finish: 0
+At time 39740.4s: allocate_worker_application called in worker 43 and application 96
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 96
+INITIAL CONSUMPTION = 0.0000 	 START = 30381.3008
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 17277.3008
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39740.4s: AddApplication called at node 43
+At time 39740.5s: deallocate_worker_application called in worker 42 and application 102 finish: 0
+At time 39740.4s: allocate_worker_application called in worker 44 and application 102
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 102
+INITIAL CONSUMPTION = 0.0000 	 START = 29990.4004
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24963.1992
+CPU = 1.6000 	 	 	 CPU = 0.2000
+MEMORY = 1.6000 	 	 MEMORY = 0.2000
+STORAGE = 60.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39740.4s: AddApplication called at node 44
+At time 39740.5s: deallocate_worker_application called in worker 42 and application 114 finish: 0
+At time 39740.4s: allocate_worker_application called in worker 44 and application 114
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 114
+INITIAL CONSUMPTION = 0.0000 	 START = 32182.6992
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 15544.4004
+CPU = 1.4000 	 	 	 CPU = 0.2000
+MEMORY = 1.4000 	 	 MEMORY = 0.2000
+STORAGE = 58.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 39740.4s: AddApplication called at node 44
+At time 40340.4s: Node 42 recharge for 100% power.
+At time 40340.4 --- controllayerhelper::node_recharge
+At time 41258.0s: deallocate_worker_application called in worker 1 and application 109 finish: 1
+At time 41258.1s: RemoveApplication called at node 1
+At time 41665.7s: deallocate_worker_application called in worker 19 and application 64 finish: 1
+At time 41665.7s: RemoveApplication called at node 19
+At time 45517.2s: deallocate_worker_application called in worker 5 and application 97 finish: 1
+At time 45517.3s: RemoveApplication called at node 5
+At time 46206.3s: deallocate_worker_application called in worker 24 and application 98 finish: 1
+At time 46206.3s: RemoveApplication called at node 24
+At time 46313.9s: deallocate_worker_application called in worker 11 and application 67 finish: 1
+At time 46313.9s: RemoveApplication called at node 11
+At time 46355.5s: deallocate_worker_application called in worker 25 and application 62 finish: 1
+At time 46355.5s: RemoveApplication called at node 25
+At time 46956.9s: deallocate_worker_application called in worker 26 and application 77 finish: 1
+At time 46956.9s: RemoveApplication called at node 26
+At time 47330.1s: Node 2 out of power.
+At time 47330.1 - Node: 2 --- controllayerhelper::lost_power
+At time 47330.1s: deallocate_worker_application called in worker 2 and application 100 finish: 0
+At time 47330.1s: allocate_worker_application called in worker 1 and application 100
+
+NODE 	 	 	 	 APPLICATION
+ID = 1 	 	 	 	 ID = 100
+INITIAL CONSUMPTION = 0.0012 	 START = 28867.0000
+POWER = 4.8694 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0012 	 DURATION = 24938.4004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 47330.1s: AddApplication called at node 1
+At time 47469.1s: deallocate_worker_application called in worker 39 and application 110 finish: 1
+At time 47469.2s: RemoveApplication called at node 39
+At time 47930.1s: Node 2 recharge for 100% power.
+At time 47930.1 --- controllayerhelper::node_recharge
+At time 48002.8s: deallocate_worker_application called in worker 23 and application 89 finish: 1
+At time 48002.9s: RemoveApplication called at node 23
+At time 48064.0s: deallocate_worker_application called in worker 27 and application 65 finish: 1
+At time 48064s: RemoveApplication called at node 27
+At time 48091.3s: deallocate_worker_application called in worker 38 and application 80 finish: 1
+At time 48091.3s: RemoveApplication called at node 38
+At time 48128.5s: Node 22 out of power.
+At time 48128.6 - Node: 22 --- controllayerhelper::lost_power
+At time 48128.6s: deallocate_worker_application called in worker 22 and application 83 finish: 0
+At time 48128.6s: allocate_worker_application called in worker 23 and application 83
+
+NODE 	 	 	 	 APPLICATION
+ID = 23 	 	 	 	 ID = 83
+INITIAL CONSUMPTION = 0.0000 	 START = 28918.1992
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22626.6992
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 48128.6s: AddApplication called at node 23
+At time 48399.2s: deallocate_worker_application called in worker 43 and application 108 finish: 1
+At time 48399.3s: RemoveApplication called at node 43
+At time 48728.5s: Node 22 recharge for 100% power.
+At time 48728.5 --- controllayerhelper::node_recharge
+At time 48954.3s: deallocate_worker_application called in worker 43 and application 90 finish: 1
+At time 48954.3s: RemoveApplication called at node 43
+At time 49049.1s: deallocate_worker_application called in worker 13 and application 61 finish: 1
+At time 49049.1s: RemoveApplication called at node 13
+At time 49433.7s: Node 1 out of power.
+At time 49433.7 - Node: 1 --- controllayerhelper::lost_power
+At time 49433.7s: deallocate_worker_application called in worker 1 and application 100 finish: 0
+At time 49433.7s: allocate_worker_application called in worker 5 and application 100
+
+NODE 	 	 	 	 APPLICATION
+ID = 5 	 	 	 	 ID = 100
+INITIAL CONSUMPTION = 0.0000 	 START = 28867.0000
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24938.4004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 49433.7s: AddApplication called at node 5
+At time 49641.8s: deallocate_worker_application called in worker 28 and application 116 finish: 1
+At time 49641.8s: RemoveApplication called at node 28
+At time 49932.5s: deallocate_worker_application called in worker 20 and application 88 finish: 1
+At time 49932.6s: RemoveApplication called at node 20
+At time 50033.7s: Node 1 recharge for 100% power.
+At time 50033.7 --- controllayerhelper::node_recharge
+At time 50130.4s: deallocate_worker_application called in worker 43 and application 99 finish: 1
+At time 50130.5s: RemoveApplication called at node 43
+At time 50258.3s: Node 21 out of power.
+At time 50258.3 - Node: 21 --- controllayerhelper::lost_power
+At time 50258.3s: deallocate_worker_application called in worker 21 and application 119 finish: 0
+At time 50258.3s: allocate_worker_application called in worker 24 and application 119
+
+NODE 	 	 	 	 APPLICATION
+ID = 24 	 	 	 	 ID = 119
+INITIAL CONSUMPTION = 0.0000 	 START = 28882.5000
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 27148.0000
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 50258.3s: AddApplication called at node 24
+At time 50489.7s: deallocate_worker_application called in worker 9 and application 91 finish: 1
+At time 50489.7s: RemoveApplication called at node 9
+At time 50586.4s: deallocate_worker_application called in worker 12 and application 112 finish: 1
+At time 50586.5s: RemoveApplication called at node 12
+At time 50858.3s: Node 21 recharge for 100% power.
+At time 50858.3 --- controllayerhelper::node_recharge
+At time 50917.6s: deallocate_worker_application called in worker 3 and application 79 finish: 1
+At time 50917.7s: RemoveApplication called at node 3
+At time 50960.2s: deallocate_worker_application called in worker 8 and application 115 finish: 1
+At time 50960.2s: RemoveApplication called at node 8
+At time 51094.5s: deallocate_worker_application called in worker 36 and application 101 finish: 1
+At time 51094.5s: RemoveApplication called at node 36
+At time 51518.6s: deallocate_worker_application called in worker 4 and application 103 finish: 1
+At time 51518.7s: RemoveApplication called at node 4
+At time 51978.7s: Node 41 out of power.
+At time 51978.7 - Node: 41 --- controllayerhelper::lost_power
+At time 51978.7s: deallocate_worker_application called in worker 41 and application 66 finish: 0
+At time 51978.7s: allocate_worker_application called in worker 43 and application 66
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 66
+INITIAL CONSUMPTION = 0.0000 	 START = 30565.8008
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 19609.3008
+CPU = 0.6000 	 	 	 CPU = 0.2000
+MEMORY = 0.6000 	 	 MEMORY = 0.2000
+STORAGE = 50.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 51978.7s: AddApplication called at node 43
+At time 51978.7s: deallocate_worker_application called in worker 41 and application 69 finish: 0
+At time 51978.7s: allocate_worker_application called in worker 43 and application 69
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 69
+INITIAL CONSUMPTION = 0.0000 	 START = 29613.9004
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 25982.0996
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 51978.7s: AddApplication called at node 43
+At time 51978.7s: deallocate_worker_application called in worker 43 and application 72 finish: 0
+At time 51978.8s: RemoveApplication called at node 43
+At time 51978.7s: allocate_worker_application called in worker 43 and application 72
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 72
+INITIAL CONSUMPTION = 0.0000 	 START = 29566.0996
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22834.3008
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 51978.7s: AddApplication called at node 43
+At time 51978.7s: deallocate_worker_application called in worker 41 and application 75 finish: 0
+At time 51978.7s: allocate_worker_application called in worker 44 and application 75
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 75
+INITIAL CONSUMPTION = 0.0000 	 START = 30277.4004
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 18347.5000
+CPU = 1.2000 	 	 	 CPU = 0.2000
+MEMORY = 1.2000 	 	 MEMORY = 0.2000
+STORAGE = 56.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 51978.7s: AddApplication called at node 44
+At time 51978.7s: deallocate_worker_application called in worker 44 and application 81 finish: 0
+At time 51978.8s: RemoveApplication called at node 44
+At time 51978.7s: allocate_worker_application called in worker 44 and application 81
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 81
+INITIAL CONSUMPTION = 0.0000 	 START = 28836.8008
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 25886.5996
+CPU = 1.0000 	 	 	 CPU = 0.2000
+MEMORY = 1.0000 	 	 MEMORY = 0.2000
+STORAGE = 54.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 51978.7s: AddApplication called at node 44
+At time 51978.7s: deallocate_worker_application called in worker 41 and application 84 finish: 0
+At time 51978.7s: allocate_worker_application called in worker 44 and application 84
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 84
+INITIAL CONSUMPTION = 0.0000 	 START = 31681.1992
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24803.6992
+CPU = 0.8000 	 	 	 CPU = 0.2000
+MEMORY = 0.8000 	 	 MEMORY = 0.2000
+STORAGE = 52.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 51978.7s: AddApplication called at node 44
+At time 51978.7s: deallocate_worker_application called in worker 43 and application 93 finish: 0
+At time 51978.8s: RemoveApplication called at node 43
+At time 51978.7s: allocate_worker_application called in worker 44 and application 93
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 93
+INITIAL CONSUMPTION = 0.0000 	 START = 31373.5996
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 23086.3008
+CPU = 0.6000 	 	 	 CPU = 0.2000
+MEMORY = 0.6000 	 	 MEMORY = 0.2000
+STORAGE = 50.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 51978.7s: AddApplication called at node 44
+At time 51978.7s: deallocate_worker_application called in worker 44 and application 102 finish: 0
+At time 51978.8s: RemoveApplication called at node 44
+At time 51978.7s: allocate_worker_application called in worker 44 and application 102
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 102
+INITIAL CONSUMPTION = 0.0000 	 START = 29990.4004
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24963.1992
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 51978.7s: AddApplication called at node 44
+At time 51978.7s: deallocate_worker_application called in worker 43 and application 105 finish: 0
+At time 51978.8s: RemoveApplication called at node 43
+At time 51978.7s: allocate_worker_application called in worker 44 and application 105
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 105
+INITIAL CONSUMPTION = 0.0000 	 START = 29361.4004
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 27146.8008
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 51978.7s: AddApplication called at node 44
+At time 51978.7s: deallocate_worker_application called in worker 43 and application 111 finish: 0
+At time 51978.8s: RemoveApplication called at node 43
+At time 51978.7s: allocate_worker_application called in worker 44 and application 111
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 111
+INITIAL CONSUMPTION = 0.0000 	 START = 28879.8008
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24794.4004
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 51978.7s: AddApplication called at node 44
+At time 52422.9s: deallocate_worker_application called in worker 37 and application 92 finish: 1
+At time 52423s: RemoveApplication called at node 37
+At time 52435.1s: deallocate_worker_application called in worker 30 and application 95 finish: 1
+At time 52435.2s: RemoveApplication called at node 30
+At time 52578.7s: Node 41 recharge for 100% power.
+At time 52578.7 --- controllayerhelper::node_recharge
+At time 52581.5s: deallocate_worker_application called in worker 35 and application 104 finish: 1
+At time 52581.5s: RemoveApplication called at node 35
+At time 52696.7s: deallocate_worker_application called in worker 10 and application 94 finish: 1
+At time 52696.7s: RemoveApplication called at node 10
+At time 52697.7s: deallocate_worker_application called in worker 6 and application 85 finish: 1
+At time 52697.8s: RemoveApplication called at node 6
+At time 52983.1s: deallocate_worker_application called in worker 32 and application 113 finish: 1
+At time 52983.1s: RemoveApplication called at node 32
+At time 53008.2s: deallocate_worker_application called in worker 40 and application 107 finish: 1
+At time 53008.2s: RemoveApplication called at node 40
+At time 53011.1s: deallocate_worker_application called in worker 31 and application 86 finish: 1
+At time 53011.1s: RemoveApplication called at node 31
+At time 53472.7s: deallocate_worker_application called in worker 16 and application 70 finish: 1
+At time 53472.8s: RemoveApplication called at node 16
+At time 53596.5s: deallocate_worker_application called in worker 43 and application 87 finish: 1
+At time 53596.5s: RemoveApplication called at node 43
+At time 54419.5s: deallocate_worker_application called in worker 14 and application 73 finish: 1
+At time 54419.5s: RemoveApplication called at node 14
+At time 54637.2s: deallocate_worker_application called in worker 7 and application 76 finish: 1
+At time 54637.3s: RemoveApplication called at node 7
+At time 55284.8s: deallocate_worker_application called in worker 44 and application 114 finish: 1
+At time 55284.9s: RemoveApplication called at node 44
+At time 55759.2s: deallocate_worker_application called in worker 43 and application 63 finish: 1
+At time 55759.3s: RemoveApplication called at node 43
+At time 56083.2s: deallocate_worker_application called in worker 29 and application 74 finish: 1
+At time 56083.3s: RemoveApplication called at node 29
+At time 56407.5s: deallocate_worker_application called in worker 44 and application 78 finish: 1
+At time 56407.5s: RemoveApplication called at node 44
+At time 56685.9s: deallocate_worker_application called in worker 44 and application 117 finish: 1
+At time 56685.9s: RemoveApplication called at node 44
+At time 57017.8s: deallocate_worker_application called in worker 43 and application 96 finish: 1
+At time 57017.8s: RemoveApplication called at node 43
+At time 57209.9s: deallocate_worker_application called in worker 33 and application 68 finish: 1
+At time 57210s: RemoveApplication called at node 33
+At time 57618.5s: allocate_worker_application called in worker 42 and application 165
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 165
+INITIAL CONSUMPTION = 0.0012 	 START = 57618.5000
+POWER = 79.3079 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0104 	 DURATION = 18179.1992
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 57618.5s: AddApplication called at node 42
+At time 57759.2s: allocate_worker_application called in worker 42 and application 171
+
+NODE 	 	 	 	 APPLICATION
+ID = 42 	 	 	 	 ID = 171
+INITIAL CONSUMPTION = 0.0012 	 START = 57759.1992
+POWER = 78.9821 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0116 	 DURATION = 29037.4004
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 57759.2s: AddApplication called at node 42
+At time 57772.3s: allocate_worker_application called in worker 25 and application 179
+
+NODE 	 	 	 	 APPLICATION
+ID = 25 	 	 	 	 ID = 179
+INITIAL CONSUMPTION = 0.0000 	 START = 57772.3984
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22890.0996
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 57772.3s: AddApplication called at node 25
+At time 57939.9s: allocate_worker_application called in worker 3 and application 163
+
+NODE 	 	 	 	 APPLICATION
+ID = 3 	 	 	 	 ID = 163
+INITIAL CONSUMPTION = 0.0000 	 START = 57940.0000
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21569.0996
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 57939.9s: AddApplication called at node 3
+At time 57954.9s: allocate_worker_application called in worker 4 and application 139
+
+NODE 	 	 	 	 APPLICATION
+ID = 4 	 	 	 	 ID = 139
+INITIAL CONSUMPTION = 0.0000 	 START = 57955.0000
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 30451.9004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 57954.9s: AddApplication called at node 4
+At time 58000.6s: allocate_worker_application called in worker 26 and application 158
+
+NODE 	 	 	 	 APPLICATION
+ID = 26 	 	 	 	 ID = 158
+INITIAL CONSUMPTION = 0.0000 	 START = 58000.6016
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 12651.7002
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 58000.6s: AddApplication called at node 26
+At time 58037.6s: allocate_worker_application called in worker 43 and application 180
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 180
+INITIAL CONSUMPTION = 0.0000 	 START = 58037.6016
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 17140.6992
+CPU = 0.6000 	 	 	 CPU = 0.2000
+MEMORY = 0.6000 	 	 MEMORY = 0.2000
+STORAGE = 50.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 58037.6s: AddApplication called at node 43
+At time 58099.0s: allocate_worker_application called in worker 27 and application 137
+
+NODE 	 	 	 	 APPLICATION
+ID = 27 	 	 	 	 ID = 137
+INITIAL CONSUMPTION = 0.0000 	 START = 58099.1016
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20782.5000
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 58099.0s: AddApplication called at node 27
+At time 58177.4s: allocate_worker_application called in worker 28 and application 143
+
+NODE 	 	 	 	 APPLICATION
+ID = 28 	 	 	 	 ID = 143
+INITIAL CONSUMPTION = 0.0000 	 START = 58177.5000
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22883.8008
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 58177.4s: AddApplication called at node 28
+At time 58187.1s: allocate_worker_application called in worker 43 and application 168
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 168
+INITIAL CONSUMPTION = 0.0000 	 START = 58187.1992
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 30690.5996
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 58187.1s: AddApplication called at node 43
+At time 58230.5s: allocate_worker_application called in worker 43 and application 123
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 123
+INITIAL CONSUMPTION = 0.0000 	 START = 58230.6016
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 12914.0000
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 58230.5s: AddApplication called at node 43
+At time 58242.0s: allocate_worker_application called in worker 6 and application 175
+
+NODE 	 	 	 	 APPLICATION
+ID = 6 	 	 	 	 ID = 175
+INITIAL CONSUMPTION = 0.0000 	 START = 58242.1016
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 17456.3008
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 58242.0s: AddApplication called at node 6
+At time 58259.8s: allocate_worker_application called in worker 7 and application 160
+
+NODE 	 	 	 	 APPLICATION
+ID = 7 	 	 	 	 ID = 160
+INITIAL CONSUMPTION = 0.0000 	 START = 58259.8984
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 19981.0000
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 58259.8s: AddApplication called at node 7
+At time 58291.5s: allocate_worker_application called in worker 8 and application 157
+
+NODE 	 	 	 	 APPLICATION
+ID = 8 	 	 	 	 ID = 157
+INITIAL CONSUMPTION = 0.0000 	 START = 58291.6016
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 28273.5000
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 58291.5s: AddApplication called at node 8
+At time 58349.4s: allocate_worker_application called in worker 9 and application 154
+
+NODE 	 	 	 	 APPLICATION
+ID = 9 	 	 	 	 ID = 154
+INITIAL CONSUMPTION = 0.0000 	 START = 58349.5000
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20069.0996
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 58349.4s: AddApplication called at node 9
+At time 58430.3s: allocate_worker_application called in worker 29 and application 146
+
+NODE 	 	 	 	 APPLICATION
+ID = 29 	 	 	 	 ID = 146
+INITIAL CONSUMPTION = 0.0000 	 START = 58430.3008
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21455.5996
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 58430.3s: AddApplication called at node 29
+At time 58534.1s: deallocate_worker_application called in worker 43 and application 120 finish: 1
+At time 58534.2s: RemoveApplication called at node 43
+At time 58589.9s: allocate_worker_application called in worker 43 and application 144
+
+NODE 	 	 	 	 APPLICATION
+ID = 43 	 	 	 	 ID = 144
+INITIAL CONSUMPTION = 0.0000 	 START = 58590.0000
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20964.3008
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 58589.9s: AddApplication called at node 43
+At time 58736.7s: allocate_worker_application called in worker 10 and application 121
+
+NODE 	 	 	 	 APPLICATION
+ID = 10 	 	 	 	 ID = 121
+INITIAL CONSUMPTION = 0.0000 	 START = 58736.8008
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21717.0000
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 58736.7s: AddApplication called at node 10
+At time 58766.2s: allocate_worker_application called in worker 11 and application 148
+
+NODE 	 	 	 	 APPLICATION
+ID = 11 	 	 	 	 ID = 148
+INITIAL CONSUMPTION = 0.0000 	 START = 58766.3008
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 18941.4004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 58766.2s: AddApplication called at node 11
+At time 58767.3s: allocate_worker_application called in worker 12 and application 145
+
+NODE 	 	 	 	 APPLICATION
+ID = 12 	 	 	 	 ID = 145
+INITIAL CONSUMPTION = 0.0000 	 START = 58767.3984
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24534.9004
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 58767.3s: AddApplication called at node 12
+At time 58811.3s: allocate_worker_application called in worker 30 and application 122
+
+NODE 	 	 	 	 APPLICATION
+ID = 30 	 	 	 	 ID = 122
+INITIAL CONSUMPTION = 0.0000 	 START = 58811.3008
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22629.5996
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 58811.3s: AddApplication called at node 30
+At time 58814.9s: allocate_worker_application called in worker 31 and application 155
+
+NODE 	 	 	 	 APPLICATION
+ID = 31 	 	 	 	 ID = 155
+INITIAL CONSUMPTION = 0.0000 	 START = 58814.8984
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 13857.5996
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 58814.9s: AddApplication called at node 31
+At time 58825.4s: allocate_worker_application called in worker 44 and application 153
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 153
+INITIAL CONSUMPTION = 0.0000 	 START = 58825.5000
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 23933.3008
+CPU = 0.6000 	 	 	 CPU = 0.2000
+MEMORY = 0.6000 	 	 MEMORY = 0.2000
+STORAGE = 50.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 58825.4s: AddApplication called at node 44
+At time 58840.0s: allocate_worker_application called in worker 32 and application 131
+
+NODE 	 	 	 	 APPLICATION
+ID = 32 	 	 	 	 ID = 131
+INITIAL CONSUMPTION = 0.0000 	 START = 58840.1016
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22926.9004
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 58840.0s: AddApplication called at node 32
+At time 58986.2s: allocate_worker_application called in worker 33 and application 140
+
+NODE 	 	 	 	 APPLICATION
+ID = 33 	 	 	 	 ID = 140
+INITIAL CONSUMPTION = 0.0000 	 START = 58986.3008
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22904.0996
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 58986.2s: AddApplication called at node 33
+At time 59003.1s: allocate_worker_application called in worker 13 and application 127
+
+NODE 	 	 	 	 APPLICATION
+ID = 13 	 	 	 	 ID = 127
+INITIAL CONSUMPTION = 0.0000 	 START = 59003.1016
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20499.0996
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 59003.1s: AddApplication called at node 13
+At time 59128.5s: deallocate_worker_application called in worker 17 and application 82 finish: 1
+At time 59128.5s: RemoveApplication called at node 17
+At time 59158.0s: allocate_worker_application called in worker 44 and application 126
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 126
+INITIAL CONSUMPTION = 0.0000 	 START = 59158.0000
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24799.6992
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 59158.0s: AddApplication called at node 44
+At time 59304.0s: allocate_worker_application called in worker 44 and application 132
+
+NODE 	 	 	 	 APPLICATION
+ID = 44 	 	 	 	 ID = 132
+INITIAL CONSUMPTION = 0.0000 	 START = 59304.0000
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 15328.0996
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 59304.0s: AddApplication called at node 44
+At time 59397.3s: allocate_worker_application called in worker 45 and application 150
+
+NODE 	 	 	 	 APPLICATION
+ID = 45 	 	 	 	 ID = 150
+INITIAL CONSUMPTION = 0.0000 	 START = 59397.3008
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24451.3008
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 2.0000 	 	 MEMORY = 0.2000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 59397.3s: AddApplication called at node 45
+At time 59432.0s: allocate_worker_application called in worker 45 and application 147
+
+NODE 	 	 	 	 APPLICATION
+ID = 45 	 	 	 	 ID = 147
+INITIAL CONSUMPTION = 0.0000 	 START = 59432.0000
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 20391.1992
+CPU = 1.8000 	 	 	 CPU = 0.2000
+MEMORY = 1.8000 	 	 MEMORY = 0.2000
+STORAGE = 62.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 59432.0s: AddApplication called at node 45
+At time 59569.0s: allocate_worker_application called in worker 14 and application 130
+
+NODE 	 	 	 	 APPLICATION
+ID = 14 	 	 	 	 ID = 130
+INITIAL CONSUMPTION = 0.0000 	 START = 59569.0000
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 26611.1992
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 59569.0s: AddApplication called at node 14
+At time 59575.3s: allocate_worker_application called in worker 35 and application 152
+
+NODE 	 	 	 	 APPLICATION
+ID = 35 	 	 	 	 ID = 152
+INITIAL CONSUMPTION = 0.0000 	 START = 59575.3984
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22038.1992
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 59575.3s: AddApplication called at node 35
+At time 59585.6s: allocate_worker_application called in worker 45 and application 135
+
+NODE 	 	 	 	 APPLICATION
+ID = 45 	 	 	 	 ID = 135
+INITIAL CONSUMPTION = 0.0000 	 START = 59585.6016
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21623.8008
+CPU = 1.6000 	 	 	 CPU = 0.2000
+MEMORY = 1.6000 	 	 MEMORY = 0.2000
+STORAGE = 60.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 59585.6s: AddApplication called at node 45
+At time 59612.7s: allocate_worker_application called in worker 36 and application 167
+
+NODE 	 	 	 	 APPLICATION
+ID = 36 	 	 	 	 ID = 167
+INITIAL CONSUMPTION = 0.0000 	 START = 59612.6992
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 17722.5996
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 59612.7s: AddApplication called at node 36
+At time 59700.1s: allocate_worker_application called in worker 37 and application 173
+
+NODE 	 	 	 	 APPLICATION
+ID = 37 	 	 	 	 ID = 173
+INITIAL CONSUMPTION = 0.0000 	 START = 59700.1992
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 24028.4004
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 59700.1s: AddApplication called at node 37
+At time 59729.2s: allocate_worker_application called in worker 16 and application 172
+
+NODE 	 	 	 	 APPLICATION
+ID = 16 	 	 	 	 ID = 172
+INITIAL CONSUMPTION = 0.0000 	 START = 59729.3008
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 17605.3008
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 59729.2s: AddApplication called at node 16
+At time 59747.3s: allocate_worker_application called in worker 45 and application 141
+
+NODE 	 	 	 	 APPLICATION
+ID = 45 	 	 	 	 ID = 141
+INITIAL CONSUMPTION = 0.0000 	 START = 59747.3984
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 29276.5996
+CPU = 1.4000 	 	 	 CPU = 0.2000
+MEMORY = 1.4000 	 	 MEMORY = 0.2000
+STORAGE = 58.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 59747.3s: AddApplication called at node 45
+At time 59771.3s: allocate_worker_application called in worker 17 and application 169
+
+NODE 	 	 	 	 APPLICATION
+ID = 17 	 	 	 	 ID = 169
+INITIAL CONSUMPTION = 0.0000 	 START = 59771.3008
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 16300.0000
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 59771.3s: AddApplication called at node 17
+At time 59819.9s: allocate_worker_application called in worker 38 and application 149
+
+NODE 	 	 	 	 APPLICATION
+ID = 38 	 	 	 	 ID = 149
+INITIAL CONSUMPTION = 0.0000 	 START = 59819.8984
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 13491.5996
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 59819.9s: AddApplication called at node 38
+At time 59840.1s: allocate_worker_application called in worker 19 and application 151
+
+NODE 	 	 	 	 APPLICATION
+ID = 19 	 	 	 	 ID = 151
+INITIAL CONSUMPTION = 0.0000 	 START = 59840.1016
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 16666.3008
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 59840.1s: AddApplication called at node 19
+At time 59930.3s: allocate_worker_application called in worker 39 and application 170
+
+NODE 	 	 	 	 APPLICATION
+ID = 39 	 	 	 	 ID = 170
+INITIAL CONSUMPTION = 0.0000 	 START = 59930.3008
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 31569.5000
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 59930.3s: AddApplication called at node 39
+At time 59951.4s: allocate_worker_application called in worker 45 and application 156
+
+NODE 	 	 	 	 APPLICATION
+ID = 45 	 	 	 	 ID = 156
+INITIAL CONSUMPTION = 0.0000 	 START = 59951.5000
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 18630.6992
+CPU = 1.2000 	 	 	 CPU = 0.2000
+MEMORY = 1.2000 	 	 MEMORY = 0.2000
+STORAGE = 56.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 59951.4s: AddApplication called at node 45
+At time 60028.3s: allocate_worker_application called in worker 40 and application 125
+
+NODE 	 	 	 	 APPLICATION
+ID = 40 	 	 	 	 ID = 125
+INITIAL CONSUMPTION = 0.0000 	 START = 60028.3984
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 15968.7998
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 60028.3s: AddApplication called at node 40
+At time 60034.4s: allocate_worker_application called in worker 45 and application 162
+
+NODE 	 	 	 	 APPLICATION
+ID = 45 	 	 	 	 ID = 162
+INITIAL CONSUMPTION = 0.0000 	 START = 60034.3984
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 18822.1992
+CPU = 1.0000 	 	 	 CPU = 0.2000
+MEMORY = 1.0000 	 	 MEMORY = 0.2000
+STORAGE = 54.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 60034.4s: AddApplication called at node 45
+At time 60059.3s: allocate_worker_application called in worker 20 and application 124
+
+NODE 	 	 	 	 APPLICATION
+ID = 20 	 	 	 	 ID = 124
+INITIAL CONSUMPTION = 0.0000 	 START = 60059.3008
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 22284.5996
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 60059.3s: AddApplication called at node 20
+At time 60105.5s: deallocate_worker_application called in worker 34 and application 71 finish: 1
+At time 60105.5s: RemoveApplication called at node 34
+At time 60112.8s: allocate_worker_application called in worker 1 and application 133
+
+NODE 	 	 	 	 APPLICATION
+ID = 1 	 	 	 	 ID = 133
+INITIAL CONSUMPTION = 0.0012 	 START = 60112.8008
+POWER = 87.6400 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0023 	 DURATION = 21738.0000
+CPU = 3.6000 	 	 	 CPU = 0.4000
+MEMORY = 7.6000 	 	 MEMORY = 0.4000
+STORAGE = 62.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 60112.8s: AddApplication called at node 1
+At time 60117.1s: allocate_worker_application called in worker 34 and application 176
+
+NODE 	 	 	 	 APPLICATION
+ID = 34 	 	 	 	 ID = 176
+INITIAL CONSUMPTION = 0.0000 	 START = 60117.1992
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 29355.1992
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 4.0000 	 	 MEMORY = 0.2000
+STORAGE = 128.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 60117.1s: AddApplication called at node 34
+At time 60278.4s: allocate_worker_application called in worker 21 and application 128
+
+NODE 	 	 	 	 APPLICATION
+ID = 21 	 	 	 	 ID = 128
+INITIAL CONSUMPTION = 0.0012 	 START = 60278.5000
+POWER = 88.4026 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0023 	 DURATION = 21981.0996
+CPU = 1.8000 	 	 	 CPU = 0.2000
+MEMORY = 3.8000 	 	 MEMORY = 0.2000
+STORAGE = 120.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 60278.4s: AddApplication called at node 21
+At time 60319.8s: allocate_worker_application called in worker 45 and application 177
+
+NODE 	 	 	 	 APPLICATION
+ID = 45 	 	 	 	 ID = 177
+INITIAL CONSUMPTION = 0.0000 	 START = 60319.8008
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 30561.5996
+CPU = 0.8000 	 	 	 CPU = 0.2000
+MEMORY = 0.8000 	 	 MEMORY = 0.2000
+STORAGE = 52.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 60319.8s: AddApplication called at node 45
+At time 60496.6s: allocate_worker_application called in worker 22 and application 161
+
+NODE 	 	 	 	 APPLICATION
+ID = 22 	 	 	 	 ID = 161
+INITIAL CONSUMPTION = 0.0012 	 START = 60496.6992
+POWER = 85.6851 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0023 	 DURATION = 16575.0000
+CPU = 1.8000 	 	 	 CPU = 0.2000
+MEMORY = 3.8000 	 	 MEMORY = 0.2000
+STORAGE = 120.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 60496.6s: AddApplication called at node 22
+At time 60520.9s: allocate_worker_application called in worker 2 and application 136
+
+NODE 	 	 	 	 APPLICATION
+ID = 2 	 	 	 	 ID = 136
+INITIAL CONSUMPTION = 0.0012 	 START = 60520.8984
+POWER = 84.7329 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0023 	 DURATION = 19869.4004
+CPU = 3.6000 	 	 	 CPU = 0.4000
+MEMORY = 7.6000 	 	 MEMORY = 0.4000
+STORAGE = 62.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 60520.9s: AddApplication called at node 2
+At time 60528.0s: allocate_worker_application called in worker 45 and application 174
+
+NODE 	 	 	 	 APPLICATION
+ID = 45 	 	 	 	 ID = 174
+INITIAL CONSUMPTION = 0.0000 	 START = 60528.0000
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 27603.0996
+CPU = 0.6000 	 	 	 CPU = 0.2000
+MEMORY = 0.6000 	 	 MEMORY = 0.2000
+STORAGE = 50.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 60528.0s: AddApplication called at node 45
+At time 60646.4s: deallocate_worker_application called in worker 15 and application 106 finish: 1
+At time 60646.5s: RemoveApplication called at node 15
+At time 60683.7s: allocate_worker_application called in worker 45 and application 138
+
+NODE 	 	 	 	 APPLICATION
+ID = 45 	 	 	 	 ID = 138
+INITIAL CONSUMPTION = 0.0000 	 START = 60683.6992
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 23386.4004
+CPU = 0.4000 	 	 	 CPU = 0.2000
+MEMORY = 0.4000 	 	 MEMORY = 0.2000
+STORAGE = 48.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 60683.7s: AddApplication called at node 45
+At time 60862.6s: allocate_worker_application called in worker 15 and application 142
+
+NODE 	 	 	 	 APPLICATION
+ID = 15 	 	 	 	 ID = 142
+INITIAL CONSUMPTION = 0.0000 	 START = 60862.6992
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 17038.8008
+CPU = 4.0000 	 	 	 CPU = 0.4000
+MEMORY = 8.0000 	 	 MEMORY = 0.4000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 60862.6s: AddApplication called at node 15
+At time 60879.2s: allocate_worker_application called in worker 45 and application 159
+
+NODE 	 	 	 	 APPLICATION
+ID = 45 	 	 	 	 ID = 159
+INITIAL CONSUMPTION = 0.0000 	 START = 60879.3008
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 23578.8008
+CPU = 0.2000 	 	 	 CPU = 0.2000
+MEMORY = 0.2000 	 	 MEMORY = 0.2000
+STORAGE = 46.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 60879.2s: AddApplication called at node 45
+At time 60946.0s: allocate_worker_application called in worker 46 and application 129
+
+NODE 	 	 	 	 APPLICATION
+ID = 46 	 	 	 	 ID = 129
+INITIAL CONSUMPTION = 0.0000 	 START = 60946.0000
+POWER = 100.0000 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 25068.9004
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 2.0000 	 	 MEMORY = 0.2000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 60946.0s: AddApplication called at node 46
+At time 60956.0s: allocate_worker_application called in worker 23 and application 134
+
+NODE 	 	 	 	 APPLICATION
+ID = 23 	 	 	 	 ID = 134
+INITIAL CONSUMPTION = 0.0000 	 START = 60956.1016
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21441.5000
+CPU = 1.8000 	 	 	 CPU = 0.2000
+MEMORY = 3.8000 	 	 MEMORY = 0.2000
+STORAGE = 120.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 60956.0s: AddApplication called at node 23
+At time 60977.2s: allocate_worker_application called in worker 24 and application 164
+
+NODE 	 	 	 	 APPLICATION
+ID = 24 	 	 	 	 ID = 164
+INITIAL CONSUMPTION = 0.0000 	 START = 60977.3008
+POWER = 100.0000 	 	 POLICY = storage
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 19629.1992
+CPU = 1.8000 	 	 	 CPU = 0.2000
+MEMORY = 3.8000 	 	 MEMORY = 0.2000
+STORAGE = 120.0000 	 	 STORAGE = 8.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 60977.2s: AddApplication called at node 24
+At time 61025.9s: allocate_worker_application called in worker 3 and application 178
+
+NODE 	 	 	 	 APPLICATION
+ID = 3 	 	 	 	 ID = 178
+INITIAL CONSUMPTION = 0.0000 	 START = 61025.8984
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 21338.0000
+CPU = 3.6000 	 	 	 CPU = 0.4000
+MEMORY = 7.6000 	 	 MEMORY = 0.4000
+STORAGE = 62.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 61025.9s: AddApplication called at node 3
+At time 61031.8s: allocate_worker_application called in worker 4 and application 166
+
+NODE 	 	 	 	 APPLICATION
+ID = 4 	 	 	 	 ID = 166
+INITIAL CONSUMPTION = 0.0000 	 START = 61031.8984
+POWER = 100.0000 	 	 POLICY = performance
+CURRENT CONSUMPTION = 0.0000 	 DURATION = 18846.1992
+CPU = 3.6000 	 	 	 CPU = 0.4000
+MEMORY = 7.6000 	 	 MEMORY = 0.4000
+STORAGE = 62.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 50.0000 	 	 FINISH = 0
+
+At time 61031.8s: AddApplication called at node 4
+At time 62532.8s: deallocate_worker_application called in worker 18 and application 118 finish: 1
+At time 62532.8s: RemoveApplication called at node 18
+At time 70326.2s: deallocate_worker_application called in worker 44 and application 75 finish: 1
+At time 70326.3s: RemoveApplication called at node 44
+At time 70652.3s: deallocate_worker_application called in worker 26 and application 158 finish: 1
+At time 70652.3s: RemoveApplication called at node 26
+At time 70755.3s: deallocate_worker_application called in worker 23 and application 83 finish: 1
+At time 70755.3s: RemoveApplication called at node 23
+At time 71144.5s: deallocate_worker_application called in worker 43 and application 123 finish: 1
+At time 71144.6s: RemoveApplication called at node 43
+At time 71588.0s: deallocate_worker_application called in worker 43 and application 66 finish: 1
+At time 71588.1s: RemoveApplication called at node 43
+At time 72672.5s: deallocate_worker_application called in worker 31 and application 155 finish: 1
+At time 72672.5s: RemoveApplication called at node 31
+At time 73311.5s: deallocate_worker_application called in worker 38 and application 149 finish: 1
+At time 73311.5s: RemoveApplication called at node 38
+At time 74372.1s: deallocate_worker_application called in worker 5 and application 100 finish: 1
+At time 74372.2s: RemoveApplication called at node 5
+At time 74632.1s: deallocate_worker_application called in worker 44 and application 132 finish: 1
+At time 74632.1s: RemoveApplication called at node 44
+At time 74813.0s: deallocate_worker_application called in worker 43 and application 72 finish: 1
+At time 74813.1s: RemoveApplication called at node 43
+At time 75065.0s: deallocate_worker_application called in worker 44 and application 93 finish: 1
+At time 75065.1s: RemoveApplication called at node 44
+At time 75178.3s: deallocate_worker_application called in worker 43 and application 180 finish: 1
+At time 75178.3s: RemoveApplication called at node 43
+At time 75698.3s: deallocate_worker_application called in worker 6 and application 175 finish: 1
+At time 75698.4s: RemoveApplication called at node 6
+At time 75797.7s: deallocate_worker_application called in worker 42 and application 165 finish: 1
+At time 75797.7s: RemoveApplication called at node 42
+At time 75997.1s: deallocate_worker_application called in worker 40 and application 125 finish: 1
+At time 75997.2s: RemoveApplication called at node 40
+At time 76071.3s: deallocate_worker_application called in worker 17 and application 169 finish: 1
+At time 76071.3s: RemoveApplication called at node 17
+At time 76506.4s: deallocate_worker_application called in worker 19 and application 151 finish: 1
+At time 76506.4s: RemoveApplication called at node 19
+At time 76773.1s: deallocate_worker_application called in worker 44 and application 111 finish: 1
+At time 76773.2s: RemoveApplication called at node 44
+At time 76782.4s: deallocate_worker_application called in worker 44 and application 84 finish: 1
+At time 76782.5s: RemoveApplication called at node 44
+At time 76941.9s: deallocate_worker_application called in worker 44 and application 102 finish: 1
+At time 76942s: RemoveApplication called at node 44
+At time 77071.6s: deallocate_worker_application called in worker 22 and application 161 finish: 1
+At time 77071.7s: RemoveApplication called at node 22
+At time 77334.5s: deallocate_worker_application called in worker 16 and application 172 finish: 1
+At time 77334.6s: RemoveApplication called at node 16
+At time 77335.3s: deallocate_worker_application called in worker 36 and application 167 finish: 1
+At time 77335.3s: RemoveApplication called at node 36
+At time 77406.3s: deallocate_worker_application called in worker 24 and application 119 finish: 1
+At time 77406.3s: RemoveApplication called at node 24
+At time 77707.6s: deallocate_worker_application called in worker 11 and application 148 finish: 1
+At time 77707.7s: RemoveApplication called at node 11
+At time 77865.3s: deallocate_worker_application called in worker 44 and application 81 finish: 1
+At time 77865.4s: RemoveApplication called at node 44
+At time 77901.4s: deallocate_worker_application called in worker 15 and application 142 finish: 1
+At time 77901.5s: RemoveApplication called at node 15
+At time 77960.8s: deallocate_worker_application called in worker 43 and application 69 finish: 1
+At time 77960.9s: RemoveApplication called at node 43
+At time 78240.8s: deallocate_worker_application called in worker 7 and application 160 finish: 1
+At time 78240.9s: RemoveApplication called at node 7
+At time 78418.5s: deallocate_worker_application called in worker 9 and application 154 finish: 1
+At time 78418.6s: RemoveApplication called at node 9
+At time 78582.1s: deallocate_worker_application called in worker 45 and application 156 finish: 1
+At time 78582.2s: RemoveApplication called at node 45
+At time 78856.6s: deallocate_worker_application called in worker 45 and application 162 finish: 1
+At time 78856.6s: RemoveApplication called at node 45
+At time 78881.5s: deallocate_worker_application called in worker 27 and application 137 finish: 1
+At time 78881.6s: RemoveApplication called at node 27
+At time 79125.5s: deallocate_worker_application called in worker 44 and application 105 finish: 1
+At time 79125.6s: RemoveApplication called at node 44
+At time 79502.2s: deallocate_worker_application called in worker 13 and application 127 finish: 1
+At time 79502.2s: RemoveApplication called at node 13
+At time 79509.0s: deallocate_worker_application called in worker 3 and application 163 finish: 1
+At time 79509.1s: RemoveApplication called at node 3
+At time 79554.2s: deallocate_worker_application called in worker 43 and application 144 finish: 1
+At time 79554.3s: RemoveApplication called at node 43
+At time 79823.2s: deallocate_worker_application called in worker 45 and application 147 finish: 1
+At time 79823.2s: RemoveApplication called at node 45
+At time 79878.0s: deallocate_worker_application called in worker 4 and application 166 finish: 1
+At time 79878.1s: RemoveApplication called at node 4
+At time 79885.9s: deallocate_worker_application called in worker 29 and application 146 finish: 1
+At time 79885.9s: RemoveApplication called at node 29
+At time 80390.3s: deallocate_worker_application called in worker 2 and application 136 finish: 1
+At time 80390.3s: RemoveApplication called at node 2
+At time 80453.7s: deallocate_worker_application called in worker 10 and application 121 finish: 1
+At time 80453.8s: RemoveApplication called at node 10
+At time 80606.4s: deallocate_worker_application called in worker 24 and application 164 finish: 1
+At time 80606.5s: RemoveApplication called at node 24
+At time 80662.4s: deallocate_worker_application called in worker 25 and application 179 finish: 1
+At time 80662.5s: RemoveApplication called at node 25
+At time 81061.2s: deallocate_worker_application called in worker 28 and application 143 finish: 1
+At time 81061.3s: RemoveApplication called at node 28
+At time 81209.4s: deallocate_worker_application called in worker 45 and application 135 finish: 1
+At time 81209.4s: RemoveApplication called at node 45
+At time 81440.9s: deallocate_worker_application called in worker 30 and application 122 finish: 1
+At time 81440.9s: RemoveApplication called at node 30
+At time 81613.5s: deallocate_worker_application called in worker 35 and application 152 finish: 1
+At time 81613.6s: RemoveApplication called at node 35
+At time 81766.9s: deallocate_worker_application called in worker 32 and application 131 finish: 1
+At time 81767s: RemoveApplication called at node 32
+At time 81850.8s: deallocate_worker_application called in worker 1 and application 133 finish: 1
+At time 81850.8s: RemoveApplication called at node 1
+At time 81890.3s: deallocate_worker_application called in worker 33 and application 140 finish: 1
+At time 81890.4s: RemoveApplication called at node 33
+At time 82259.5s: deallocate_worker_application called in worker 21 and application 128 finish: 1
+At time 82259.6s: RemoveApplication called at node 21
+At time 82343.9s: deallocate_worker_application called in worker 20 and application 124 finish: 1
+At time 82343.9s: RemoveApplication called at node 20
+At time 82363.9s: deallocate_worker_application called in worker 3 and application 178 finish: 1
+At time 82363.9s: RemoveApplication called at node 3
+At time 82397.5s: deallocate_worker_application called in worker 23 and application 134 finish: 1
+At time 82397.6s: RemoveApplication called at node 23
+At time 82758.7s: deallocate_worker_application called in worker 44 and application 153 finish: 1
+At time 82758.8s: RemoveApplication called at node 44
+At time 82860.2s: Node 42 out of power.
+At time 82860.2 - Node: 42 --- controllayerhelper::lost_power
+At time 82860.2s: deallocate_worker_application called in worker 42 and application 171 finish: 0
+At time 82860.2s: allocate_worker_application called in worker 41 and application 171
+
+NODE 	 	 	 	 APPLICATION
+ID = 41 	 	 	 	 ID = 171
+INITIAL CONSUMPTION = 0.0012 	 START = 57759.1992
+POWER = 64.2575 	 	 POLICY = transmission
+CURRENT CONSUMPTION = 0.0012 	 DURATION = 29037.4004
+CPU = 2.0000 	 	 	 CPU = 0.2000
+MEMORY = 2.0000 	 	 MEMORY = 0.2000
+STORAGE = 64.0000 	 	 STORAGE = 2.0000
+TRANSMISSION = 100.0000 	 	 FINISH = 0
+
+At time 82860.2s: AddApplication called at node 41
+At time 83302.2s: deallocate_worker_application called in worker 12 and application 145 finish: 1
+At time 83302.3s: RemoveApplication called at node 12
+At time 83460.2s: Node 42 recharge for 100% power.
+At time 83460.2 --- controllayerhelper::node_recharge
+At time 83728.5s: deallocate_worker_application called in worker 37 and application 173 finish: 1
+At time 83728.6s: RemoveApplication called at node 37
+At time 83848.6s: deallocate_worker_application called in worker 45 and application 150 finish: 1
+At time 83848.6s: RemoveApplication called at node 45
+At time 83957.7s: deallocate_worker_application called in worker 44 and application 126 finish: 1
+At time 83957.7s: RemoveApplication called at node 44
+At time 84070.1s: deallocate_worker_application called in worker 45 and application 138 finish: 1
+At time 84070.1s: RemoveApplication called at node 45
+At time 84458.0s: deallocate_worker_application called in worker 45 and application 159 finish: 1
+At time 84458.1s: RemoveApplication called at node 45
+At time 86014.9s: deallocate_worker_application called in worker 46 and application 129 finish: 1
+At time 86014.9s: RemoveApplication called at node 46
+At time 86180.2s: deallocate_worker_application called in worker 14 and application 130 finish: 1
+At time 86180.2s: RemoveApplication called at node 14
+At time 86565.0s: deallocate_worker_application called in worker 8 and application 157 finish: 1
+At time 86565.1s: RemoveApplication called at node 8
+At time 88131.1s: deallocate_worker_application called in worker 45 and application 174 finish: 1
+At time 88131.1s: RemoveApplication called at node 45
+At time 88406.8s: deallocate_worker_application called in worker 4 and application 139 finish: 1
+At time 88406.9s: RemoveApplication called at node 4
+At time 88877.7s: deallocate_worker_application called in worker 43 and application 168 finish: 1
+At time 88877.8s: RemoveApplication called at node 43
+At time 89023.9s: deallocate_worker_application called in worker 45 and application 141 finish: 1
+At time 89024s: RemoveApplication called at node 45
+At time 89472.3s: deallocate_worker_application called in worker 34 and application 176 finish: 1
+At time 89472.4s: RemoveApplication called at node 34
+At time 90881.4s: deallocate_worker_application called in worker 45 and application 177 finish: 1
+At time 90881.4s: RemoveApplication called at node 45
+At time 91499.8s: deallocate_worker_application called in worker 39 and application 170 finish: 1
+At time 91499.8s: RemoveApplication called at node 39
+At time 110619.5s: Node 41 out of power.
+At time 111219.5s: Node 41 recharge for 100% power.
+At time 111897.6s: deallocate_worker_application called in worker 41 and application 171 finish: 1
+At time 111898s: RemoveApplication called at node 41
+At time 113860.7s: Node 2 out of power.
+At time 114095.7s: Node 1 out of power.
+At time 114460.7s: Node 2 recharge for 100% power.
+At time 114677.2s: Node 21 out of power.
+At time 114695.7s: Node 1 recharge for 100% power.
+At time 115277.2s: Node 21 recharge for 100% power.
+At time 117953.6s: Node 22 out of power.
+At time 118553.6s: Node 22 recharge for 100% power.
+At time 140222.9s: Node 41 out of power.
+At time 140822.9s: Node 41 recharge for 100% power.

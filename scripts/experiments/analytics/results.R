@@ -25,16 +25,31 @@ rm(working_directory)
 
 rm(list = ls())
 
-data <- data.frame( matrix(ncol = 3, nrow = 150) )
-colnames(data) <- c("nodes", "policies", "values")
+data <- data.frame( matrix(ncol = 4, nrow = 0) )
+colnames(data) <- c("policies", "nodes", "turn", "values")
 
-level_order <- c("60", "90", "120", "150", "180")
+level_order <- c("30", "60", "90", "120", "150", "180")
 
-data$nodes <- c(rep(c("60"), 30), rep(c("90"), 30), rep(c("120"), 30), rep(c("150"), 30), rep(c("180"), 30))
-data$policies <- c(rep("sat", 75), rep("bal", 75))
-data$values <- c(rnorm(75, mean = 50, sd = 10), rnorm(75, mean = 70, sd = 10))
+for (i in level_order) {
+  auxfile <- read.csv(paste("../results/", "pfair-", i, "nodes.txt", sep = ""))
+  auxDFSat <- data.frame(
+    policies=rep("sat", length(auxfile$pfSat)),
+    nodes=rep(i, length(auxfile$pfSat)),
+    turn=seq(1, length(auxfile$pfSat)),
+    values=auxfile$pfSat
+    )
+  auxDFBal <- data.frame(
+    policies=rep("bal", length(auxfile$pfBal)),
+    nodes=rep(i, length(auxfile$pfBal)),
+    turn=seq(1, length(auxfile$pfBal)),
+    values=auxfile$pfBal
+    )
+  data <- rbind(data, auxDFBal)
+  data <- rbind(data, auxDFSat)
+}
+rm(i)
 
-pdf(file="plot.pdf")
+# pdf(file="plot.pdf")
 plot <- ggplot( data, 
                 aes(
                     x=factor(nodes, level = level_order), 
@@ -42,24 +57,22 @@ plot <- ggplot( data,
                     fill=policies 
                 )
               ) +
-    theme_bw() +
-    geom_boxplot (
-        width = 0.2, fill = "white",
-        size = 1.5, outlier.shape = NA
-    ) +
-    ggdist::stat_halfeye(
-        adjust = .33, ## bandwidth
-        width = .67,
-        color = NA, ## remove slab interval
-        position = position_nudge(x = .15)
-    ) +
-    gghalves::geom_half_point(
-        side = "l",
-        range_scale = .3,
-        alpha = .5, size = 3
-    ) +
-    facet_grid(~policies) +
-    theme(
+  theme_bw() +
+  theme_bw() +
+  geom_bar(stat = "identity") +
+  geom_text(position = position_stack(vjust = 0.5)) +
+  scale_fill_manual(name = "Tipos de nós:", 
+                    labels = c("Grupo 1", "Grupo 2", "Grupo 3"),
+                    values = c("gray","#E69F00","#56B4E9")
+                    ) +
+  labs(title = "", x = "Quantidade de nós", 
+       y =  "Percentual de alocação justa (%)") +
+  facet_grid(~politica, 
+             labeller = labeller(
+               politica = c(bal = "Balanceamento", sat = "Saturação")
+               )
+             ) +
+  theme(
     legend.position = "top",
     legend.text = element_text(face = "bold", size = 12),
     legend.title = element_text(face = "bold", size = 12),
@@ -67,4 +80,29 @@ plot <- ggplot( data,
     axis.title = element_text(face = "bold", size = 12),
     strip.text = element_text(face = "bold", size = 12)
   )
-dev.off()
+  #   theme_bw() +
+  #   geom_boxplot (
+  #       width = 0.2, fill = "white",
+  #       size = 1.5, outlier.shape = NA
+  #   ) +
+  #   ggdist::stat_halfeye(
+  #       adjust = .33, ## bandwidth
+  #       width = .67,
+  #       color = NA, ## remove slab interval
+  #       position = position_nudge(x = .15)
+  #   ) +
+  #   gghalves::geom_half_point(
+  #       side = "l",
+  #       range_scale = .3,
+  #       alpha = .5, size = 3
+  #   ) +
+  #   facet_wrap(~policies, scales="free_y") +
+  #   theme(
+  #   legend.position = "top",
+  #   legend.text = element_text(face = "bold", size = 12),
+  #   legend.title = element_text(face = "bold", size = 12),
+  #   axis.text = element_text(face = "bold", size = 12),
+  #   axis.title = element_text(face = "bold", size = 12),
+  #   strip.text = element_text(face = "bold", size = 12)
+  # )
+# dev.off()

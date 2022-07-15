@@ -16,6 +16,11 @@ if (any(packages_loaded == FALSE)) {
   rm(packages_installed, packages_loaded, packages_needed)
 }
 
+# Need a symbolic link to wherever folder it is located: $ ln -s /path/to/positron ~/positron
+working_directory <- "~/positron/scripts/experiments/analytics"
+if (getwd() != working_directory) setwd("~/positron/scripts/experiments/analytics")
+rm(working_directory)
+
 rm(list = ls())
 auxDF <- read.csv("primeiro.csv", header = T)
 colnames(auxDF) <- c("nodes", "6", "9", "12", "15", "18")

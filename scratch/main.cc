@@ -25,14 +25,14 @@ int main(int argc, char *argv[])
   bool logging = false;
   bool tracing = false;
   bool balanced = false;
-  bool powerlessness = false;
+  bool powerless = false;
   uint32_t seed = 42;
 
   CommandLine cmd(__FILE__);
   cmd.AddValue("logging", "Tell control applications to logging if true", logging);
   cmd.AddValue("tracing", "Tell control applications to tracing if true", tracing);
   cmd.AddValue("balanced", "Tell control whether is a balanced policy", balanced);
-  cmd.AddValue("powerlessness", "Set simulation scenario with battery loss", powerlessness);
+  cmd.AddValue("powerless", "Set simulation scenario with battery loss", powerless);
   cmd.AddValue("seed", "Set seed as an input parameter", seed);
 
   cmd.Parse(argc, argv);
@@ -43,8 +43,8 @@ int main(int argc, char *argv[])
   {
     LogComponentEnable("ControlLayerClientApplication", LOG_LEVEL_INFO);
     LogComponentEnable("ControlLayerServerApplication", LOG_LEVEL_INFO);
-    LogComponentEnable("UdpEchoClientApplication", LOG_LEVEL_INFO);
-    LogComponentEnable("UdpEchoServerApplication", LOG_LEVEL_INFO);
+    // LogComponentEnable("UdpEchoClientApplication", LOG_LEVEL_INFO);
+    // LogComponentEnable("UdpEchoServerApplication", LOG_LEVEL_INFO);
   }
 
   YAML::Node input = YAML::LoadFile("./scratch/input.yaml");
@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
         Names::Add(auxWorkerID, workerNodes.Get(nodeId));
       }
 
-      if (powerlessness) {
+      if (powerless) {
         int tenpercent = nodeQtd/10;
         int count = 0;
 
@@ -131,16 +131,16 @@ int main(int argc, char *argv[])
 
   ApplicationContainer controlApps = controlServer.Install(controlNodes);
   controlApps.Start(Seconds(1.0));
-  controlApps.Stop(Seconds(simulationTime));
+  controlApps.Stop(Seconds(2*simulationTime));
 
   ApplicationContainer workerApps = workerServer.Install(workerNodes);
   workerApps.Start(Seconds(1.0));
-  workerApps.Stop(Seconds(simulationTime));
+  workerApps.Stop(Seconds(2*simulationTime));
 
   ControlLayerClientHelper controller(Ipv6Address("2001:1::2"), 9);
   ApplicationContainer controlClient = controller.Install("/Names/Controller");
   controlClient.Start(Seconds(1.0));
-  controlClient.Stop(Seconds(simulationTime));
+  controlClient.Stop(Seconds(2*simulationTime));
 
   controller.DropDatabase();
   controller.CreateDatabase();

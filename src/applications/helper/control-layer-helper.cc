@@ -279,10 +279,9 @@ static ApplicationStruct select_application_by_id(int id)
 
 static int insert_worker_application(int id_worker, int id_application, float performed_at)
 {
-
-  char sql[] = "INSERT INTO WORKERS_APPLICATIONS (ID_WORKER,ID_APPLICATION,PERFORMED_AT,FINISHED_AT) VALUES ";
   std::ostringstream oss;
-  oss << sql << "(" << id_worker << ", " << id_application << ", " << performed_at << ", 0 ); ";
+  oss << "INSERT INTO WORKERS_APPLICATIONS (ID_WORKER,ID_APPLICATION,PERFORMED_AT,FINISHED_AT) VALUES ";
+  oss << "(" << id_worker << ", " << id_application << ", " << performed_at << ", 0 ); ";
 
   const std::string sql2 = oss.str();
   const char *sql3 = sql2.c_str();
@@ -294,9 +293,9 @@ static int insert_worker_application(int id_worker, int id_application, float pe
 static Worker get_worker_by_application_id(int id, float start)
 {
   /* Create SQL statement */
-  char sql[] = "SELECT * from WORKERS WHERE ID = (SELECT ID_WORKER from WORKERS_APPLICATIONS WHERE ID_APPLICATION = ";
   std::ostringstream oss;
-  oss << sql << id << " AND PERFORMED_AT = " << start << " AND FINISHED_AT = 0" << ");";
+  oss << "SELECT * from WORKERS WHERE ID = (SELECT ID_WORKER from WORKERS_APPLICATIONS WHERE ID_APPLICATION = ";
+  oss << id << " AND FINISHED_AT = 0" << ");";
 
   const std::string sql2 = oss.str();
   const char *sql3 = sql2.c_str();
@@ -321,13 +320,14 @@ namespace ns3
     node->RemoveApplication();
 
     // update relational table
-    char sql[] = "UPDATE WORKERS_APPLICATIONS SET";
-
-    // std::string finish = finished_at == application.START + application.DURATION ? "1": "0";
-
+    // std::ostringstream oss;
+    // oss << "UPDATE WORKERS_APPLICATIONS SET";
+    // oss << " FINISHED_AT= " << finished_at << " WHERE (ID_WORKER= " << worker.ID << " AND ID_APPLICATION= " << application.ID << " AND PERFORMED_AT= " << application.START << ");"
+    //     << "UPDATE APPLICATIONS SET FINISH = " << finish << " WHERE ID = " << application.ID << ";";
     std::ostringstream oss;
-    oss << sql << " FINISHED_AT= " << finished_at << " WHERE (ID_WORKER= " << worker.ID << " AND ID_APPLICATION= " << application.ID << " AND PERFORMED_AT= " << application.START << ");"
-        << "UPDATE APPLICATIONS SET FINISH = " << finish << " WHERE ID = " << application.ID << ";";
+    oss << "UPDATE WORKERS_APPLICATIONS SET FINISHED_AT = " << finished_at;
+    oss << " WHERE (ID_WORKER= " << worker.ID << " AND ID_APPLICATION= " << application.ID << " AND FINISHED_AT = 0);"
+        << " UPDATE APPLICATIONS SET FINISH = " << finish << " WHERE ID = " << application.ID << ";";
 
     const std::string sql2 = oss.str();
     const char *sql3 = sql2.c_str();
@@ -350,17 +350,19 @@ namespace ns3
       std::cout << "allocate_worker_application called in worker " << worker.ID << " and application " << application.ID << std::endl;
       // std::cout << "Application Start: " << application.START << " - Application Duration: " << application.DURATION << std::endl;
 
-      insert_worker_application(worker.ID, application.ID, application.START);
-      printf("\n");
-      printf("NODE \t \t \t \t APPLICATION\n");
-      printf("ID = %d \t \t \t \t ID = %d\n", worker.ID, application.ID);
-      printf("INITIAL CONSUMPTION = %.4f \t START = %.4f\n", worker.INITIAL_CONSUMPTION, application.START);
-      printf("POWER = %.4f \t \t POLICY = %s\n", worker.POWER, application.POLICY);
-      printf("CURRENT CONSUMPTION = %.4f \t DURATION = %.4f\n", worker.CURRENT_CONSUMPTION, application.DURATION);
-      printf("CPU = %.4f \t \t \t CPU = %.4f\n", worker.CPU, application.CPU);
-      printf("MEMORY = %.4f \t \t MEMORY = %.4f\n", worker.MEMORY, application.MEMORY);
-      printf("STORAGE = %.4f \t \t STORAGE = %.4f\n", worker.STORAGE, application.STORAGE);
-      printf("TRANSMISSION = %.4f \t \t FINISH = %d\n\n", worker.TRANSMISSION, application.FINISH);
+      // insert_worker_application(worker.ID, application.ID, application.START);
+      insert_worker_application(worker.ID, application.ID, currentTime);
+      NS_LOG_UNCOND("\n");
+      NS_LOG_UNCOND("APPLICATION" << "\t \t" << "NODE");
+      NS_LOG_UNCOND("ID = " << application.ID << "\t \t" << "ID = " << worker.ID);
+      NS_LOG_UNCOND("START =  " << currentTime << "\t" << "INITIAL CONSUMPTION = " << worker.INITIAL_CONSUMPTION);
+      NS_LOG_UNCOND("POLICY = " << application.POLICY << "\t" << "POWER = " << worker.POWER);
+      NS_LOG_UNCOND("DURATION = " << application.DURATION << "\t" << "CURRENT CONSUMPTION = " << worker.CURRENT_CONSUMPTION);
+      NS_LOG_UNCOND("CPU = " << application.CPU << "\t \t" << "CPU = " << worker.CPU);
+      NS_LOG_UNCOND("MEMORY = " << application.MEMORY << "\t \t" << "MEMORY = " << worker.MEMORY);
+      NS_LOG_UNCOND("STORAGE = " << application.STORAGE << "\t \t" << "STORAGE = " << worker.STORAGE);
+      NS_LOG_UNCOND("FINISH = " << application.FINISH << "\t \t" << "TRANSMISSION = " << worker.TRANSMISSION);
+      NS_LOG_UNCOND("\n");
 
       Ptr<Node> node = controlNodes.Get(worker.ID);
       node->AddApplication();

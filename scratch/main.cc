@@ -25,15 +25,15 @@ int main(int argc, char *argv[])
   bool logging = false;
   bool tracing = false;
   bool balanced = false;
-  bool powerlessness = true;
+  bool powerlessness = false;
   uint32_t seed = 42;
 
   CommandLine cmd(__FILE__);
   cmd.AddValue("logging", "Tell control applications to logging if true", logging);
   cmd.AddValue("tracing", "Tell control applications to tracing if true", tracing);
   cmd.AddValue("balanced", "Tell control whether is a balanced policy", balanced);
-  cmd.AddValue("seed", "Set seed as an input parameter", seed);
   cmd.AddValue("powerlessness", "Set simulation scenario with battery loss", powerlessness);
+  cmd.AddValue("seed", "Set seed as an input parameter", seed);
 
   cmd.Parse(argc, argv);
 

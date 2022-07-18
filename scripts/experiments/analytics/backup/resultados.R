@@ -17,8 +17,8 @@ if (any(packages_loaded == FALSE)) {
 }
 
 # Need a symbolic link to wherever folder it is located: $ ln -s /path/to/positron ~/positron
-working_directory <- "~/positron/scripts/experiments/analytics"
-if (getwd() != working_directory) setwd("~/positron/scripts/experiments/analytics")
+working_directory <- "~/positron/scripts/experiments/analytics/backup"
+if (getwd() != working_directory) setwd("~/positron/scripts/experiments/analytics/backup")
 rm(working_directory)
 
 rm(list = ls())

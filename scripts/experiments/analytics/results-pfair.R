@@ -1,3 +1,11 @@
+rm(list = ls())
+
+powerScenario <- readline(prompt="\nEnter power scenario (powerfull|powerless): ")
+if ( powerScenario != "powerfull" & powerScenario != "powerless" ) {
+  print("Error: invalid power scenario!!")
+  quit()
+}
+
 # Packages needed
 packages_needed <- c("ggplot2", "Rmisc", "tidyverse", "colorspace", 
                      "rcartocolor", "ggforce", "ggdist", "ggridges",
@@ -6,24 +14,24 @@ packages_needed <- c("ggplot2", "Rmisc", "tidyverse", "colorspace",
 # Install packages not yet installed
 packages_installed <- packages_needed %in% rownames(installed.packages())
 if (any(packages_installed == FALSE)) {
-  print(paste(packages_needed[!packages_installed], 
-              "not installed!!", sep = " "))
+  print(paste(packages_needed[!packages_installed], " not installed!!", sep = " "))
   quit()
 } 
 
 packages_loaded <- packages_needed %in% .packages()
 if (any(packages_loaded == FALSE)) {
-  invisible(lapply(packages_needed[!packages_loaded], 
-                   library, character.only = TRUE))
-  rm(packages_installed, packages_loaded, packages_needed)
+  invisible(
+    lapply(
+      packages_needed[!packages_loaded], library, character.only = TRUE
+    )
+  )
 }
+rm(packages_installed, packages_loaded, packages_needed)
 
 # Need a symbolic link to wherever folder it is located: $ ln -s /path/to/positron ~/positron
 working_directory <- "~/positron/scripts/experiments/analytics"
 if (getwd() != working_directory) setwd("~/positron/scripts/experiments/analytics")
 rm(working_directory)
-
-rm(list = ls())
 
 data <- data.frame( matrix(ncol = 5, nrow = 0) )
 colnames(data) <- c("policies", "nodes",  "groups", "turns", "values")
@@ -37,7 +45,7 @@ for (policie in policies) {
   for (scenario in scenarios) {
     for (turn in turns) {
 
-      filename <- paste("../results/", "pfair-", scenario, "nodes-", policie, "-", turn, ".csv", sep = "")
+      filename <- paste("../results/", powerScenario, "/pfair-", scenario, "nodes-", policie, "-", turn, ".csv", sep = "")
       auxFile <- read.csv(filename)
 
       for (group in groups) {
@@ -69,7 +77,9 @@ for (policie in policies) {
         policies=policie, 
         nodes=scenario,
         groups=group,
-        means=mean(data[data$policies == policie & data$nodes == scenario & data$groups == group,]$values)
+        means=mean(
+          data[data$policies == policie & data$nodes == scenario & data$groups == group,]$values
+          )
       )
 
       dataAvg <- rbind(dataAvg, auxDF)
@@ -110,3 +120,4 @@ gplotPfair <- ggplot(dataAvg,
     axis.title = element_text(face = "bold", size = 12),
     strip.text = element_text(face = "bold", size = 12)
   )
+  ggsave(file=paste("pfair-", powerScenario, ".pdf", sep=""))

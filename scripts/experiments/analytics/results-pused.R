@@ -1,3 +1,11 @@
+rm(list = ls())
+
+powerScenario <- readline(prompt="\nEnter power scenario (powerfull|powerless): ")
+if ( powerScenario != "powerfull" & powerScenario != "powerless" ) {
+  print("Error: invalid power scenario!!")
+  quit()
+}
+
 # Packages needed
 packages_needed <- c("ggplot2", "Rmisc", "tidyverse", "colorspace", 
                      "rcartocolor", "ggforce", "ggdist", "ggridges",
@@ -6,24 +14,24 @@ packages_needed <- c("ggplot2", "Rmisc", "tidyverse", "colorspace",
 # Install packages not yet installed
 packages_installed <- packages_needed %in% rownames(installed.packages())
 if (any(packages_installed == FALSE)) {
-  print(paste(packages_needed[!packages_installed], 
-              "not installed!!", sep = " "))
+  print(paste(packages_needed[!packages_installed], " not installed!!", sep = " "))
   quit()
 } 
 
 packages_loaded <- packages_needed %in% .packages()
 if (any(packages_loaded == FALSE)) {
-  invisible(lapply(packages_needed[!packages_loaded], 
-                   library, character.only = TRUE))
-  rm(packages_installed, packages_loaded, packages_needed)
+  invisible(
+    lapply(
+      packages_needed[!packages_loaded], library, character.only = TRUE
+    )
+  )
 }
+rm(packages_installed, packages_loaded, packages_needed)
 
 # Need a symbolic link to wherever folder it is located: $ ln -s /path/to/positron ~/positron
 working_directory <- "~/positron/scripts/experiments/analytics"
 if (getwd() != working_directory) setwd("~/positron/scripts/experiments/analytics")
 rm(working_directory)
-
-rm(list = ls())
 
 data <- data.frame( matrix(ncol = 4, nrow = 0) )
 colnames(data) <- c("policies", "nodes",  "turns", "values")
@@ -36,7 +44,7 @@ scenarios <- c("30", "60", "90", "120", "150", "180")
 
 for (scenario in scenarios) {
 
-  filename <- paste("../results/", "pused-", scenario, "nodes.txt", sep = "")
+  filename <- paste("../results/", powerScenario, "/pused-", scenario, "nodes.txt", sep = "")
   auxFile <- read.csv(filename)
 
   auxDF <- data.frame(
@@ -119,3 +127,4 @@ theme(
   axis.text = element_text(face = "bold", size = 12),
   axis.title = element_text(face = "bold", size = 12)
 )
+ggsave(file=paste("pused-", powerScenario, ".pdf", sep=""))

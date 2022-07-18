@@ -5,7 +5,7 @@
 
 turns=$(seq 1 30)
 workdir=$PWD
-resultsdir="$workdir/scripts/experiments/results"
+resultsdir="$workdir/scripts/experiments/results/powerfull"
 scenarios='30nodes 60nodes 90nodes 120nodes 150nodes 180nodes'
 
 for scenario in $scenarios; 
@@ -18,12 +18,12 @@ do
     for turn in $turns; 
     do
 
-        ./waf --run "main --balanced=true --seed=$turn" > log-bal.tmp 2>&1
+        ./waf --run "main --balanced=true --seed=$turn --powerless=false" > log-bal.tmp 2>&1
         sqlite3 scratch/database.db < scripts/sql/pfair.sql
         mv temp.csv $resultsdir/pfair-$scenario-bal-$turn.csv
         testeBal=$(sqlite3 scratch/database.db < scripts/sql/pused.sql)
 
-        ./waf --run "main --balanced=false --seed=$turn" > log-sat.tmp 2>&1
+        ./waf --run "main --balanced=false --seed=$turn --powerless=false" > log-sat.tmp 2>&1
         sqlite3 scratch/database.db < scripts/sql/pfair.sql
         mv temp.csv $resultsdir/pfair-$scenario-sat-$turn.csv
         testeSat=$(sqlite3 scratch/database.db < scripts/sql/pused.sql)

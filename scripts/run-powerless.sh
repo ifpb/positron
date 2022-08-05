@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # usage example, from POSITRON workdir
-# ./scripts/run.sh
+# ./scripts/run-powerless.sh
 
 turns=$(seq 1 30)
 workdir=$PWD
@@ -12,6 +12,7 @@ for scenario in $scenarios;
 do
     # echo "pfBal,peBal,pfSat,peSat" > $resultsdir/pfair-$scenario.txt
     echo "puBal,puSat" > $resultsdir/pused-$scenario.txt
+    echo "ppBal,ppSat" > $resultsdir/ppreempted-$scenario.txt
     ./scripts/change-input.sh $scenario
     totalofnodes=${scenario%nodes}
 
@@ -21,15 +22,19 @@ do
         ./waf --run "main --balanced=true --seed=$turn --powerless=true" > log-bal.tmp 2>&1
         sqlite3 scratch/database.db < scripts/sql/pfair.sql
         mv temp.csv $resultsdir/pfair-$scenario-bal-$turn.csv
-        testeBal=$(sqlite3 scratch/database.db < scripts/sql/pused.sql)
+        testUsedBal=$(sqlite3 scratch/database.db < scripts/sql/pused.sql)
+        testPreemptedBal=$(sqlite3 scratch/database.db < scripts/sql/ppreempted.sql)
+        
 
         ./waf --run "main --balanced=false --seed=$turn --powerless=true" > log-sat.tmp 2>&1
         sqlite3 scratch/database.db < scripts/sql/pfair.sql
         mv temp.csv $resultsdir/pfair-$scenario-sat-$turn.csv
-        testeSat=$(sqlite3 scratch/database.db < scripts/sql/pused.sql)
-        
-        echo "$testeBal,$testeSat" >> $resultsdir/pused-$scenario.txt
+        testUsedSat=$(sqlite3 scratch/database.db < scripts/sql/pused.sql)
+        testPreemptedSat=$(sqlite3 scratch/database.db < scripts/sql/ppreempted.sql)
 
+        echo "$testUsedBal,$testUsedSat" >> $resultsdir/pused-$scenario.txt
+        echo "$testPreemptedBal,$testPreemptedSat" >> $resultsdir/ppreempted-$scenario.txt
+        
         # resultBal=$(cat log-bal.tmp | ./scripts/backup/pfair.awk $totalofnodes)
         # resultSat=$(cat log-sat.tmp | ./scripts/backup/pfair.awk $totalofnodes)
         # finishBal=$(cat log-bal.tmp | ./scripts/backup/pfinish.awk)

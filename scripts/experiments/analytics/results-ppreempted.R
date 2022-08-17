@@ -44,22 +44,22 @@ scenarios <- c("30", "60", "90", "120", "150", "180")
 
 for (scenario in scenarios) {
 
-  filename <- paste("../results/", powerScenario, "/pused-", scenario, "nodes.txt", sep = "")
+  filename <- paste("../results/", powerScenario, "/ppreempted-", scenario, "nodes.txt", sep = "")
   auxFile <- read.csv(filename)
 
   auxDF <- data.frame(
-    policies=rep("bal", length(auxFile$puBal)), 
-    nodes=rep(scenario, length(auxFile$puBal)),
-    turns=seq(1, length(auxFile$puBal)),
-    values=auxFile$puBal
+    policies=rep("bal", length(auxFile$ppBal)), 
+    nodes=rep(scenario, length(auxFile$ppBal)),
+    turns=seq(1, length(auxFile$ppBal)),
+    values=auxFile$ppBal
   )
   auxBalDF <- rbind(auxBalDF, auxDF)
 
   auxDF <- data.frame(
-    policies=rep("sat", length(auxFile$puSat)), 
-    nodes=rep(scenario, length(auxFile$puSat)),
-    turns=seq(1, length(auxFile$puSat)),
-    values=auxFile$puSat
+    policies=rep("sat", length(auxFile$ppSat)), 
+    nodes=rep(scenario, length(auxFile$ppSat)),
+    turns=seq(1, length(auxFile$ppSat)),
+    values=auxFile$ppSat
   )
   auxSatDF <- rbind(auxSatDF, auxDF)
 
@@ -106,7 +106,7 @@ dataAvg <- rbind(dataAvg, auxSatAvg)
 
 rm(auxDF, auxBalAvg, auxSatAvg, auxVector, scenario)
 
-gplotPused <- ggplot(dataAvg, 
+gplotPpreempted <- ggplot(dataAvg, 
                      aes(x = factor(nodes, level = scenarios), 
                      y=mean, 
                      fill=policies
@@ -119,7 +119,7 @@ scale_fill_manual("Policies:", labels = c("Balancing", "Saturation"),
 geom_errorbar(aes(ymin=lower, ymax=upper), width=.2,
               position = position_dodge(.9)) +
 labs(title = "", x = "Total amount of workers", 
-      y =  "Percentage of used workers (%)") +
+      y =  "Percentage of preempted applications (%)") +
 theme(
   legend.position = "top",
   legend.text = element_text(face = "bold", size = 12),
@@ -127,4 +127,4 @@ theme(
   axis.text = element_text(face = "bold", size = 12),
   axis.title = element_text(face = "bold", size = 12)
 )
-ggsave(file=paste("pused-", powerScenario, ".pdf", sep=""))
+ggsave(file=paste("ppreempted-", powerScenario, ".pdf", sep=""))

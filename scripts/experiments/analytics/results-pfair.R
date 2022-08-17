@@ -98,7 +98,7 @@ gplotPfair <- ggplot(dataAvg,
                          )
                     ) +
   theme_bw() +
-  geom_bar(stat = "identity") +
+  geom_bar(stat = "identity", alpha=0.5) +
   geom_text(position = position_stack(vjust = 0.5)) +
   scale_fill_manual(name = "Allocated groups:", 
                     labels = c("Unfair", "Group 1", "Group 2", "Group 3"),
@@ -118,6 +118,7 @@ gplotPfair <- ggplot(dataAvg,
     legend.title = element_text(face = "bold", size = 12),
     axis.text = element_text(face = "bold", size = 12),
     axis.title = element_text(face = "bold", size = 12),
-    strip.text = element_text(face = "bold", size = 12)
+    strip.text = element_text(face = "bold", size = 12),
+    text = element_text(face = "bold", size = 30)
   )
   ggsave(file=paste("pfair-", powerScenario, ".pdf", sep=""))

@@ -1,9 +1,9 @@
 -- usage: POSITRON_FOLDER $ sqlite3 scratch/database.db < scripts/sql/draft.sql
 
-.headers on
+-- .headers on
 -- .mode column
--- .mode csv
--- .output draft.csv
+.mode csv
+.output g3_times.csv
 
 -- select ID, ID_WORKER, (PERFORMED_AT - START) as diffSTART, (DURATION - (FINISHED_AT - PERFORMED_AT)) as diffDuration
 -- from APPLICATIONS, WORKERS_APPLICATIONS 
@@ -61,3 +61,19 @@
 --     -- order by app
 -- )
 -- group by fairness;
+
+select inicio, fim
+from (
+    select ID_APPLICATION as app, ID_WORKER as worker, PERFORMED_AT as inicio, FINISHED_AT as fim,
+        case
+            when POLICY like 'performance' and NAME like 'Grupo1-%' then "G1"
+            when POLICY like 'storage' and NAME like 'Grupo2-%' then "G2"
+            when POLICY like 'transmission' and NAME like 'Grupo3-%' then "G3"
+        else "error"
+        end as grupo
+    from WORKERS, APPLICATIONS, WORKERS_APPLICATIONS
+    where APPLICATIONS.ID = ID_APPLICATION AND WORKERS.ID = ID_WORKER
+    -- order by grupo, inicio
+)
+where grupo = "G3"
+order by inicio;

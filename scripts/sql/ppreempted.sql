@@ -10,9 +10,3 @@ from (
     group by ID_APPLICATION having count(*)>1
     
 );
-
-
-
-
-
-

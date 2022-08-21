@@ -7,9 +7,9 @@ if ( powerScenario != "powerfull" & powerScenario != "powerless" ) {
 }
 
 # Packages needed
-packages_needed <- c("ggplot2", "Rmisc", "tidyverse", "colorspace", 
-                     "rcartocolor", "ggforce", "ggdist", "ggridges",
-                     "ggbeeswarm", "gghalves", "systemfonts")
+packages_needed <- c("ggplot2", "Rmisc", "tidyverse", "colorspace", "cowplot",
+                     "rcartocolor", "ggforce", "ggdist", "ggridges", "ggimage",
+                     "ggbeeswarm", "gghalves", "systemfonts", "grid")
 
 # Install packages not yet installed
 packages_installed <- packages_needed %in% rownames(installed.packages())
@@ -111,7 +111,7 @@ gplotPfair <- ggplot(dataAvg,
              labeller = labeller(
                policies = c(bal = "Balanced", sat = "Saturation")
                )
-             ) +
+            ) +
   theme(
     legend.position = "top",
     legend.text = element_text(face = "bold", size = 12),
@@ -121,4 +121,39 @@ gplotPfair <- ggplot(dataAvg,
     strip.text = element_text(face = "bold", size = 12),
     text = element_text(face = "bold", size = 30)
   )
-  ggsave(file=paste("pfair-", powerScenario, ".pdf", sep=""))
+
+t_col <- function(color, percent = 50, name = NULL) {
+      #      color = color name
+  #    percent = % transparency
+  #       name = an optional name for the color
+
+  ## Get RGB values for named color
+  rgb.val <- col2rgb(color)
+
+  ## Make new color using input color as base and alpha set by transparency
+  t.col <- rgb(rgb.val[1], rgb.val[2], rgb.val[3],
+             max = 255,
+             alpha = (100 - percent) * 255 / 100,
+             names = name
+             )
+
+  ## Save the color
+  invisible(t.col)
+}
+
+bal.col <- t_col("#FB9A99")
+sat.col <- t_col("#CAB2D6")
+# fills <- c("#FB9A99", "#CAB2D6")
+fills <- c(bal.col, sat.col)
+
+gplotAux <- ggplot_gtable(ggplot_build(gplotPfair))
+striprt <- which( grepl('strip-r', gplotAux$layout$name) | grepl('strip-t', gplotAux$layout$name) )
+k <- 1
+for (i in striprt) {
+  j <- which(grepl('rect', gplotAux$grobs[[i]]$grobs[[1]]$childrenOrder))
+  gplotAux$grobs[[i]]$grobs[[1]]$children[[j]]$gp$fill <- fills[k]
+  k <- k + 1
+}
+gplotPfair <- plot_grid(gplotAux)
+
+ggsave(file=paste("pfair-", powerScenario, ".pdf", sep=""))

@@ -122,9 +122,10 @@ labs(title = "", x = "Total amount of workers",
       y =  "Percentage of preempted applications (%)") +
 theme(
   legend.position = "top",
-  legend.text = element_text(face = "bold", size = 12),
-  legend.title = element_text(face = "bold", size = 12),
-  axis.text = element_text(face = "bold", size = 12),
-  axis.title = element_text(face = "bold", size = 12)
+  legend.text = element_text(face = "bold", size = 14),
+  legend.title = element_text(face = "bold", size = 14),
+  axis.text = element_text(face = "bold", size = 14),
+  axis.title = element_text(face = "bold", size = 14),
+  strip.text = element_text(face = "bold", size = 14)
 )
 ggsave(file=paste("ppreempted-", powerScenario, ".pdf", sep=""))

@@ -99,7 +99,7 @@ gplotPfair <- ggplot(dataAvg,
                     ) +
   theme_bw() +
   geom_bar(stat = "identity", alpha=0.5) +
-  geom_text(position = position_stack(vjust = 0.5)) +
+  geom_text(position = position_stack(vjust = 0.5), size = 7, fontface = "bold") +
   scale_fill_manual(name = "Allocated groups:", 
                     labels = c("Unfair", "Group 1", "Group 2", "Group 3"),
                     values = c("red", "gray","#E69F00","#56B4E9")
@@ -114,12 +114,11 @@ gplotPfair <- ggplot(dataAvg,
             ) +
   theme(
     legend.position = "top",
-    legend.text = element_text(face = "bold", size = 12),
-    legend.title = element_text(face = "bold", size = 12),
-    axis.text = element_text(face = "bold", size = 12),
-    axis.title = element_text(face = "bold", size = 12),
-    strip.text = element_text(face = "bold", size = 12),
-    text = element_text(face = "bold", size = 30)
+    legend.text = element_text(face = "bold", size = 20),
+    legend.title = element_text(face = "bold", size = 20),
+    axis.text = element_text(face = "bold", size = 20),
+    axis.title = element_text(face = "bold", size = 20),
+    strip.text = element_text(face = "bold", size = 20)
   )
 
 t_col <- function(color, percent = 50, name = NULL) {

@@ -155,4 +155,4 @@ for (i in striprt) {
 }
 gplotPfair <- plot_grid(gplotAux)
 
-ggsave(file=paste("pfair-", powerScenario, ".pdf", sep=""))
+ggsave(file=paste("pfair-", powerScenario, ".pdf", sep=""), height=7.0, width=10.0, units="in")

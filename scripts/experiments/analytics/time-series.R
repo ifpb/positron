@@ -114,10 +114,10 @@ gTimeSeries <- ggplot(gFinal, aes(x=(time/3600), y=value, fill=gType)) +
   theme(
     # legend.position = c(0.2, 0.8),
     legend.position = "top",
-    legend.text = element_text(face = "bold", size = 14),
-    legend.title = element_text(face = "bold", size = 14),
-    axis.text = element_text(face = "bold", size = 14),
-    axis.title = element_text(face = "bold", size = 14),
-    strip.text = element_text(face = "bold", size = 14)
+    legend.text = element_text(face = "bold", size = 20),
+    legend.title = element_text(face = "bold", size = 20),
+    axis.text = element_text(face = "bold", size = 20),
+    axis.title = element_text(face = "bold", size = 20),
+    strip.text = element_text(face = "bold", size = 20)
   )
-  ggsave(file="time-series.pdf")
+  ggsave(file="time-series.pdf", height=7.0, width=10.0, units="in")

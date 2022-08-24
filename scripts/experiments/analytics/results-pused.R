@@ -122,10 +122,10 @@ labs(title = "", x = "Total amount of workers",
       y =  "Percentage of used workers (%)") +
 theme(
   legend.position = "top",
-  legend.text = element_text(face = "bold", size = 14),
-  legend.title = element_text(face = "bold", size = 14),
-  axis.text = element_text(face = "bold", size = 14),
-  axis.title = element_text(face = "bold", size = 14),
-  strip.text = element_text(face = "bold", size = 14)
+  legend.text = element_text(face = "bold", size = 20),
+  legend.title = element_text(face = "bold", size = 20),
+  axis.text = element_text(face = "bold", size = 20),
+  axis.title = element_text(face = "bold", size = 20),
+  strip.text = element_text(face = "bold", size = 20)
 )
-ggsave(file=paste("pused-", powerScenario, ".pdf", sep=""))
+ggsave(file=paste("pused-", powerScenario, ".pdf", sep=""), height=7.0, width=10.0, units="in")

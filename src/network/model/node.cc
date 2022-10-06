@@ -544,16 +544,26 @@ Node::DoDispose ()
 >>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
     {
       Ptr<NetDevice> device = *i;
+<<<<<<< HEAD
       device->Dispose();
       *i = 0;
+=======
+      device->Dispose ();
+      *i = nullptr;
+>>>>>>> 4af0fe4b8 (Fix clang-tidy modernize-use-nullptr warnings)
     }
     m_devices.clear();
     for (std::vector<Ptr<Application>>::iterator i = m_applications.begin();
          i != m_applications.end(); i++)
     {
       Ptr<Application> application = *i;
+<<<<<<< HEAD
       application->Dispose();
       *i = 0;
+=======
+      application->Dispose ();
+      *i = nullptr;
+>>>>>>> 4af0fe4b8 (Fix clang-tidy modernize-use-nullptr warnings)
     }
 <<<<<<< HEAD
     m_applications.clear();

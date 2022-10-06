@@ -63,7 +63,7 @@ public:
    * \brief Get the type ID.
    * \return the object TypeId
    */
-  static TypeId GetTypeId (void);
+  static TypeId GetTypeId ();
 
   Node();
   /**
@@ -79,7 +79,7 @@ public:
    * This unique id happens to be also the index of the Node into
    * the NodeList.
    */
-  uint32_t GetId (void) const;
+  uint32_t GetId () const;
 
 // -----------------------------------------------
 
@@ -120,13 +120,13 @@ public:
    *
    * \return The time as seen by this node
    */
-  Time GetLocalTime (void) const;
+  Time GetLocalTime () const;
 
   /**
    * \returns the system id for parallel simulations associated
    *          to this node.
    */
-  uint32_t GetSystemId (void) const;
+  uint32_t GetSystemId () const;
 
   /**
    * \brief Associate a NetDevice to this node.
@@ -147,7 +147,7 @@ public:
    * \returns the number of NetDevice instances associated
    *          to this Node.
    */
-  uint32_t GetNDevices (void) const;
+  uint32_t GetNDevices () const;
 
   /**
    * \brief Associate an Application to this Node.
@@ -168,7 +168,7 @@ public:
   /**
    * \returns the number of Application instances associated to this Node.
    */
-  uint32_t GetNApplications (void) const;
+  uint32_t GetNApplications () const;
 
   /**
    * A protocol handler
@@ -241,7 +241,7 @@ public:
   /**
    * \returns true if checksums are enabled, false otherwise.
    */
-  static bool ChecksumEnabled (void);
+  static bool ChecksumEnabled ();
 
 
 protected:
@@ -250,8 +250,8 @@ protected:
    * and must chain up to it by calling Node::DoDispose at the
    * end of their own DoDispose method.
    */
-  virtual void DoDispose (void);
-  virtual void DoInitialize (void);
+  virtual void DoDispose ();
+  virtual void DoInitialize ();
 private:
 
   /**
@@ -298,7 +298,7 @@ private:
   /**
    * \brief Finish node's construction by setting the correct node ID.
    */
-  void Construct (void);
+  void Construct ();
 
   /**
    * \brief Protocol handler entry.

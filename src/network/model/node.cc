@@ -116,7 +116,7 @@ namespace ns3
   }
 =======
 TypeId
-Node::GetTypeId (void)
+Node::GetTypeId ()
 {
   static TypeId tid = TypeId ("ns3::Node")
     .SetParent<Object> ()
@@ -171,6 +171,7 @@ Node::Node(uint32_t sid)
 }
 >>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
 
+<<<<<<< HEAD
   void
   Node::Construct(void)
   {
@@ -179,12 +180,21 @@ Node::Node(uint32_t sid)
     lastSet = Seconds(0); // Tempo da ultima medicao do CurrentPower.
     Simulator::Schedule(Seconds(0), &Node::UpdateEvent, this); // Inicializa o evento de fim de bateria
   }
+=======
+void
+Node::Construct ()
+{
+  NS_LOG_FUNCTION (this);
+  m_id = NodeList::Add (this);
+}
+>>>>>>> 6bb638356 (Fix clang-tidy modernize-redundant-void-arg warnings)
 
   Node::~Node()
   {
     NS_LOG_FUNCTION(this);
   }
 
+<<<<<<< HEAD
   uint32_t
   Node::GetId(void) const
   {
@@ -201,6 +211,28 @@ Node::Node(uint32_t sid)
     AttPower();
     return power;
   }
+=======
+uint32_t
+Node::GetId () const
+{
+  NS_LOG_FUNCTION (this);
+  return m_id;
+}
+
+Time
+Node::GetLocalTime () const
+{
+  NS_LOG_FUNCTION (this);
+  return Simulator::Now ();
+}
+
+uint32_t
+Node::GetSystemId () const
+{
+  NS_LOG_FUNCTION (this);
+  return m_sid;
+}
+>>>>>>> 6bb638356 (Fix clang-tidy modernize-redundant-void-arg warnings)
 
 <<<<<<< HEAD
   double
@@ -469,7 +501,7 @@ Node::GetDevice (uint32_t index) const
   return m_devices[index];
 }
 uint32_t
-Node::GetNDevices (void) const
+Node::GetNDevices () const
 {
   NS_LOG_FUNCTION (this);
   return m_devices.size ();
@@ -495,7 +527,7 @@ Node::GetApplication (uint32_t index) const
   return m_applications[index];
 }
 uint32_t
-Node::GetNApplications (void) const
+Node::GetNApplications () const
 {
   NS_LOG_FUNCTION (this);
   return m_applications.size ();
@@ -538,7 +570,7 @@ Node::DoDispose ()
   Object::DoDispose ();
 }
 void
-Node::DoInitialize (void)
+Node::DoInitialize ()
 {
   NS_LOG_FUNCTION (this);
   for (std::vector<Ptr<NetDevice> >::iterator i = m_devices.begin ();
@@ -626,6 +658,7 @@ Node::RegisterProtocolHandler (ProtocolHandler handler,
     }
   }
 
+<<<<<<< HEAD
   bool
   Node::ChecksumEnabled(void)
   {
@@ -634,6 +667,16 @@ Node::RegisterProtocolHandler (ProtocolHandler handler,
     g_checksumEnabled.GetValue(val);
     return val.Get();
   }
+=======
+bool
+Node::ChecksumEnabled ()
+{
+  NS_LOG_FUNCTION_NOARGS ();
+  BooleanValue val;
+  g_checksumEnabled.GetValue (val);
+  return val.Get ();
+}
+>>>>>>> 6bb638356 (Fix clang-tidy modernize-redundant-void-arg warnings)
 
   bool
   Node::PromiscReceiveFromDevice(Ptr<NetDevice> device, Ptr<const Packet> packet, uint16_t protocol,

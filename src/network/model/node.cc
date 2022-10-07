@@ -24,13 +24,20 @@
 =======
 >>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
 #include "node.h"
-#include "node-list.h"
-#include "net-device.h"
+
 #include "application.h"
+#include "net-device.h"
+#include "node-list.h"
+
+#include "ns3/assert.h"
+#include "ns3/boolean.h"
+#include "ns3/global-value.h"
+#include "ns3/log.h"
+#include "ns3/object-vector.h"
 #include "ns3/packet.h"
 #include "ns3/simulator.h"
-#include "ns3/object-vector.h"
 #include "ns3/uinteger.h"
+<<<<<<< HEAD
 #include "ns3/log.h"
 #include "ns3/assert.h"
 #include "ns3/global-value.h"
@@ -45,6 +52,15 @@ namespace ns3
 {
 
   NS_LOG_COMPONENT_DEFINE("Node");
+=======
+
+namespace ns3
+{
+
+NS_LOG_COMPONENT_DEFINE("Node");
+
+NS_OBJECT_ENSURE_REGISTERED(Node);
+>>>>>>> e25ff966f (Apply clang-format to codebase)
 
   NS_OBJECT_ENSURE_REGISTERED(Node);
 
@@ -53,10 +69,18 @@ namespace ns3
  * \anchor GlobalValueChecksumEnabled
  * \brief A global switch to enable all checksums for all protocols.
  */
+<<<<<<< HEAD
   static GlobalValue g_checksumEnabled = GlobalValue("ChecksumEnabled",
                                                      "A global switch to enable all checksums for all protocols",
                                                      BooleanValue(false),
                                                      MakeBooleanChecker());
+=======
+static GlobalValue g_checksumEnabled =
+    GlobalValue("ChecksumEnabled",
+                "A global switch to enable all checksums for all protocols",
+                BooleanValue(false),
+                MakeBooleanChecker());
+>>>>>>> e25ff966f (Apply clang-format to codebase)
 
 <<<<<<< HEAD
   TypeId
@@ -116,35 +140,41 @@ namespace ns3
   }
 =======
 TypeId
-Node::GetTypeId ()
+Node::GetTypeId()
 {
-  static TypeId tid = TypeId ("ns3::Node")
-    .SetParent<Object> ()
-    .SetGroupName("Network")
-    .AddConstructor<Node> ()
-    .AddAttribute ("DeviceList", "The list of devices associated to this Node.",
-                   ObjectVectorValue (),
-                   MakeObjectVectorAccessor (&Node::m_devices),
-                   MakeObjectVectorChecker<NetDevice> ())
-    .AddAttribute ("ApplicationList", "The list of applications associated to this Node.",
-                   ObjectVectorValue (),
-                   MakeObjectVectorAccessor (&Node::m_applications),
-                   MakeObjectVectorChecker<Application> ())
-    .AddAttribute ("Id", "The id (unique integer) of this Node.",
-                   TypeId::ATTR_GET, // allow only getting it.
-                   UintegerValue (0),
-                   MakeUintegerAccessor (&Node::m_id),
-                   MakeUintegerChecker<uint32_t> ())
-    .AddAttribute ("SystemId", "The systemId of this node: a unique integer used for parallel simulations.",
-                   TypeId::ATTR_GET | TypeId::ATTR_SET,
-                   UintegerValue (0),
-                   MakeUintegerAccessor (&Node::m_sid),
-                   MakeUintegerChecker<uint32_t> ())
-  ;
-  return tid;
+    static TypeId tid =
+        TypeId("ns3::Node")
+            .SetParent<Object>()
+            .SetGroupName("Network")
+            .AddConstructor<Node>()
+            .AddAttribute("DeviceList",
+                          "The list of devices associated to this Node.",
+                          ObjectVectorValue(),
+                          MakeObjectVectorAccessor(&Node::m_devices),
+                          MakeObjectVectorChecker<NetDevice>())
+            .AddAttribute("ApplicationList",
+                          "The list of applications associated to this Node.",
+                          ObjectVectorValue(),
+                          MakeObjectVectorAccessor(&Node::m_applications),
+                          MakeObjectVectorChecker<Application>())
+            .AddAttribute("Id",
+                          "The id (unique integer) of this Node.",
+                          TypeId::ATTR_GET, // allow only getting it.
+                          UintegerValue(0),
+                          MakeUintegerAccessor(&Node::m_id),
+                          MakeUintegerChecker<uint32_t>())
+            .AddAttribute(
+                "SystemId",
+                "The systemId of this node: a unique integer used for parallel simulations.",
+                TypeId::ATTR_GET | TypeId::ATTR_SET,
+                UintegerValue(0),
+                MakeUintegerAccessor(&Node::m_sid),
+                MakeUintegerChecker<uint32_t>());
+    return tid;
 }
 >>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
 
+<<<<<<< HEAD
   Node::Node()
       : m_id(0),
         m_sid(0)
@@ -152,6 +182,15 @@ Node::GetTypeId ()
     NS_LOG_FUNCTION(this);
     Construct();
   }
+=======
+Node::Node()
+    : m_id(0),
+      m_sid(0)
+{
+    NS_LOG_FUNCTION(this);
+    Construct();
+}
+>>>>>>> e25ff966f (Apply clang-format to codebase)
 
 <<<<<<< HEAD
   Node::Node(uint32_t sid)
@@ -163,11 +202,11 @@ Node::GetTypeId ()
   }
 =======
 Node::Node(uint32_t sid)
-  : m_id (0),
-    m_sid (sid)
+    : m_id(0),
+      m_sid(sid)
 {
-  NS_LOG_FUNCTION (this << sid);
-  Construct ();
+    NS_LOG_FUNCTION(this << sid);
+    Construct();
 }
 >>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
 
@@ -182,17 +221,24 @@ Node::Node(uint32_t sid)
   }
 =======
 void
-Node::Construct ()
+Node::Construct()
 {
-  NS_LOG_FUNCTION (this);
-  m_id = NodeList::Add (this);
+    NS_LOG_FUNCTION(this);
+    m_id = NodeList::Add(this);
 }
 >>>>>>> 6bb638356 (Fix clang-tidy modernize-redundant-void-arg warnings)
 
+<<<<<<< HEAD
   Node::~Node()
   {
     NS_LOG_FUNCTION(this);
   }
+=======
+Node::~Node()
+{
+    NS_LOG_FUNCTION(this);
+}
+>>>>>>> e25ff966f (Apply clang-format to codebase)
 
 <<<<<<< HEAD
   uint32_t
@@ -213,24 +259,24 @@ Node::Construct ()
   }
 =======
 uint32_t
-Node::GetId () const
+Node::GetId() const
 {
-  NS_LOG_FUNCTION (this);
-  return m_id;
+    NS_LOG_FUNCTION(this);
+    return m_id;
 }
 
 Time
-Node::GetLocalTime () const
+Node::GetLocalTime() const
 {
-  NS_LOG_FUNCTION (this);
-  return Simulator::Now ();
+    NS_LOG_FUNCTION(this);
+    return Simulator::Now();
 }
 
 uint32_t
-Node::GetSystemId () const
+Node::GetSystemId() const
 {
-  NS_LOG_FUNCTION (this);
-  return m_sid;
+    NS_LOG_FUNCTION(this);
+    return m_sid;
 }
 >>>>>>> 6bb638356 (Fix clang-tidy modernize-redundant-void-arg warnings)
 
@@ -479,63 +525,68 @@ Node::GetSystemId () const
          i != m_devices.end(); i++)
 =======
 uint32_t
-Node::AddDevice (Ptr<NetDevice> device)
+Node::AddDevice(Ptr<NetDevice> device)
 {
-  NS_LOG_FUNCTION (this << device);
-  uint32_t index = m_devices.size ();
-  m_devices.push_back (device);
-  device->SetNode (this);
-  device->SetIfIndex (index);
-  device->SetReceiveCallback (MakeCallback (&Node::NonPromiscReceiveFromDevice, this));
-  Simulator::ScheduleWithContext (GetId (), Seconds (0.0),
-                                  &NetDevice::Initialize, device);
-  NotifyDeviceAdded (device);
-  return index;
+    NS_LOG_FUNCTION(this << device);
+    uint32_t index = m_devices.size();
+    m_devices.push_back(device);
+    device->SetNode(this);
+    device->SetIfIndex(index);
+    device->SetReceiveCallback(MakeCallback(&Node::NonPromiscReceiveFromDevice, this));
+    Simulator::ScheduleWithContext(GetId(), Seconds(0.0), &NetDevice::Initialize, device);
+    NotifyDeviceAdded(device);
+    return index;
 }
+
 Ptr<NetDevice>
-Node::GetDevice (uint32_t index) const
+Node::GetDevice(uint32_t index) const
 {
-  NS_LOG_FUNCTION (this << index);
-  NS_ASSERT_MSG (index < m_devices.size (), "Device index " << index <<
-                 " is out of range (only have " << m_devices.size () << " devices).");
-  return m_devices[index];
-}
-uint32_t
-Node::GetNDevices () const
-{
-  NS_LOG_FUNCTION (this);
-  return m_devices.size ();
+    NS_LOG_FUNCTION(this << index);
+    NS_ASSERT_MSG(index < m_devices.size(),
+                  "Device index " << index << " is out of range (only have " << m_devices.size()
+                                  << " devices).");
+    return m_devices[index];
 }
 
 uint32_t
-Node::AddApplication (Ptr<Application> application)
+Node::GetNDevices() const
 {
-  NS_LOG_FUNCTION (this << application);
-  uint32_t index = m_applications.size ();
-  m_applications.push_back (application);
-  application->SetNode (this);
-  Simulator::ScheduleWithContext (GetId (), Seconds (0.0),
-                                  &Application::Initialize, application);
-  return index;
+    NS_LOG_FUNCTION(this);
+    return m_devices.size();
 }
-Ptr<Application>
-Node::GetApplication (uint32_t index) const
-{
-  NS_LOG_FUNCTION (this << index);
-  NS_ASSERT_MSG (index < m_applications.size (), "Application index " << index <<
-                 " is out of range (only have " << m_applications.size () << " applications).");
-  return m_applications[index];
-}
+
 uint32_t
-Node::GetNApplications () const
+Node::AddApplication(Ptr<Application> application)
 {
-  NS_LOG_FUNCTION (this);
-  return m_applications.size ();
+    NS_LOG_FUNCTION(this << application);
+    uint32_t index = m_applications.size();
+    m_applications.push_back(application);
+    application->SetNode(this);
+    Simulator::ScheduleWithContext(GetId(), Seconds(0.0), &Application::Initialize, application);
+    return index;
+}
+
+Ptr<Application>
+Node::GetApplication(uint32_t index) const
+{
+    NS_LOG_FUNCTION(this << index);
+    NS_ASSERT_MSG(index < m_applications.size(),
+                  "Application index " << index << " is out of range (only have "
+                                       << m_applications.size() << " applications).");
+    return m_applications[index];
+}
+
+uint32_t
+Node::GetNApplications() const
+{
+    NS_LOG_FUNCTION(this);
+    return m_applications.size();
 }
 
 void
-Node::DoDispose ()
+Node::DoDispose()
 {
+<<<<<<< HEAD
   NS_LOG_FUNCTION (this);
   m_deviceAdditionListeners.clear ();
   m_handlers.clear ();
@@ -599,6 +650,29 @@ Node::DoInitialize ()
 
     Object::DoInitialize();
   }
+=======
+    NS_LOG_FUNCTION(this);
+    m_deviceAdditionListeners.clear();
+    m_handlers.clear();
+    for (std::vector<Ptr<NetDevice>>::iterator i = m_devices.begin(); i != m_devices.end(); i++)
+    {
+        Ptr<NetDevice> device = *i;
+        device->Dispose();
+        *i = nullptr;
+    }
+    m_devices.clear();
+    for (std::vector<Ptr<Application>>::iterator i = m_applications.begin();
+         i != m_applications.end();
+         i++)
+    {
+        Ptr<Application> application = *i;
+        application->Dispose();
+        *i = nullptr;
+    }
+    m_applications.clear();
+    Object::DoDispose();
+}
+>>>>>>> e25ff966f (Apply clang-format to codebase)
 
 <<<<<<< HEAD
   void
@@ -615,11 +689,9 @@ Node::DoInitialize ()
     entry.promiscuous = promiscuous;
 =======
 void
-Node::RegisterProtocolHandler (ProtocolHandler handler,
-                               uint16_t protocolType,
-                               Ptr<NetDevice> device,
-                               bool promiscuous)
+Node::DoInitialize()
 {
+<<<<<<< HEAD
   NS_LOG_FUNCTION (this << &handler << protocolType << device << promiscuous);
   struct Node::ProtocolHandlerEntry entry;
   entry.handler = handler;
@@ -665,6 +737,70 @@ Node::RegisterProtocolHandler (ProtocolHandler handler,
         m_handlers.erase(i);
         break;
       }
+=======
+    NS_LOG_FUNCTION(this);
+    for (std::vector<Ptr<NetDevice>>::iterator i = m_devices.begin(); i != m_devices.end(); i++)
+    {
+        Ptr<NetDevice> device = *i;
+        device->Initialize();
+    }
+    for (std::vector<Ptr<Application>>::iterator i = m_applications.begin();
+         i != m_applications.end();
+         i++)
+    {
+        Ptr<Application> application = *i;
+        application->Initialize();
+    }
+
+    Object::DoInitialize();
+}
+
+void
+Node::RegisterProtocolHandler(ProtocolHandler handler,
+                              uint16_t protocolType,
+                              Ptr<NetDevice> device,
+                              bool promiscuous)
+{
+    NS_LOG_FUNCTION(this << &handler << protocolType << device << promiscuous);
+    struct Node::ProtocolHandlerEntry entry;
+    entry.handler = handler;
+    entry.protocol = protocolType;
+    entry.device = device;
+    entry.promiscuous = promiscuous;
+
+    // On demand enable promiscuous mode in netdevices
+    if (promiscuous)
+    {
+        if (!device)
+        {
+            for (std::vector<Ptr<NetDevice>>::iterator i = m_devices.begin(); i != m_devices.end();
+                 i++)
+            {
+                Ptr<NetDevice> dev = *i;
+                dev->SetPromiscReceiveCallback(MakeCallback(&Node::PromiscReceiveFromDevice, this));
+            }
+        }
+        else
+        {
+            device->SetPromiscReceiveCallback(MakeCallback(&Node::PromiscReceiveFromDevice, this));
+        }
+    }
+
+    m_handlers.push_back(entry);
+}
+
+void
+Node::UnregisterProtocolHandler(ProtocolHandler handler)
+{
+    NS_LOG_FUNCTION(this << &handler);
+    for (ProtocolHandlerList::iterator i = m_handlers.begin(); i != m_handlers.end(); i++)
+    {
+        if (i->handler.IsEqual(handler))
+        {
+            m_handlers.erase(i);
+            break;
+        }
+>>>>>>> e25ff966f (Apply clang-format to codebase)
     }
   }
 
@@ -679,15 +815,16 @@ Node::RegisterProtocolHandler (ProtocolHandler handler,
   }
 =======
 bool
-Node::ChecksumEnabled ()
+Node::ChecksumEnabled()
 {
-  NS_LOG_FUNCTION_NOARGS ();
-  BooleanValue val;
-  g_checksumEnabled.GetValue (val);
-  return val.Get ();
+    NS_LOG_FUNCTION_NOARGS();
+    BooleanValue val;
+    g_checksumEnabled.GetValue(val);
+    return val.Get();
 }
 >>>>>>> 6bb638356 (Fix clang-tidy modernize-redundant-void-arg warnings)
 
+<<<<<<< HEAD
   bool
   Node::PromiscReceiveFromDevice(Ptr<NetDevice> device, Ptr<const Packet> packet, uint16_t protocol,
                                  const Address &from, const Address &to, NetDevice::PacketType packetType)
@@ -740,17 +877,73 @@ Node::ChecksumEnabled ()
 =======
           if (i->protocol == 0 ||
               i->protocol == protocol)
+=======
+bool
+Node::PromiscReceiveFromDevice(Ptr<NetDevice> device,
+                               Ptr<const Packet> packet,
+                               uint16_t protocol,
+                               const Address& from,
+                               const Address& to,
+                               NetDevice::PacketType packetType)
+{
+    NS_LOG_FUNCTION(this << device << packet << protocol << &from << &to << packetType);
+    return ReceiveFromDevice(device, packet, protocol, from, to, packetType, true);
+}
+
+bool
+Node::NonPromiscReceiveFromDevice(Ptr<NetDevice> device,
+                                  Ptr<const Packet> packet,
+                                  uint16_t protocol,
+                                  const Address& from)
+{
+    NS_LOG_FUNCTION(this << device << packet << protocol << &from);
+    return ReceiveFromDevice(device,
+                             packet,
+                             protocol,
+                             from,
+                             device->GetAddress(),
+                             NetDevice::PacketType(0),
+                             false);
+}
+
+bool
+Node::ReceiveFromDevice(Ptr<NetDevice> device,
+                        Ptr<const Packet> packet,
+                        uint16_t protocol,
+                        const Address& from,
+                        const Address& to,
+                        NetDevice::PacketType packetType,
+                        bool promiscuous)
+{
+    NS_LOG_FUNCTION(this << device << packet << protocol << &from << &to << packetType
+                         << promiscuous);
+    NS_ASSERT_MSG(Simulator::GetContext() == GetId(),
+                  "Received packet with erroneous context ; "
+                      << "make sure the channels in use are correctly updating events context "
+                      << "when transferring events from one node to another.");
+    NS_LOG_DEBUG("Node " << GetId() << " ReceiveFromDevice:  dev " << device->GetIfIndex()
+                         << " (type=" << device->GetInstanceTypeId().GetName() << ") Packet UID "
+                         << packet->GetUid());
+    bool found = false;
+
+    for (ProtocolHandlerList::iterator i = m_handlers.begin(); i != m_handlers.end(); i++)
+    {
+        if (!i->device || (i->device == device))
+        {
+            if (i->protocol == 0 || i->protocol == protocol)
+>>>>>>> e25ff966f (Apply clang-format to codebase)
             {
-              if (promiscuous == i->promiscuous)
+                if (promiscuous == i->promiscuous)
                 {
-                  i->handler (device, packet, protocol, from, to, packetType);
-                  found = true;
+                    i->handler(device, packet, protocol, from, to, packetType);
+                    found = true;
                 }
             }
 >>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
         }
       }
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
     return found;
   }
@@ -764,10 +957,15 @@ Node::ChecksumEnabled ()
          i != m_devices.end(); ++i)
 =======
   return found;
+=======
+    return found;
+>>>>>>> e25ff966f (Apply clang-format to codebase)
 }
+
 void
-Node::RegisterDeviceAdditionListener (DeviceAdditionListener listener)
+Node::RegisterDeviceAdditionListener(DeviceAdditionListener listener)
 {
+<<<<<<< HEAD
   NS_LOG_FUNCTION (this << &listener);
   m_deviceAdditionListeners.push_back (listener);
   // and, then, notify the new listener about all existing devices.
@@ -776,6 +974,15 @@ Node::RegisterDeviceAdditionListener (DeviceAdditionListener listener)
 >>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
     {
       listener(*i);
+=======
+    NS_LOG_FUNCTION(this << &listener);
+    m_deviceAdditionListeners.push_back(listener);
+    // and, then, notify the new listener about all existing devices.
+    for (std::vector<Ptr<NetDevice>>::const_iterator i = m_devices.begin(); i != m_devices.end();
+         ++i)
+    {
+        listener(*i);
+>>>>>>> e25ff966f (Apply clang-format to codebase)
     }
 <<<<<<< HEAD
   }
@@ -787,9 +994,11 @@ Node::RegisterDeviceAdditionListener (DeviceAdditionListener listener)
          i != m_deviceAdditionListeners.end(); i++)
 =======
 }
+
 void
-Node::UnregisterDeviceAdditionListener (DeviceAdditionListener listener)
+Node::UnregisterDeviceAdditionListener(DeviceAdditionListener listener)
 {
+<<<<<<< HEAD
   NS_LOG_FUNCTION (this << &listener);
   for (DeviceAdditionListenerList::iterator i = m_deviceAdditionListeners.begin ();
        i != m_deviceAdditionListeners.end (); i++)
@@ -800,6 +1009,18 @@ Node::UnregisterDeviceAdditionListener (DeviceAdditionListener listener)
         m_deviceAdditionListeners.erase(i);
         break;
       }
+=======
+    NS_LOG_FUNCTION(this << &listener);
+    for (DeviceAdditionListenerList::iterator i = m_deviceAdditionListeners.begin();
+         i != m_deviceAdditionListeners.end();
+         i++)
+    {
+        if ((*i).IsEqual(listener))
+        {
+            m_deviceAdditionListeners.erase(i);
+            break;
+        }
+>>>>>>> e25ff966f (Apply clang-format to codebase)
     }
 <<<<<<< HEAD
   }
@@ -807,16 +1028,18 @@ Node::UnregisterDeviceAdditionListener (DeviceAdditionListener listener)
 }
 
 void
-Node::NotifyDeviceAdded (Ptr<NetDevice> device)
+Node::NotifyDeviceAdded(Ptr<NetDevice> device)
 {
-  NS_LOG_FUNCTION (this << device);
-  for (DeviceAdditionListenerList::iterator i = m_deviceAdditionListeners.begin ();
-       i != m_deviceAdditionListeners.end (); i++)
+    NS_LOG_FUNCTION(this << device);
+    for (DeviceAdditionListenerList::iterator i = m_deviceAdditionListeners.begin();
+         i != m_deviceAdditionListeners.end();
+         i++)
     {
-      (*i) (device);
+        (*i)(device);
     }
 }
 
+<<<<<<< HEAD
 >>>>>>> b6a5ee815 (Run utils/trim-trailing-whitespace.py on codebase)
 
   void
@@ -831,3 +1054,6 @@ Node::NotifyDeviceAdded (Ptr<NetDevice> device)
   }
 
 } // namespace ns3
+=======
+} // namespace ns3
+>>>>>>> e25ff966f (Apply clang-format to codebase)

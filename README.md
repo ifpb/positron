@@ -1,11 +1,20 @@
 # The Network Simulator, Version 3
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 POSITRON: Esquema de Alocação Justa de Dispositivos IoT Multifuncionais
 ================================
 
 ## Lista de conteúdo:
 =======
+=======
+
+[![codecov](https://codecov.io/gh/nsnam/ns-3-dev-git/branch/master/graph/badge.svg)](https://codecov.io/gh/nsnam/ns-3-dev-git/branch/master/)
+[![Gitlab CI](https://gitlab.com/nsnam/ns-3-dev/badges/master/pipeline.svg)](https://gitlab.com/nsnam/ns-3-dev/-/pipelines)
+[![Github CI](https://github.com/nsnam/ns-3-dev-git/actions/workflows/per_commit.yml/badge.svg)](https://github.com/nsnam/ns-3-dev-git/actions)
+
+
+>>>>>>> 5bf6e4d64 (Update README.md to display coverage and CI badges)
 ## Table of Contents
 >>>>>>> af8689447 (Fix syntax of Markdown files)
 

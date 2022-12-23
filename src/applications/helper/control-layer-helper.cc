@@ -46,6 +46,8 @@ bool validworker = 0;
 
 ns3::EventId finishIDApp[100000];
 uint32_t qntDeApp = 0;
+uint32_t row = 0;
+int list_not_finished[10] = { };
 
 struct Worker
 {
@@ -143,6 +145,15 @@ static int callback_worker(void *data, int argc, char **argv, char **azColName)
 static int callback_workers_applications_count(void *data, int argc, char **argv, char **azColName)
 {
   qntDeApp = atoi(argv[0]);
+  return 0;
+}
+
+static int callback_applications_not_finished(void *data, int argc, char **argv, char **azColName)
+{
+  for(int i = 0; i < argc; i++){
+    list_not_finished[row] = atoi(argv[i]);
+  }
+  row = row + 1;
   return 0;
 }
 
@@ -699,6 +710,18 @@ namespace ns3
     // coloca a bateria do nó para 100
     query = "UPDATE WORKERS SET POWER = 100 WHERE ID = " + std::to_string(worker->GetId()) + ";";
     database_query(query.c_str(), callback_worker);
+
+    // verificar aplicações em espera
+    query = "SELECT ID FROM APPLICATIONS WHERE FINISH = 0 AND START < "+std::to_string(currentTime)+";";
+    database_query(query.c_str(), callback_applications_not_finished);
+
+    // verificar se a aplicação está em execução
+    for(uint32_t i = 0; i < row; i++){
+      query = "SELECT * FROM WORKERS_APPLICATIONS WHERE ID_APPLICATION = "+ std::to_string(list_not_finished[i]) +" AND FINISHED_AT != 0 LIMIT 1;";
+      database_query(query.c_str(), callback_application);
+      allocate_worker_application(application);
+    }
+    row = 0;
 
     // query = "SELECT WORKERS_APPLICATIONS.ID_APPLICATION FROM WORKERS_APPLICATIONS LEFT JOIN APPLICATIONS ON APPLICATIONS.FINISH == 0;";
     // database_query(query.c_str(), callback_apps_id);

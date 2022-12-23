@@ -46,8 +46,6 @@ bool validworker = 0;
 
 ns3::EventId finishIDApp[100000];
 uint32_t qntDeApp = 0;
-uint32_t row = 0;
-int list_not_finished[10] = { };
 
 struct Worker
 {
@@ -148,12 +146,9 @@ static int callback_workers_applications_count(void *data, int argc, char **argv
   return 0;
 }
 
-static int callback_applications_not_finished(void *data, int argc, char **argv, char **azColName)
+static int callback_applications_not_finished_count(void *data, int argc, char **argv, char **azColName)
 {
-  for(int i = 0; i < argc; i++){
-    list_not_finished[row] = atoi(argv[i]);
-  }
-  row = row + 1;
+  qntDeApp = atoi(argv[0]);
   return 0;
 }
 
@@ -386,8 +381,9 @@ namespace ns3
     }
     else
     {
-
-      std::cout << "It was not possible to allocate application : " << application.ID << std::endl;
+      double currentTime = ns3::Simulator::Now().GetSeconds();
+      std::cout << "At time " << std::to_string(currentTime).substr(0, std::to_string(currentTime).find(".") + 2) << "s: ";
+      std::cout << "it was not possible to allocate application : " << application.ID << std::endl;
       // TODO:
       // PRECISAMOS DEFINIR COMO INDICAR SE NAO TIVER WORKER PARA A APP NESSE MOMENTO
     }
@@ -705,38 +701,28 @@ namespace ns3
     std::cout << "At time " << std::to_string(currentTime).substr(0, std::to_string(currentTime).find(".") + 2) << " --- controllayerhelper::node_recharge" << std::endl;
     // std::cout << "At time " << ns3::Simulator::Now().GetSeconds() << " - Node: " << worker->GetId() << " --- controllayerhelper::node_recharge" << std::endl;
 
-    std::string query;
-
     // coloca a bateria do nó para 100
-    query = "UPDATE WORKERS SET POWER = 100 WHERE ID = " + std::to_string(worker->GetId()) + ";";
-    database_query(query.c_str(), callback_worker);
+    std::string query_update;
+    query_update = "UPDATE WORKERS SET POWER = 100 WHERE ID = " + std::to_string(worker->GetId()) + ";";
+    database_query(query_update.c_str(), callback_worker);
 
-    // verificar aplicações em espera
-    query = "SELECT ID FROM APPLICATIONS WHERE FINISH = 0 AND START < "+std::to_string(currentTime)+";";
-    database_query(query.c_str(), callback_applications_not_finished);
+    // verificar quantas aplicações estão em espera
+    std::string query_apps;
+    std::string query_count;
+    query_apps = "SELECT * FROM APPLICATIONS WHERE FINISH = 0 AND START < "+std::to_string(currentTime)+" AND ID in (SELECT ID_APPLICATION FROM WORKERS_APPLICATIONS WHERE FINISHED_AT != 0)";
+    query_count = "SELECT COUNT(*) FROM (" + query_apps + ");";
+    database_query(query_count.c_str(), callback_applications_not_finished_count);
 
-    // verificar se a aplicação está em execução
-    for(uint32_t i = 0; i < row; i++){
-      query = "SELECT * FROM WORKERS_APPLICATIONS WHERE ID_APPLICATION = "+ std::to_string(list_not_finished[i]) +" AND FINISHED_AT != 0 LIMIT 1;";
-      database_query(query.c_str(), callback_application);
+    // tentar alocar aplicações em espera
+    std::string query_loop;
+    for (uint32_t i = 0; i < qntDeApp; i++)
+    {
+      query_loop = query_apps + " LIMIT 1 OFFSET " + std::to_string(i) + ";";
+      database_query(query_loop.c_str(), callback_application);
       allocate_worker_application(application);
     }
-    row = 0;
+    qntDeApp = 0;
 
-    // query = "SELECT WORKERS_APPLICATIONS.ID_APPLICATION FROM WORKERS_APPLICATIONS LEFT JOIN APPLICATIONS ON APPLICATIONS.FINISH == 0;";
-    // database_query(query.c_str(), callback_apps_id);
-
-    // //obter a quantidade real das aplicações
-    // for (uint32_t i = 0; i < qntDeApp; i++)
-    // {
-    //   query = "SELECT * FROM APPLICATIONS WHERE ID=(SELECT ID_APPLICATION FROM WORKERS_APPLICATIONS WHERE ID_WORKER=" + std::to_string(worker->GetId()) + " LIMIT 1 OFFSET " + std::to_string(i) + ");";
-    //   database_query(query.c_str(), callback_application);
-
-    //   allocate_worker_application(application);
-    // }
-    // qntDeApp = 0;
-
-    // std::cout << "fim recharge\n";
     return 0;
   }
 

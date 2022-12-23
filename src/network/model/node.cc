@@ -246,7 +246,7 @@ namespace ns3
     m_socket->Send(p);
     m_socket->Close();
 
-    // Simulator::Schedule(Seconds(600) , &Node::Recharge, this);
+    Simulator::Schedule(Seconds(600) , &Node::Recharge, this);
   }
 
   void

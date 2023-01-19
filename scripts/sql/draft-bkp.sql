@@ -3,7 +3,7 @@
 -- .headers on
 -- .mode column
 .mode csv
-.output g3_times.csv
+.output g1_times.csv
 
 -- select ID, ID_WORKER, (PERFORMED_AT - START) as diffSTART, (DURATION - (FINISHED_AT - PERFORMED_AT)) as diffDuration
 -- from APPLICATIONS, WORKERS_APPLICATIONS 
@@ -75,5 +75,5 @@ from (
     where APPLICATIONS.ID = ID_APPLICATION AND WORKERS.ID = ID_WORKER
     -- order by grupo, inicio
 )
-where grupo = "G3"
+where grupo = "G1"
 order by inicio;

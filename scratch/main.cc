@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
     // LogComponentEnable("UdpEchoServerApplication", LOG_LEVEL_INFO);
   }
 
-  YAML::Node input = YAML::LoadFile("./scratch/input.yaml");
+  YAML::Node input = YAML::LoadFile("./scratch/180nodes/input.yaml");
   YAML::Node nodes = input["nodes"];
   YAML::Node apps = input["applications"];
 
@@ -113,7 +113,7 @@ int main(int argc, char *argv[])
   LrWpanHelper ethernet;
   //lrWpanHelper.EnableLogComponents();
   NetDeviceContainer controlDevices = ethernet.Install(controlNodes);
-  ethernet.AssociateToPan(controlDevices, 10);
+  ethernet.CreateAssociatedPan(controlDevices, 10);
 
   InternetStackHelper stack;
   stack.SetIpv4StackInstall(false);

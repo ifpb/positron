@@ -1,3 +1,7 @@
+find_package(yaml-cpp)
+include_directories(${YAML_CPP_INCLUDE_DIRS})
+link_libraries(${YAML_CPP_LIBRARIES})
+
 set(target_prefix scratch_)
 
 function(create_scratch source_files)

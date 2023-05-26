@@ -24,6 +24,9 @@ build_lib(
     model/udp-echo-server.cc
     model/udp-server.cc
     model/udp-trace-client.cc
+    model/control-layer-client.cc
+    model/control-layer-server.cc
+    helper/control-layer-helper.cc
   HEADER_FILES
     helper/bulk-send-helper.h
     helper/on-off-helper.h
@@ -48,6 +51,9 @@ build_lib(
     model/udp-echo-server.h
     model/udp-server.h
     model/udp-trace-client.h
+    model/control-layer-client.h
+    model/control-layer-server.h
+    helper/control-layer-helper.h
   LIBRARIES_TO_LINK ${libinternet}
                     ${libstats}
   TEST_SOURCES

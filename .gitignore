@@ -39,3 +39,10 @@ build/
 
 !scripts
 version.cache
+
+.idea/
+cmake_cache/
+cmake-build-debug/
+cmake-build-relwithdebinfo/
+cmake-build-minsizerel/
+cmake-build-release/

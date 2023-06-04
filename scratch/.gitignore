@@ -3,7 +3,11 @@
 !.gitignore
 !subdir/
 !scratch-simulator.cc
+<<<<<<< HEAD
 !input.yaml
 !main.cc
 !*nodes
 !dev
+=======
+!CMakeLists.txt
+>>>>>>> 9c876c7f5 (CMake buildsystem)

@@ -21,10 +21,28 @@ Instruções de instalação e uso são descritas a seguir.
 
 ## Instalação
 
+<<<<<<< HEAD
 Primeiramente, deve-se fazer um clone deste repositório através da ferramenta Git
 
 ```shell
 git clone https://github.com/ifpb/positron
+=======
+To build the set of default libraries and the example
+programs included in this package, you need to use the
+tool 'ns3'. Detailed information on how to use ns3 is
+included in the file doc/build.txt
+
+However, the real quick and dirty way to get started is to
+type the command
+```shell
+./ns3 configure --enable-examples
+```
+
+followed by
+
+```shell
+./ns3
+>>>>>>> 3c604d5b2 (Update docs with CMake and ns3 wrapper)
 ```
 
 <<<<<<< HEAD
@@ -48,8 +66,12 @@ following command, such as:
 >>>>>>> 80134a570 (Update references to RELEASE_NOTES)
 
 ```shell
+<<<<<<< HEAD
 cd positron 
 sudo bash scripts/dependencies.sh
+=======
+./ns3 --run simple-global-routing
+>>>>>>> 3c604d5b2 (Update docs with CMake and ns3 wrapper)
 ```
 
 A instalação deve continuar conforme os passos do próprio NS-3, apenas com a indicação da biblioteca YAML como diferença

@@ -146,15 +146,12 @@ static int callback_workers_applications_count(void *data, int argc, char **argv
   return 0;
 }
 
-<<<<<<< HEAD
 static int callback_applications_not_finished_count(void *data, int argc, char **argv, char **azColName)
 {
   qntDeApp = atoi(argv[0]);
   return 0;
 }
 
-=======
->>>>>>> 27288fce1 (POSITRON: initial commit)
 static int callback_application(void *data, int argc, char **argv, char **azColName)
 {
   fprintf(stderr, "%s: Callback_Application(AppId: %s)\n", (const char *)data, argv[0]);
@@ -288,16 +285,9 @@ static ApplicationStruct select_application_by_id(int id)
 
 static int insert_worker_application(int id_worker, int id_application, float performed_at)
 {
-<<<<<<< HEAD
   std::ostringstream oss;
   oss << "INSERT INTO WORKERS_APPLICATIONS (ID_WORKER,ID_APPLICATION,PERFORMED_AT,FINISHED_AT) VALUES ";
   oss << "(" << id_worker << ", " << id_application << ", " << performed_at << ", 0 ); ";
-=======
-
-  char sql[] = "INSERT INTO WORKERS_APPLICATIONS (ID_WORKER,ID_APPLICATION,PERFORMED_AT,FINISHED_AT) VALUES ";
-  std::ostringstream oss;
-  oss << sql << "(" << id_worker << ", " << id_application << ", " << performed_at << ", 0 ); ";
->>>>>>> 27288fce1 (POSITRON: initial commit)
 
   const std::string sql2 = oss.str();
   const char *sql3 = sql2.c_str();
@@ -309,15 +299,9 @@ static int insert_worker_application(int id_worker, int id_application, float pe
 static Worker get_worker_by_application_id(int id, float start)
 {
   /* Create SQL statement */
-<<<<<<< HEAD
   std::ostringstream oss;
   oss << "SELECT * from WORKERS WHERE ID = (SELECT ID_WORKER from WORKERS_APPLICATIONS WHERE ID_APPLICATION = ";
   oss << id << " AND FINISHED_AT = 0" << ");";
-=======
-  char sql[] = "SELECT * from WORKERS WHERE ID = (SELECT ID_WORKER from WORKERS_APPLICATIONS WHERE ID_APPLICATION = ";
-  std::ostringstream oss;
-  oss << sql << id << " AND PERFORMED_AT = " << start << " AND FINISHED_AT = 0" << ");";
->>>>>>> 27288fce1 (POSITRON: initial commit)
 
   const std::string sql2 = oss.str();
   const char *sql3 = sql2.c_str();
@@ -342,7 +326,6 @@ namespace ns3
     node->RemoveApplication();
 
     // update relational table
-<<<<<<< HEAD
     // std::ostringstream oss;
     // oss << "UPDATE WORKERS_APPLICATIONS SET";
     // oss << " FINISHED_AT= " << finished_at << " WHERE (ID_WORKER= " << worker.ID << " AND ID_APPLICATION= " << application.ID << " AND PERFORMED_AT= " << application.START << ");"
@@ -351,15 +334,6 @@ namespace ns3
     oss << "UPDATE WORKERS_APPLICATIONS SET FINISHED_AT = " << finished_at;
     oss << " WHERE (ID_WORKER= " << worker.ID << " AND ID_APPLICATION= " << application.ID << " AND FINISHED_AT = 0);"
         << " UPDATE APPLICATIONS SET FINISH = " << finish << " WHERE ID = " << application.ID << ";";
-=======
-    char sql[] = "UPDATE WORKERS_APPLICATIONS SET";
-
-    // std::string finish = finished_at == application.START + application.DURATION ? "1": "0";
-
-    std::ostringstream oss;
-    oss << sql << " FINISHED_AT= " << finished_at << " WHERE (ID_WORKER= " << worker.ID << " AND ID_APPLICATION= " << application.ID << " AND PERFORMED_AT= " << application.START << ");"
-        << "UPDATE APPLICATIONS SET FINISH = " << finish << " WHERE ID = " << application.ID << ";";
->>>>>>> 27288fce1 (POSITRON: initial commit)
 
     const std::string sql2 = oss.str();
     const char *sql3 = sql2.c_str();
@@ -382,7 +356,6 @@ namespace ns3
       std::cout << "allocate_worker_application called in worker " << worker.ID << " and application " << application.ID << std::endl;
       // std::cout << "Application Start: " << application.START << " - Application Duration: " << application.DURATION << std::endl;
 
-<<<<<<< HEAD
       // insert_worker_application(worker.ID, application.ID, application.START);
       insert_worker_application(worker.ID, application.ID, currentTime);
       NS_LOG_UNCOND("\n");
@@ -396,19 +369,6 @@ namespace ns3
       NS_LOG_UNCOND("STORAGE = " << application.STORAGE << "\t \t" << "STORAGE = " << worker.STORAGE);
       NS_LOG_UNCOND("FINISH = " << application.FINISH << "\t \t" << "TRANSMISSION = " << worker.TRANSMISSION);
       NS_LOG_UNCOND("\n");
-=======
-      insert_worker_application(worker.ID, application.ID, application.START);
-      printf("\n");
-      printf("NODE \t \t \t \t APPLICATION\n");
-      printf("ID = %d \t \t \t \t ID = %d\n", worker.ID, application.ID);
-      printf("INITIAL CONSUMPTION = %.4f \t START = %.4f\n", worker.INITIAL_CONSUMPTION, application.START);
-      printf("POWER = %.4f \t \t POLICY = %s\n", worker.POWER, application.POLICY);
-      printf("CURRENT CONSUMPTION = %.4f \t DURATION = %.4f\n", worker.CURRENT_CONSUMPTION, application.DURATION);
-      printf("CPU = %.4f \t \t \t CPU = %.4f\n", worker.CPU, application.CPU);
-      printf("MEMORY = %.4f \t \t MEMORY = %.4f\n", worker.MEMORY, application.MEMORY);
-      printf("STORAGE = %.4f \t \t STORAGE = %.4f\n", worker.STORAGE, application.STORAGE);
-      printf("TRANSMISSION = %.4f \t \t FINISH = %d\n\n", worker.TRANSMISSION, application.FINISH);
->>>>>>> 27288fce1 (POSITRON: initial commit)
 
       Ptr<Node> node = controlNodes.Get(worker.ID);
       node->AddApplication();
@@ -421,14 +381,9 @@ namespace ns3
     }
     else
     {
-<<<<<<< HEAD
       double currentTime = ns3::Simulator::Now().GetSeconds();
       std::cout << "At time " << std::to_string(currentTime).substr(0, std::to_string(currentTime).find(".") + 2) << "s: ";
       std::cout << "it was not possible to allocate application : " << application.ID << std::endl;
-=======
-
-      std::cout << "Não foi possível alocar a aplicação: " << application.ID << std::endl;
->>>>>>> 27288fce1 (POSITRON: initial commit)
       // TODO:
       // PRECISAMOS DEFINIR COMO INDICAR SE NAO TIVER WORKER PARA A APP NESSE MOMENTO
     }
@@ -746,7 +701,6 @@ namespace ns3
     std::cout << "At time " << std::to_string(currentTime).substr(0, std::to_string(currentTime).find(".") + 2) << " --- controllayerhelper::node_recharge" << std::endl;
     // std::cout << "At time " << ns3::Simulator::Now().GetSeconds() << " - Node: " << worker->GetId() << " --- controllayerhelper::node_recharge" << std::endl;
 
-<<<<<<< HEAD
     // coloca a bateria do nó para 100
     std::string query_update;
     query_update = "UPDATE WORKERS SET POWER = 100 WHERE ID = " + std::to_string(worker->GetId()) + ";";
@@ -769,28 +723,6 @@ namespace ns3
     }
     qntDeApp = 0;
 
-=======
-    std::string query;
-
-    // coloca a bateria do nó para 100
-    query = "UPDATE WORKERS SET POWER = 100 WHERE ID = " + std::to_string(worker->GetId()) + ";";
-    database_query(query.c_str(), callback_worker);
-
-    // query = "SELECT WORKERS_APPLICATIONS.ID_APPLICATION FROM WORKERS_APPLICATIONS LEFT JOIN APPLICATIONS ON APPLICATIONS.FINISH == 0;";
-    // database_query(query.c_str(), callback_apps_id);
-
-    // //obter a quantidade real das aplicações
-    // for (uint32_t i = 0; i < qntDeApp; i++)
-    // {
-    //   query = "SELECT * FROM APPLICATIONS WHERE ID=(SELECT ID_APPLICATION FROM WORKERS_APPLICATIONS WHERE ID_WORKER=" + std::to_string(worker->GetId()) + " LIMIT 1 OFFSET " + std::to_string(i) + ");";
-    //   database_query(query.c_str(), callback_application);
-
-    //   allocate_worker_application(application);
-    // }
-    // qntDeApp = 0;
-
-    // std::cout << "fim recharge\n";
->>>>>>> 27288fce1 (POSITRON: initial commit)
     return 0;
   }
 

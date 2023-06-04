@@ -113,7 +113,7 @@ int main(int argc, char *argv[])
   LrWpanHelper ethernet;
   //lrWpanHelper.EnableLogComponents();
   NetDeviceContainer controlDevices = ethernet.Install(controlNodes);
-  ethernet.AssociateToPan(controlDevices, 10);
+  ethernet.CreateAssociatedPan(controlDevices, 10);
 
   InternetStackHelper stack;
   stack.SetIpv4StackInstall(false);

@@ -11,10 +11,7 @@
 #include "ns3/point-to-point-module.h"
 #include "ns3/applications-module.h"
 #include "ns3/ipv4-global-routing-helper.h"
-<<<<<<< HEAD
 // #include "ns3/random-variable-stream.h"
-=======
->>>>>>> 61494877c (POSITRON: updating .gitignore scratch folder)
 #include <yaml-cpp/yaml.h>
 
 using namespace ns3;
@@ -28,20 +25,14 @@ int main(int argc, char *argv[])
   bool logging = false;
   bool tracing = false;
   bool balanced = false;
-<<<<<<< HEAD
   bool powerless = false;
-=======
->>>>>>> 61494877c (POSITRON: updating .gitignore scratch folder)
   uint32_t seed = 42;
 
   CommandLine cmd(__FILE__);
   cmd.AddValue("logging", "Tell control applications to logging if true", logging);
   cmd.AddValue("tracing", "Tell control applications to tracing if true", tracing);
   cmd.AddValue("balanced", "Tell control whether is a balanced policy", balanced);
-<<<<<<< HEAD
   cmd.AddValue("powerless", "Set simulation scenario with battery loss", powerless);
-=======
->>>>>>> 61494877c (POSITRON: updating .gitignore scratch folder)
   cmd.AddValue("seed", "Set seed as an input parameter", seed);
 
   cmd.Parse(argc, argv);
@@ -52,16 +43,11 @@ int main(int argc, char *argv[])
   {
     LogComponentEnable("ControlLayerClientApplication", LOG_LEVEL_INFO);
     LogComponentEnable("ControlLayerServerApplication", LOG_LEVEL_INFO);
-<<<<<<< HEAD
     // LogComponentEnable("UdpEchoClientApplication", LOG_LEVEL_INFO);
     // LogComponentEnable("UdpEchoServerApplication", LOG_LEVEL_INFO);
-=======
-    LogComponentEnable("UdpEchoClientApplication", LOG_LEVEL_INFO);
-    LogComponentEnable("UdpEchoServerApplication", LOG_LEVEL_INFO);
->>>>>>> 61494877c (POSITRON: updating .gitignore scratch folder)
   }
 
-  YAML::Node input = YAML::LoadFile("./scratch/180nodes/input.yaml");
+  YAML::Node input = YAML::LoadFile("./scratch/input.yaml");
   YAML::Node nodes = input["nodes"];
   YAML::Node apps = input["applications"];
 
@@ -97,7 +83,6 @@ int main(int argc, char *argv[])
         string auxWorkerID = attr["name"].as<string>() + to_string(nodeQtd - i);
         Names::Add(auxWorkerID, workerNodes.Get(nodeId));
       }
-<<<<<<< HEAD
 
       if (powerless) {
         int tenpercent = nodeQtd/10;
@@ -112,8 +97,6 @@ int main(int argc, char *argv[])
           }
         } 
       }
-=======
->>>>>>> 61494877c (POSITRON: updating .gitignore scratch folder)
     }
   }
   controlNodes.Add(workerNodes);
@@ -148,37 +131,21 @@ int main(int argc, char *argv[])
 
   ApplicationContainer controlApps = controlServer.Install(controlNodes);
   controlApps.Start(Seconds(1.0));
-<<<<<<< HEAD
   controlApps.Stop(Seconds(2*simulationTime));
 
   ApplicationContainer workerApps = workerServer.Install(workerNodes);
   workerApps.Start(Seconds(1.0));
   workerApps.Stop(Seconds(2*simulationTime));
-=======
-  controlApps.Stop(Seconds(simulationTime));
-
-  ApplicationContainer workerApps = workerServer.Install(workerNodes);
-  workerApps.Start(Seconds(1.0));
-  workerApps.Stop(Seconds(simulationTime));
->>>>>>> 61494877c (POSITRON: updating .gitignore scratch folder)
 
   ControlLayerClientHelper controller(Ipv6Address("2001:1::2"), 9);
   ApplicationContainer controlClient = controller.Install("/Names/Controller");
   controlClient.Start(Seconds(1.0));
-<<<<<<< HEAD
   controlClient.Stop(Seconds(2*simulationTime));
-=======
-  controlClient.Stop(Seconds(simulationTime));
->>>>>>> 61494877c (POSITRON: updating .gitignore scratch folder)
 
   controller.DropDatabase();
   controller.CreateDatabase();
   controller.initialize(controlNodes, controlInterfaces, balanced);
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 61494877c (POSITRON: updating .gitignore scratch folder)
   cout << "List of nodes:" << endl;
   for (NodeList::Iterator node = NodeList::Begin(); node != NodeList::End(); node++)
   {
@@ -207,15 +174,10 @@ int main(int argc, char *argv[])
   {
 
     std::string policy = apps[i]["policy"].as<std::string>();
-<<<<<<< HEAD
-=======
-    float start = apps[i]["start"].as<float>();
->>>>>>> 61494877c (POSITRON: updating .gitignore scratch folder)
     float cpu = apps[i]["cpu"].as<float>();
     float memory = apps[i]["memory"].as<float>();
     float storage = apps[i]["storage"].as<float>();
 
-<<<<<<< HEAD
     float start = 0.0;
     float startAux = apps[i]["start"].as<float>();
     float startMin = startAux + 10; // plus 10s to avoid starting at the very beginning
@@ -234,27 +196,13 @@ int main(int argc, char *argv[])
       rndDuration->SetAttribute ("Mean", DoubleValue (durationMean));
       rndDuration->SetAttribute ("Variance", DoubleValue (durationVar));
       duration = rndDuration->GetValue ();
-=======
-    float duration = 0.0;
-    float mean = apps[i]["duration"].as<float>();
-    float variance = 30.0;
-    while(duration <= 0.0) {
-        Ptr<NormalRandomVariable> auxDuration = CreateObject<NormalRandomVariable> ();
-        auxDuration->SetAttribute ("Mean", DoubleValue (mean));
-        auxDuration->SetAttribute ("Variance", DoubleValue (variance));
-        duration = auxDuration->GetValue ();
->>>>>>> 61494877c (POSITRON: updating .gitignore scratch folder)
     }
 
     int app_id = i + 1;
 
-<<<<<<< HEAD
     float startNow = 0.0;
     // Simulator::Schedule(Seconds(start), &ControlLayerClientHelper::AddAppToDatabase, &controller, policy, start, duration, cpu, memory, storage);
     Simulator::Schedule(Seconds(startNow), &ControlLayerClientHelper::AddAppToDatabase, &controller, policy, start, duration, cpu, memory, storage);
-=======
-    Simulator::Schedule(Seconds(start), &ControlLayerClientHelper::AddAppToDatabase, &controller, policy, start, duration, cpu, memory, storage);
->>>>>>> 61494877c (POSITRON: updating .gitignore scratch folder)
     Simulator::Schedule(Seconds(start), &ControlLayerClientHelper::AllocateAPP, &controller, app_id);
 
   }

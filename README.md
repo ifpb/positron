@@ -9,8 +9,6 @@ POSITRON: Esquema de Alocação Justa de Dispositivos IoT Multifuncionais
 3) [Utilização](#utilização)
 4) [Contatos](#contatos)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 POSITRON: Esquema de Alocação Justa de Dispositivos IoT Multifuncionais
 ================================
 
@@ -27,27 +25,21 @@ Para o seu funcionamento, é necessária a instalação prévia do SQLite 3 e da
 Instruções de instalação e uso são descritas a seguir.
 
 
-<<<<<<< HEAD
->>>>>>> 5bf6e4d64 (Update README.md to display coverage and CI badges)
 ## Table of Contents
->>>>>>> af8689447 (Fix syntax of Markdown files)
 
 1) [Informações](#informações)
 2) [Instalação](#instalação)
 3) [Utilização](#utilização)
 4) [Contatos](#contatos)
 
-<<<<<<< HEAD
 =======
 > **NOTE**: Much more substantial information about ns-3 can be found at
 <https://www.nsnam.org>
->>>>>>> af8689447 (Fix syntax of Markdown files)
 
 ## Informações
 
 O POSITRON foi implementado e testado com base na versão 3.35 do [NS-3](https://www.nsnam.org), em um ambiente Linux Ubuntu 20.04.
 
-<<<<<<< HEAD
 Para o seu funcionamento, é necessária a instalação prévia do SQLite 3 e da biblioteca YAML CPP.
 
 Instruções de instalação e uso são descritas a seguir.
@@ -61,12 +53,10 @@ process that the project tries to follow is described here:
 This README excerpts some details from a more extensive
 tutorial that is maintained at:
 <https://www.nsnam.org/documentation/latest/>
->>>>>>> af8689447 (Fix syntax of Markdown files)
 
 
 ## Instalação
 
-<<<<<<< HEAD
 Primeiramente, deve-se fazer um clone deste repositório através da ferramenta Git
 
 ```shell
@@ -83,7 +73,6 @@ type the command
 ## Instalação
 
 Primeiramente, deve-se fazer um clone deste repositório através da ferramenta Git
->>>>>>> 27288fce1 (POSITRON: initial commit)
 
 ```shell
 git clone https://github.com/leandro-hbs/teste-ns-3
@@ -92,12 +81,9 @@ git clone https://github.com/leandro-hbs/teste-ns-3
 Após a clonagem do repositório, recomenda-se a instalação das dependências
 
 ```shell
-<<<<<<< HEAD
 ./ns3
->>>>>>> 3c604d5b2 (Update docs with CMake and ns3 wrapper)
 ```
 
-<<<<<<< HEAD
 Após a clonagem do repositório, recomenda-se a instalação das dependências
 =======
 in the directory which contains this README file. The files
@@ -115,26 +101,15 @@ improve the portability of the code to these other platforms.
 On recent Linux systems, once you have built ns-3 (with examples
 enabled), it should be easy to run the sample programs with the
 following command, such as:
->>>>>>> 80134a570 (Update references to RELEASE_NOTES)
 
 ```shell
-<<<<<<< HEAD
-<<<<<<< HEAD
 cd positron 
 sudo bash scripts/dependencies.sh
-<<<<<<< HEAD
-=======
-./ns3 --run simple-global-routing
->>>>>>> 3c604d5b2 (Update docs with CMake and ns3 wrapper)
-=======
 ./ns3 run simple-global-routing
->>>>>>> 33f2ee841 (doc: update ns3 API)
 ```
 
 A instalação deve continuar conforme os passos do próprio NS-3, apenas com a indicação da biblioteca YAML como diferença
 
-<<<<<<< HEAD
-=======
 ## Getting access to the ns-3 documentation
 
 Once you have verified that your build of ns-3 works by running
@@ -166,11 +141,10 @@ familiar with it.
 
 If you have successfully installed git, you can get
 a copy of the development version with the following command:
-=======
+
+```
 cd teste-ns-3
 sudo bash script/dependencies.sh
-=======
->>>>>>> 21a67c264 (POSITRON: scripts folder and README update)
 ```
 
 A instalação deve continuar conforme os passos do próprio NS-3, apenas com a indicação da biblioteca YAML como diferença
@@ -180,11 +154,8 @@ CXFLAGS_EXTRA="-I/usr/include/yaml-cpp" LDFLAGS="-lyaml-cpp" ./waf configure --e
 ```
 
 seguido de
->>>>>>> 27288fce1 (POSITRON: initial commit)
 
->>>>>>> af8689447 (Fix syntax of Markdown files)
 ```shell
-<<<<<<< HEAD
 CXFLAGS_EXTRA="-I/usr/include/yaml-cpp" LDFLAGS="-lyaml-cpp" ./waf configure --enable-examples --enable-tests
 ```
 
@@ -198,7 +169,6 @@ seguido de
 ./waf build
 ```
 
->>>>>>> 27288fce1 (POSITRON: initial commit)
 ## Utilização
 
 Uma vez compilado, pode-se executar o POSITRON a partir dos arquivos main.cc e input.yaml no diretório scracth.
@@ -225,7 +195,6 @@ Exemplos de parâmetros de simulação
 
 ## Contatos
 
-<<<<<<< HEAD
 * Aldri Santos (aldri[at]dcc.ufmg.br)
 * Ayrton M. Porto de Gois (ayrton.porto[at]academico.ifpb.edu.br)
 * Diego M. Rocha (diego.rocha[at]academico.ifpb.edu.br)
@@ -235,11 +204,3 @@ Exemplos de parâmetros de simulação
 * Lucas Carvalho Goncalves Silva (lucas.goncalves[at]academico.ifpb.edu.br)
 * Paulo Ditarso Maciel Jr. (paulo.maciel[at]ifpb.edu.br)
 * Ricardo Pereira Lins (ricardo.lins[at]academico.ifpb.edu.br)
-=======
-* Diego M. Rocha (diego.rocha[at]academico.ifpb.edu.br)
-* Ayrton M. Porto de Gois (ayrton.porto[at]academico.ifpb.edu.br)
-* Leandro H. Batista da silva (leandro.batista[at]academico.ifpb.edu.br)
-* Fernando Matos (fernando[at]ci.ufpb.br)
-* Aldri Santos (aldri[at]dcc.ufmg.br)
-* Paulo Ditarso Maciel Jr. (paulo.maciel[at]ifpb.edu.br)
->>>>>>> 27288fce1 (POSITRON: initial commit)

@@ -23,10 +23,6 @@
 
 #include <vector>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 27288fce1 (POSITRON: initial commit)
 #include "ns3/object.h"
 #include "ns3/callback.h"
 #include "ns3/ptr.h"
@@ -36,13 +32,6 @@
 #include "ns3/event-id.h"
 
 namespace ns3 {
-<<<<<<< HEAD
-=======
-namespace ns3
-{
->>>>>>> e25ff966f (Apply clang-format to codebase)
-=======
->>>>>>> 27288fce1 (POSITRON: initial commit)
 
 class Application;
 class Packet;
@@ -92,8 +81,6 @@ public:
    */
   uint32_t GetId (void) const;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 // -----------------------------------------------
 
   double GetPower (void);
@@ -122,66 +109,6 @@ public:
 
   void RemoveApplication (void);
 
-
-// -----------------------------------------------
-
-  /**
-   * In the future, ns3 nodes may have clock that returned a local time
-   * different from the virtual time Simulator::Now().
-   * This function is currently a placeholder to ease the development of this feature.
-   * For now, it is only an alias to Simulator::Now()
-   *
-   * \return The time as seen by this node
-   */
-  Time GetLocalTime () const;
-=======
-    /**
-     * In the future, ns3 nodes may have clock that returned a local time
-     * different from the virtual time Simulator::Now().
-     * This function is currently a placeholder to ease the development of this feature.
-     * For now, it is only an alias to Simulator::Now()
-     *
-     * \return The time as seen by this node
-     */
-    Time GetLocalTime() const;
->>>>>>> e25ff966f (Apply clang-format to codebase)
-=======
-// -----------------------------------------------
->>>>>>> 27288fce1 (POSITRON: initial commit)
-
-  double GetPower (void);
-
-  double GetInitialConsumption (void) const;
-
-  double GetCurrentConsumption (void) const;
-
-  double GetCpu (void) const;
-
-  double GetMemory (void) const;
-
-  double GetTransmission (void) const;
-
-  double GetStorage (void) const;
-
-  void UpdateEvent (void);
-
-  void OutOfPower (void);
-
-  void Recharge (void);
-
-  void AttPower (void);
-
-  void AddApplication (void);
-
-  void RemoveApplication (void);
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-  /**
-   * \brief Finish node's construction by setting the correct node ID.
-   */
-  void Construct ();
-=======
 
 // -----------------------------------------------
 
@@ -372,7 +299,6 @@ private:
    * \brief Finish node's construction by setting the correct node ID.
    */
   void Construct (void);
->>>>>>> 27288fce1 (POSITRON: initial commit)
 
   /**
    * \brief Protocol handler entry.
@@ -406,17 +332,6 @@ private:
   std::vector<Ptr<Application> > m_applications; //!< Applications associated to this node
   ProtocolHandlerList m_handlers; //!< Protocol handlers in the node
   DeviceAdditionListenerList m_deviceAdditionListeners; //!< Device addition listeners in the node
-<<<<<<< HEAD
-=======
-    uint32_t m_id;                                        //!< Node id for this node
-    uint32_t m_sid;                                       //!< System id for this node
-    std::vector<Ptr<NetDevice>> m_devices;                //!< Devices associated to this node
-    std::vector<Ptr<Application>> m_applications;         //!< Applications associated to this node
-    ProtocolHandlerList m_handlers;                       //!< Protocol handlers in the node
-    DeviceAdditionListenerList m_deviceAdditionListeners; //!< Device addition listeners in the node
->>>>>>> e25ff966f (Apply clang-format to codebase)
-=======
->>>>>>> 27288fce1 (POSITRON: initial commit)
 };
 
 } // namespace ns3

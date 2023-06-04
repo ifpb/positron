@@ -27,7 +27,25 @@ Primeiramente, deve-se fazer um clone deste repositório através da ferramenta 
 git clone https://github.com/ifpb/positron
 ```
 
+<<<<<<< HEAD
 Após a clonagem do repositório, recomenda-se a instalação das dependências
+=======
+in the directory which contains this README file. The files
+built will be copied in the build/ directory.
+
+The current codebase is expected to build and run on the
+set of platforms listed in the [release notes](RELEASE_NOTES.md)
+file.
+
+Other platforms may or may not work: we welcome patches to
+improve the portability of the code to these other platforms.
+
+## Running ns-3
+
+On recent Linux systems, once you have built ns-3 (with examples
+enabled), it should be easy to run the sample programs with the
+following command, such as:
+>>>>>>> 80134a570 (Update references to RELEASE_NOTES)
 
 ```shell
 cd positron 

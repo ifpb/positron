@@ -29,7 +29,7 @@ Após a clonagem do repositório, recomenda-se a instalação das dependências
 
 ```shell
 cd positron 
-sudo bash scripts/dependencies.sh
+bash scripts/dependencies.sh
 ```
 
 A instalação deve continuar conforme os passos do próprio NS-3

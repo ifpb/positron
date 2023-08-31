@@ -26,6 +26,7 @@ int main(int argc, char *argv[])
   bool tracing = false;
   bool balanced = false;
   bool powerless = false;
+  uint32_t loss = 0;
   uint32_t seed = 42;
 
   CommandLine cmd(__FILE__);
@@ -33,6 +34,7 @@ int main(int argc, char *argv[])
   cmd.AddValue("tracing", "Tell control applications to tracing if true", tracing);
   cmd.AddValue("balanced", "Tell control whether is a balanced policy", balanced);
   cmd.AddValue("powerless", "Set simulation scenario with battery loss", powerless);
+  cmd.AddValue("loss", "Set simulation battery loss percentega", loss);
   cmd.AddValue("seed", "Set seed as an input parameter", seed);
 
   cmd.Parse(argc, argv);
@@ -85,13 +87,15 @@ int main(int argc, char *argv[])
       }
 
       if (powerless) {
-        int tenpercent = nodeQtd/10;
-        int count = 0;
 
+        float factor = (float)loss/100;
+        int losspercent = nodeQtd * factor;
+        int count = 0;
+      
         for (int i = 0; i < nodeQtd; i++) {
           int nodeId = workerNodes.GetN() - (nodeQtd) + i;
           count += 1;
-          if (count <= tenpercent) {
+          if (count <= losspercent) {
             workerNodes.Get (nodeId)->SetAttribute ("InitialConsumption", DoubleValue(0.001157407));
             workerNodes.Get (nodeId)->SetAttribute ("CurrentConsumption", DoubleValue(0.001157407));
           }

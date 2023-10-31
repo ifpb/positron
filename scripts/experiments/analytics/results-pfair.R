@@ -1,10 +1,6 @@
 rm(list = ls())
 
-powerScenario <- readline(prompt="\nEnter power scenario (powerfull|powerless): ")
-if ( powerScenario != "powerfull" & powerScenario != "powerless" ) {
-  print("Error: invalid power scenario!!")
-  quit()
-}
+powerScenario <- "powerless"
 
 # Packages needed
 packages_needed <- c("ggplot2", "Rmisc", "tidyverse", "colorspace", "cowplot",
@@ -45,7 +41,7 @@ for (policie in policies) {
   for (scenario in scenarios) {
     for (turn in turns) {
 
-      filename <- paste("../results/", powerScenario, "/pfair-", scenario, "nodes-", policie, "-", turn, ".csv", sep = "")
+      filename <- paste("../results/IJNM23/", powerScenario, "/30/pfair-", scenario, "nodes-", policie, "-", turn, ".csv", sep = "")
       auxFile <- read.csv(filename)
 
       for (group in groups) {

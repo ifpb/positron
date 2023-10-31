@@ -41,12 +41,12 @@ auxSatDF <- data.frame( matrix(ncol = 5, nrow = 0) )
 colnames(auxSatDF) <- c("power", "policies", "nodes",  "turns", "values")
 
 scenarios <- c("30", "60", "90", "120", "150", "180")
-powerScenarios <- c("powerfull", "powerless")
+powerScenarios <- c("powerless")
 
 for (powerScenario in powerScenarios) {
   for (scenario in scenarios) {
 
-    filename <- paste("../results/", powerScenario, "/pused-", scenario, "nodes.txt", sep = "")
+    filename <- paste("../results/IJNM23/", powerScenario, "/30/pused-", scenario, "nodes.txt", sep = "")
     auxFile <- read.csv(filename)
 
     auxDF <- data.frame(

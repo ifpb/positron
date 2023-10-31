@@ -1,9 +1,9 @@
 #! /bin/bash
 
 # usage example, from POSITRON workdir
-# ./scripts/run-powerfull.sh
+# ./scripts/run-powerfull-IJNM.sh
 
-turns=$(seq 1 3)
+turns=$(seq 1 30)
 workdir=$PWD
 resultsdir="$workdir/scripts/experiments/results/IJNM23/powerfull"
 scenarios='30nodes 60nodes 90nodes 120nodes 150nodes 180nodes'

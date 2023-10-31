@@ -1,10 +1,6 @@
 rm(list = ls())
 
-powerScenario <- readline(prompt="\nEnter power scenario (powerfull|powerless): ")
-if ( powerScenario != "powerfull" & powerScenario != "powerless" ) {
-  print("Error: invalid power scenario!!")
-  quit()
-}
+powerScenario <- "powerless"
 
 # Packages needed
 packages_needed <- c("ggplot2", "Rmisc", "tidyverse", "colorspace", 
@@ -44,7 +40,7 @@ scenarios <- c("30", "60", "90", "120", "150", "180")
 
 for (scenario in scenarios) {
 
-  filename <- paste("../results/", powerScenario, "/ppreempted-", scenario, "nodes.txt", sep = "")
+  filename <- paste("../results/IJNM23/", powerScenario, "/30/ppreempted-", scenario, "nodes.txt", sep = "")
   auxFile <- read.csv(filename)
 
   auxDF <- data.frame(

@@ -114,8 +114,8 @@ scale_fill_manual("Policies:", labels = c("Balancing", "Saturation"),
                   values = c("#FB9A99", "#CAB2D6")) +
 geom_errorbar(aes(ymin=lower, ymax=upper), width=.2,
               position = position_dodge(.9)) +
-labs(title = "", x = "Total amount of workers", 
-      y =  "Percentage of preempted applications (%)") +
+labs(title = "", x = "Total amount of Workers", 
+      y =  "% of preempted applications") +
 theme(
   legend.position = "top",
   legend.text = element_text(face = "bold", size = 20),

@@ -21,6 +21,7 @@ do
     do
 
         ./ns3 run "main --balanced=true --seed=$turn --powerless=false" > log-bal.tmp 2>&1
+        cp scratch/database.db $resultsdir/sqlite-$scenario-bal-$turn.db
         sqlite3 scratch/database.db < scripts/sql/pfair.sql
         mv temp.csv $resultsdir/pfair-$scenario-bal-$turn.csv
         testUsedBal=$(sqlite3 scratch/database.db < scripts/sql/pused.sql)
@@ -28,6 +29,7 @@ do
         testMakespanBal=$(sqlite3 scratch/database.db < scripts/sql/makespan.sql)
 
         ./ns3 run "main --balanced=false --seed=$turn --powerless=false" > log-sat.tmp 2>&1
+        cp scratch/database.db $resultsdir/sqlite-$scenario-sat-$turn.db
         sqlite3 scratch/database.db < scripts/sql/pfair.sql
         mv temp.csv $resultsdir/pfair-$scenario-sat-$turn.csv
         testUsedSat=$(sqlite3 scratch/database.db < scripts/sql/pused.sql)

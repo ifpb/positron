@@ -83,3 +83,25 @@
 
 -- select count(*) from (select * from APPLICATIONS where FINISH = 0 and START < 6197 and ID in (select ID_APPLICATION from WORKERS_APPLICATIONS where FINISHED_AT != 0));
 -- select * from APPLICATIONS where FINISH = 0 and START < 6197 and ID in (select ID_APPLICATION from WORKERS_APPLICATIONS where FINISHED_AT != 0);
+
+-- select * from APPLICATIONS --where FINISH = 0
+-- select * from WORKERS order by ID;
+-- select * from WORKERS_APPLICATIONS order by ID_APPLICATION;
+
+-- with WORKERS_APPLICATIONS_FILTRED as (
+    -- select *, max(ID_APPLICATION)
+    -- from WORKERS_APPLICATIONS
+-- )
+-- select ID as app, ID_WORKER as node, START as arrival, DURATION as duration, round(FINISHED_AT - START + 0.5,0) as makespan, (DURATION/(round(FINISHED_AT - START + 0.5,0))) as result
+-- from APPLICATIONS, WORKERS_APPLICATIONS
+-- where ID_APPLICATION in (
+--     select max(ID_APPLICATION)
+--     from WORKERS_APPLICATIONS
+--     group by ID_APPLICATION
+-- ) and ID = ID_APPLICATION
+-- order by ID;
+
+-- select ID as app, ID_WORKER as node, START as arrival, DURATION as duration, max(FINISHED_AT) as finished, round(max(FINISHED_AT) - START + 0.5,0) as makespan
+-- from APPLICATIONS, WORKERS_APPLICATIONS
+-- where ID = ID_APPLICATION
+-- group by ID_APPLICATION

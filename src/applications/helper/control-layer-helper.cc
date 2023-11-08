@@ -250,7 +250,7 @@ static bool select_worker(float cpu, float memory, float storage, char *policy, 
       << memory << " AND\
               storage_remaining >="
       << storage << " AND\
-              battery > 0\
+              battery > 50\
           LIMIT 1;";
 
   const std::string sql2 = oss.str();

@@ -1,7 +1,7 @@
 -- usage: POSITRON_FOLDER $ sqlite3 scratch/database.db < scripts/sql/draft.sql
 
-.headers on
-.mode column
+-- .headers on
+-- .mode column
 -- .mode csv
 -- .output g3_times.csv
 
@@ -103,5 +103,10 @@
 
 -- select ID as app, ID_WORKER as node, START as arrival, DURATION as duration, max(FINISHED_AT) as finished, round(max(FINISHED_AT) - START + 0.5,0) as makespan
 -- from APPLICATIONS, WORKERS_APPLICATIONS
--- where ID = ID_APPLICATION
+-- where ID = ID_APPLICATION and FINISH != 0
 -- group by ID_APPLICATION
+
+select DURATION as duration, round(max(FINISHED_AT) - START + 0.5,0) as makespan
+from APPLICATIONS, WORKERS_APPLICATIONS
+where ID = ID_APPLICATION and FINISH != 0
+group by ID_APPLICATION

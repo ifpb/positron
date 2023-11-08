@@ -37,7 +37,7 @@ auxSatDF <- data.frame( matrix(ncol = 5, nrow = 0) )
 colnames(auxSatDF) <- c("policies", "loss", "nodes",  "turns", "values")
 
 scenarios <- c("30", "60", "90", "120", "150", "180")
-lossScenarios <- c("10", "20", "30")
+lossScenarios <- c("10", "20", "25", "30", "50")
 
 for (lossScenario in lossScenarios) {
   for (scenario in scenarios) {
@@ -92,7 +92,7 @@ for (lossScenario in lossScenarios) {
       )
       auxBalAvg <- rbind(auxBalAvg, auxDF)
 
-      auxVector <- Rmisc::CI(data[data$policies == "sat" & data$nodes == scenario,]$values)
+      auxVector <- Rmisc::CI(data[data$policies == "sat" & data$loss == lossScenario & data$nodes == scenario,]$values)
       auxDF <- data.frame(
         policies="sat",
         loss=lossScenario, 
@@ -123,6 +123,7 @@ for (lossScenario in lossScenarios) {
   geom_bar(stat = "identity", position = position_dodge(), alpha=0.6) +
   scale_fill_manual("Policies:", labels = c("Balancing", "Saturation"), 
                     values = c("#FB9A99", "#CAB2D6")) +
+  scale_y_continuous(limits = c(0,26)) +                    
   geom_errorbar(aes(ymin=lower, ymax=upper), width=.2,
                 position = position_dodge(.9)) +
   labs(title = "", x = "Total amount of Workers", 

@@ -41,7 +41,7 @@ auxSatDF <- data.frame( matrix(ncol = 6, nrow = 0) )
 colnames(auxSatDF) <- c("power", "loss", "policies", "nodes",  "turns", "values")
 
 scenarios <- c("30", "60", "90", "120", "150", "180")
-lossScenarios <- c("10", "20", "30")
+lossScenarios <- c("10", "20", "25", "30", "50")
 powerScenario <- "powerless"
 
 for (lossScenario in lossScenarios) {

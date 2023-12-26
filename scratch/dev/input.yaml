@@ -4,35 +4,35 @@ configs:
 
 applications:
   - policy: "performance"
-    start: 0.0
+    start: 50000.0
     duration: 21600
     cpu: 0.4
     memory: 0.4
     storage: 2.0
-  - policy: "storage"
-    start: 0.0
-    duration: 21600
-    cpu: 0.2
-    memory: 0.2
-    storage: 8.0
-  - policy: "transmission"
-    start: 0.0
-    duration: 21600
-    cpu: 0.2
-    memory: 0.2
-    storage: 2.0
+  # - policy: "storage"
+  #   start: 0.0
+  #   duration: 21600
+  #   cpu: 0.2
+  #   memory: 0.2
+  #   storage: 8.0
+  # - policy: "transmission"
+  #   start: 0.0
+  #   duration: 21600
+  #   cpu: 0.2
+  #   memory: 0.2
+  #   storage: 2.0
 
 nodes:
-  - nNodes: 10
+  - nNodes: 1
     name: "Grupo1-"
     power: 100.0
-    initialConsumption: 0
-    currentConsumption: 0
+    initialConsumption: 0.001157407
+    currentConsumption: 0.001157407
     cpu: 4.0
     memory: 8.0
     transmission: 50.0
     storage: 64.0
-  - nNodes: 10
+  - nNodes: 1
     name: "Grupo2-"
     power: 100.0
     initialConsumption: 0
@@ -41,12 +41,12 @@ nodes:
     memory: 4.0
     transmission: 50.0
     storage: 128.0
-  - nNodes: 10
-    name: "Grupo3-"
-    power: 100.0
-    initialConsumption: 0
-    currentConsumption: 0
-    cpu: 2.0
-    memory: 2.0
-    transmission: 100.0
-    storage: 64.0
+  # - nNodes: 10
+  #   name: "Grupo3-"
+  #   power: 100.0
+  #   initialConsumption: 0
+  #   currentConsumption: 0
+  #   cpu: 2.0
+  #   memory: 2.0
+  #   transmission: 100.0
+  #   storage: 64.0

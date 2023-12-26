@@ -250,13 +250,13 @@ static bool select_worker(float cpu, float memory, float storage, char *policy, 
       << memory << " AND\
               storage_remaining >="
       << storage << " AND\
-              battery > 50\
-          LIMIT 1;";
+              battery > 50.0\
+          LIMIT 1";
 
   const std::string sql2 = oss.str();
   const char *sql3 = sql2.c_str();
 
-  // std::cout << sql3 << std::endl;
+  // std::cout << "query: " << sql3 << std::endl;
 
   validworker = 0;
   database_query(sql3, callback_worker);
@@ -342,6 +342,11 @@ namespace ns3
 
   static void allocate_worker_application(ApplicationStruct application)
   {
+
+    // for (NodeList::Iterator node = NodeList::Begin(); node != NodeList::End(); node++)
+    // {
+    //   std::cout << "Node ID: " << (*node)->GetId() << "; Power: " << (*node)->GetPower() << std::endl;
+    // }
 
     // select node throught application's parameters
     bool workerfound = select_worker(application.CPU,

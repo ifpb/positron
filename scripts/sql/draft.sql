@@ -1,6 +1,6 @@
 -- usage: POSITRON_FOLDER $ sqlite3 scratch/database.db < scripts/sql/draft.sql
 
--- .headers on
+.headers on
 -- .mode column
 -- .mode csv
 -- .output g3_times.csv
@@ -106,7 +106,21 @@
 -- where ID = ID_APPLICATION and FINISH != 0
 -- group by ID_APPLICATION
 
-select DURATION as duration, round(max(FINISHED_AT) - START + 0.5,0) as makespan
-from APPLICATIONS, WORKERS_APPLICATIONS
-where ID = ID_APPLICATION and FINISH != 0
-group by ID_APPLICATION
+-- select DURATION as duration, round(max(FINISHED_AT) - START + 0.5,0) as makespan
+-- from APPLICATIONS, WORKERS_APPLICATIONS
+-- where ID = ID_APPLICATION and FINISH != 0
+-- group by ID_APPLICATION
+
+
+SELECT worker, battery, initial_consumption,            current_consumption, cpu_remaining, memory_remaining,              transmission, storage_remaining
+FROM (SELECT WORKERS.ID AS worker, WORKERS.CPU AS cpu, WORKERS.CPU - COALESCE(SUM(APPLICATIONS.CPU), 0) AS cpu_remaining, WORKERS.MEMORY AS memory, WORKERS.MEMORY - COALESCE(SUM(APPLICATIONS.MEMORY), 0) AS memory_remaining, WORKERS.STORAGE AS storage, WORKERS.STORAGE - COALESCE(SUM(APPLICATIONS.STORAGE), 0) AS storage_remaining,                      WORKERS.POWER AS battery, WORKERS.TRANSMISSION AS transmission,     WORKERS.INITIAL_CONSUMPTION AS initial_consumption,                     WORKERS.CURRENT_CONSUMPTION + (COUNT(APPLICATIONS.ID) * WORKERS.INITIAL_CONSUMPTION) AS current_consumption, COUNT(APPLICATIONS.ID) AS application_quantity 
+FROM WORKERS
+LEFT JOIN WORKERS_APPLICATIONS ON WORKERS_APPLICATIONS.ID_WORKER == WORKERS.ID
+LEFT JOIN APPLICATIONS ON APPLICATIONS.ID == WORKERS_APPLICATIONS.ID_APPLICATION AND APPLICATIONS.FINISH == 0
+GROUP BY WORKERS.ID
+ORDER BY application_quantity ASC, cpu_remaining DESC)
+WHERE cpu_remaining >= 0.4 AND memory_remaining >= 0.4 AND              storage_remaining >= 2.0 AND battery > 50.0
+LIMIT 1
+
+
+-- SELECT              worker,              battery,              initial_consumption,              current_consumption,              cpu_remaining,              memory_remaining,              transmission,              storage_remaining          FROM (SELECT                        WORKERS.ID AS worker,                        WORKERS.CPU AS cpu,                        WORKERS.CPU - COALESCE(SUM(APPLICATIONS.CPU), 0) AS cpu_remaining,                        WORKERS.MEMORY AS memory,                        WORKERS.MEMORY - COALESCE(SUM(APPLICATIONS.MEMORY), 0) AS memory_remaining,                        WORKERS.STORAGE AS storage,                        WORKERS.STORAGE - COALESCE(SUM(APPLICATIONS.STORAGE), 0) AS storage_remaining,                        WORKERS.POWER AS battery,                        WORKERS.TRANSMISSION AS transmission,                        WORKERS.INITIAL_CONSUMPTION AS initial_consumption,                        WORKERS.CURRENT_CONSUMPTION + (COUNT(APPLICATIONS.ID) * WORKERS.INITIAL_CONSUMPTION) AS current_consumption,                        COUNT(APPLICATIONS.ID) AS application_quantity                    FROM WORKERS                    LEFT JOIN WORKERS_APPLICATIONS ON WORKERS_APPLICATIONS.ID_WORKER == WORKERS.ID                    LEFT JOIN APPLICATIONS ON APPLICATIONS.ID == WORKERS_APPLICATIONS.ID_APPLICATION AND APPLICATIONS.FINISH == 0                    GROUP BY                        WORKERS.ID                    ORDER BY                        cpu_remaining DESC )          WHERE              cpu_remaining >=0.4 AND              memory_remaining >=0.4 AND              storage_remaining >=2 AND              battery > 50.0          LIMIT 1;

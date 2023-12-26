@@ -86,21 +86,21 @@ int main(int argc, char *argv[])
         Names::Add(auxWorkerID, workerNodes.Get(nodeId));
       }
 
-      if (powerless) {
+      // if (powerless) {
 
-        float factor = (float)loss/100;
-        int losspercent = nodeQtd * factor;
-        int count = 0;
+      //   float factor = (float)loss/100;
+      //   int losspercent = nodeQtd * factor;
+      //   int count = 0;
       
-        for (int i = 0; i < nodeQtd; i++) {
-          int nodeId = workerNodes.GetN() - (nodeQtd) + i;
-          count += 1;
-          if (count <= losspercent) {
-            workerNodes.Get (nodeId)->SetAttribute ("InitialConsumption", DoubleValue(0.001157407));
-            workerNodes.Get (nodeId)->SetAttribute ("CurrentConsumption", DoubleValue(0.001157407));
-          }
-        } 
-      }
+      //   for (int i = 0; i < nodeQtd; i++) {
+      //     int nodeId = workerNodes.GetN() - (nodeQtd) + i;
+      //     count += 1;
+      //     if (count <= losspercent) {
+      //       workerNodes.Get (nodeId)->SetAttribute ("InitialConsumption", DoubleValue(0.001157407));
+      //       workerNodes.Get (nodeId)->SetAttribute ("CurrentConsumption", DoubleValue(0.001157407));
+      //     }
+      //   } 
+      // }
     }
   }
   controlNodes.Add(workerNodes);
@@ -217,7 +217,7 @@ int main(int argc, char *argv[])
     //ethernet.EnablePcapAll (scenarioName);
   }
 
-  //Simulator::Stop(Seconds (simulationTime));
+  // Simulator::Stop(Seconds (simulationTime));
   Simulator::Run();
   Simulator::Destroy();
   return 0;

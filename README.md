@@ -1,60 +1,60 @@
 
-POSITRON: Esquema de Alocação Justa de Dispositivos IoT Multifuncionais
+POSITRON: Fair Allocation Scheme for Multifunctional IoT Devices
 ================================
 
-## Lista de conteúdo:
+## Table of Contents:
 
-1) [Informações](#informações)
-2) [Instalação](#instalação)
-3) [Utilização](#utilização)
-4) [Contatos](#contatos)
+1) [Information](#information)
+2) [Installation](#installation)
+3) [Utilization](#utilization)
+4) [Contacts](#contacts)
 
-## Informações
+## Information
 
-O POSITRON foi implementado e testado com base na versão 3.38 do [NS-3](https://www.nsnam.org), em um ambiente Linux Ubuntu 22.04.
+The POSITRON was implemented and tested based on version 3.38 of [NS-3](https://www.nsnam.org), in a Ubuntu 22.04 Linux environment.
 
-Para o seu funcionamento, é necessária a instalação prévia do SQLite 3 e da biblioteca YAML CPP.
+For its operation, prior installation of SQLite 3 and the YAML CPP library is required.
 
-Instruções de instalação e uso são descritas a seguir.
+Installation and usage instructions are as follows.
 
-## Instalação
+## Installation
 
-Primeiramente, deve-se fazer um clone deste repositório através da ferramenta Git
+Firstly, you should clone this repository using the Git tool
 
 ```shell
 git clone https://github.com/ifpb/positron
 ```
 
-Após a clonagem do repositório, recomenda-se a instalação das dependências
+After cloning the repository, it is recommended to install the dependencies
 
 ```shell
 cd positron 
 bash scripts/dependencies.sh
 ```
 
-A instalação deve continuar conforme os passos do próprio NS-3
+The installation should proceed according to the steps provided by NS-3 itself
 
 ```shell
 ./ns3 configure --enable-example --enable-tests
 ```
 
-seguido de
+followed by
 
 ```shell
 ./ns3 build
 ```
 
-## Utilização
+## Utilization
 
-Uma vez compilado, pode-se executar o POSITRON a partir dos arquivos main.cc e input.yaml no diretório scracth.
+Once compiled, you can run POSITRON from the main.cc and input.yaml files in the scratch directory.
 
 ```shell
 ./ns3 run main 
 ```
 
-Basta alterar o arquivo input.yaml para configurar novos cenários de simulação.
+Simply modify the input.yaml file to configure new simulation scenarios.
 
-Exemplos de parâmetros de simulação
+Examples of simulation parameters
 
 ```shell
 ./ns3 run "main --seed=79" 
@@ -68,7 +68,7 @@ Exemplos de parâmetros de simulação
 ./waf run "main --balanced=true"
 ```
 
-## Contatos
+## Contacts
 
 * Aldri Santos (aldri[at]dcc.ufmg.br)
 * Ayrton M. Porto de Gois (ayrton.porto[at]academico.ifpb.edu.br)

@@ -1,5 +1,5 @@
 
-POSITRON: Fair Allocation Scheme for Multifunctional IoT Devices
+POSITRON: Efficient Allocation Scheme for Multifunctional IoT Devices
 ================================
 
 ## Table of Contents:
@@ -11,7 +11,7 @@ POSITRON: Fair Allocation Scheme for Multifunctional IoT Devices
 
 ## Information
 
-The POSITRON was implemented and tested based on version 3.38 of [NS-3](https://www.nsnam.org), in a Ubuntu 22.04 Linux environment.
+POSITRON was implemented and tested with version 3.38 of [NS-3](https://www.nsnam.org), in a Ubuntu 22.04 Linux environment.
 
 For its operation, prior installation of SQLite 3 and the YAML CPP library is required.
 
